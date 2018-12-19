@@ -1,0 +1,24 @@
+.Rproj.user
+.Rhistory
+.RData
+*.RData
+*.DS_Store
+RTAGS
+!README.md
+*.log
+
+myData/UKDA*
+
+outData/*/*
+
+outFigures/*
+outFigures/*/*
+
+_extras/*
+_extras/*/*
+
+/* symlinks */
+./myData/UKDA
+./myData/UKDA*
+
+
