@@ -1,0 +1,30 @@
+###  Translation from RTF performed by UnRTF, version 0.21.9 
+### font table contains 6 fonts total
+
+-----------------
+
+UK Data Archive Data Dictionary
+
+File-level information:
+
+File Name = weight_diary_person
+Number of variables = 5
+Number of cases = 10381
+
+
+Variable-level information:
+
+Pos. = 1 Variable = sn1 Variable label = point number
+This variable is numeric, the SPSS measurement level is scale.
+
+Pos. = 2 Variable = sn2 Variable label = address number
+This variable is numeric, the SPSS measurement level is scale.
+
+Pos. = 3 Variable = sn3 Variable label = Person number
+This variable is numeric, the SPSS measurement level is nominal.
+
+Pos. = 4 Variable = wtdt_gr Variable label = Weight for people keeping at least one diary - for grossing to UK population aged 8yrs or more
+This variable is numeric, the SPSS measurement level is scale.
+
+Pos. = 5 Variable = wtdt_ug Variable label = Weight for people keeping at least one diary - ungrossed
+This variable is numeric, the SPSS measurement level is scale.

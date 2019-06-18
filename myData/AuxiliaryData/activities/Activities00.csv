@@ -1,0 +1,266 @@
+Id,Name
+0.0,Unspecified personal care
+10.0,Unspecified Sleep
+1000.0,Unspecified employment
+110.0,Sleep
+1110.0,Working time in main job
+1120.0,Coffee and other breaks in main job
+120.0,Sick in bed
+1210.0,Working time in second job
+1220.0,Coffee and other breaks in second job
+1300.0,Unspecified activities related to employment
+1310.0,Lunch break
+1390.0,Other specified activities related to employment
+1391.0,Activities related to job seeking
+1399.0,Other specified activities related to employment
+2000.0,Unspecified study
+210.0,Eating
+2100.0,Unspecified activities related to school or university
+2110.0,Classes and lectures
+2120.0,Homework
+2190.0,Other specified activities related to school or university
+2210.0,Free Time Study
+300.0,Unspecified other personal care
+3000.0,Unspecified household and family care
+310.0,Wash and dress
+3100.0,Unspecified food management
+3110.0,Food preparation
+3120.0,Baking
+3130.0,Dish washing
+3140.0,Preserving
+3190.0,Other specified food management
+3200.0,Unspecified household upkeep
+3210.0,Cleaning dwelling
+3220.0,Cleaning yard
+3230.0,Heating and water
+3240.0,Various arrangements
+3250.0,Disposal of Waste
+3290.0,Other specified household upkeep
+3300.0,Unspecified making and care for textiles
+3310.0,Laundry
+3320.0,Ironing
+3330.0,Handicraft and producing textiles
+3390.0,Other specified making and care for textiles
+3400.0,Unspecified gardening and pet care
+3410.0,Gardening
+3420.0,Tending domestic animals
+3430.0,Caring for pets
+3440.0,Walking the dog
+3490.0,Other specified gardening and pet care
+3500.0,Unspecified construction and repairs
+3510.0,House construction and renovation
+3520.0,Repairs of dwelling
+3530.0,Unspecified making repairing and maintaining equipment
+3531.0,Woodcraft metal craft sculpture and pottery
+3539.0,Other specified making repairing and maintaining equipment
+3540.0,Vehicle maintenance
+3590.0,Other specified construction and repairs
+3600.0,Unspecified shopping and services
+3610.0,Unspecified shopping
+3611.0,Shopping mainly for food
+3612.0,Shopping mainly for clothing
+3613.0,Shopping mainly related to accommodation
+3614.0,Shopping or browsing at car boot sales or antique fairs
+3615.0,Window shopping or other shopping as leisure
+3619.0,Other specified shopping
+3620.0,Commercial and administrative services
+3630.0,Personal services
+3690.0,Other specified shopping and services
+3710.0,Household management not using the internet
+3720.0,Unspecified household management using the internet
+3721.0,Shping for&ordring unspec gds&srvs via internet
+3722.0,Shping for&ordring food via the internet
+3723.0,Shping for&ordring clothing via the internet
+3724.0,Shping for&ordring gds&srv related to acc via internet
+3725.0,Shping for&ordring mass media via the internet
+3726.0,Shping for&ordring entertainment via the internet
+3727.0,Banking and bill paying via the internet
+3729.0,Other specified household management using the internet
+3800.0,Unspecified childcare
+3810.0,Unspecified physical care & supervision of a child
+3811.0,Feeding the child
+3819.0,Other specified physical care & supervision of a child
+3820.0,Teaching the child
+3830.0,Reading playing and talking with child
+3840.0,Accompanying child
+3890.0,Other specified childcare
+390.0,Other specified personal care
+3910.0,Unspecified help to an adult household member
+3911.0,Physical care & supervision of an adult household member
+3914.0,Accompanying an adult household member
+3919.0,Other specified help to an adult household member
+4000.0,Unspecified volunteer work and meetings
+4100.0,Unspecified organisational work
+4110.0,Work for an organisation
+4120.0,Volunteer work through an organisation
+4190.0,Other specified organisational work
+4200.0,Unspecified informal help
+4210.0,Food management as help
+4220.0,Household upkeep as help
+4230.0,Gardening and pet care as help
+4240.0,Construction and repairs as help
+4250.0,Shopping and services as help
+4260.0,Help in employment and farming
+4270.0,Unspecified childcare as help
+4271.0,Physical care and supervision of a child as help
+4272.0,Teaching the child as help
+4273.0,Reading playing & talking to the child as help
+4274.0,Accompanying the child as help
+4279.0,Other specified childcare as help
+4280.0,Unspecified help to an adult member of another household
+4281.0,Physical care and supervision of an adult as help
+4284.0,Accompanying an adult as help
+4289.0,Other specified help to an adult member of another household
+4290.0,Other specified informal help
+4300.0,Unspecified participatory activities
+4310.0,Meetings
+4320.0,Religious activities
+4390.0,Other specified participatory activities
+5000.0,Unspecified social life and entertainment
+5100.0,Unspecified social life
+5110.0,Socialising with household members
+5120.0,Visiting and receiving visitors
+5130.0,Feasts
+5140.0,Telephone conversation
+5190.0,Other specified social life
+5200.0,Unspecified entertainment and culture
+5210.0,Cinema
+5220.0,Unspecified theatre or concerts
+5221.0,Plays musicals or pantomimes
+5222.0,Opera operetta or light opera
+5223.0,Concerts or other performances of classical music
+5224.0,Live music other than classical concerts opera and musicals
+5225.0,Dance performances
+5229.0,Other specified theatre or concerts
+5230.0,Art exhibitions and museums
+5240.0,Unspecified library
+5241.0,Brwing bks rcds audio videoCDsVDs from library
+5242.0,Reference to bks and other library materials within library
+5243.0,Using internet in the library
+5244.0,Using computers in the library other than internet use
+5245.0,Reading newspapers in a library
+5246.0,Listening to music in a library
+5249.0,Other specified library activities
+5250.0,Sports events
+5290.0,Other specified entertainment and culture
+5291.0,Visiting a historical site
+5292.0,Visiting a wildlife site
+5293.0,Visiting a botanical site
+5294.0,Visiting a leisure park
+5295.0,Visiting an urban park playground or designated play area
+5299.0,Other specified entertainment or culture
+5310.0,Resting  Time out
+6000.0,Unspecified sports and outdoor activities
+6100.0,Unspecified physical exercise
+6110.0,Walking and hiking
+6111.0,Taking a walk or hike that lasts at least 2 miles or 1 hour
+6119.0,Other walk or hike
+6120.0,Jogging and running
+6130.0,Biking skiing and skating
+6131.0,Biking
+6132.0,Skiing or skating
+6140.0,Unspecified ball games
+6141.0,Indoor pairs or doubles games
+6142.0,Indoor team games
+6143.0,Outdoor pairs or doubles games
+6144.0,Outdoor team games
+6149.0,Other specified ball games
+6150.0,Gymnastics
+6160.0,Fitness
+6170.0,Unspecified water sports
+6171.0,Swimming
+6179.0,Other specified water sports
+6190.0,Other specified physical exercise
+6200.0,Unspecified productive exercise
+6210.0,Hunting and fishing
+6220.0,Picking berries mushroom and herbs
+6290.0,Other specified productive exercise
+6310.0,Unspecified sports related activities
+6311.0,Activities related to sports
+6312.0,Activities related to productive exercise
+7000.0,Unspecified hobbies and games
+7100.0,Unspecified arts
+7110.0,Unspecified visual arts
+7111.0,Painting drawing or other graphic arts
+7112.0,Making videos taking photos or related activities
+7119.0,Other specified visual arts
+7120.0,Unspecified performing arts
+7121.0,Singing or other musical activities
+7129.0,Other specified performing arts
+7130.0,Literary arts
+7190.0,Other specified arts
+7200.0,Unspecified hobbies
+7210.0,Collecting
+7220.0,Computing  programming
+7230.0,Unspecified information by computing
+7231.0,Information searching on the internet
+7239.0,Other specified information by computing
+7240.0,Unspecified communication by computer
+7241.0,Communication on the internet
+7249.0,Other specified communication by computing
+7250.0,Unspecified other computing
+7251.0,Unspecified internet use
+7259.0,Other specified computing
+7260.0,Correspondence
+7290.0,Other specified hobbies
+7300.0,Unspecified games
+7310.0,Solo games and play
+7320.0,Unspecified games and play with others
+7321.0,Billiards pool snooker or petanque
+7322.0,Chess and bridge
+7329.0,Other specified parlour games and play
+7330.0,Computer games
+7340.0,Gambling
+7390.0,Other specified games
+8000.0,Unspecified mass media
+8100.0,Unspecified reading
+8110.0,Reading periodicals
+8120.0,Reading books
+8190.0,Other specified reading
+8210.0,Unspecified TV watching
+8211.0,Watching a film on TV
+8212.0,Watching sport on TV
+8219.0,Other specified TV watching
+8220.0,Unspecified video watching
+8221.0,Watching a film on video
+8222.0,Watching sport on video
+8229.0,Other specified video watching
+8300.0,Unspecified listening to radio and music
+8310.0,Unspecified radio listening
+8311.0,Listening to music on the radio
+8312.0,Listening to sport on the radio
+8319.0,Other specified radio listening
+8320.0,Listening to recordings
+9000.0,Travel related to unspecified time use
+9010.0,Travel related to personal business
+9110.0,Travel in the course of work
+9130.0,Travel to work from home and back only
+9140.0,Travel to work from a place other than home
+9210.0,Travel related to education
+9230.0,Travel escorting to/ from education
+9310.0,Travel related to household care
+9360.0,Travel related to shopping
+9370.0,Travel related to services
+9380.0,Travel escorting a child (other than education)
+9390.0,Travel escorting an adult (other than education)
+9410.0,Travel related to organisational work
+9420.0,Travel related to informal help to other households
+9430.0,Travel related to religious activities
+9440.0,Travel rlt to participatory actv except rel actv
+9500.0,Travel to visit friends/ relatives in their homes
+9510.0,Travel related to other social activities
+9520.0,Travel related to entertainment and culture
+9610.0,Travel related to physical exercise
+9620.0,Travel related to hunting & fishing
+9630.0,Travel related to productive excs expt hunting & fishing
+9710.0,Travel related to gambling
+9720.0,Travel related to hobbies other than gambling
+9810.0,Travel to holiday base
+9820.0,Travel for day trip/ just walk
+9890.0,Other specified travel
+9940.0,Punctuating activity
+9950.0,Filling in the time use diary
+9960.0,No main activity no idea what it might be
+9970.0,No main activity some idea what it might be
+9980.0,Illegible activity
+9990.0,Unspecified time use

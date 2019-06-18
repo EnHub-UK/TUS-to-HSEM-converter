@@ -1,0 +1,291 @@
+,Id,Name,in2000,in2015,inBoth,Group
+1,-9,No answer/refused,FALSE,TRUE,FALSE,0
+2,-1,Not applicable,FALSE,TRUE,FALSE,0
+3,0,Unspecified personal care,TRUE,TRUE,TRUE,6
+4,10,Unspecified Sleep,TRUE,FALSE,FALSE,1
+5,110,Sleep,TRUE,TRUE,TRUE,1
+6,111,Sleep: In bed not asleep,FALSE,TRUE,FALSE,1
+7,120,Sleep: Sick in bed,TRUE,TRUE,TRUE,1
+8,210,Eating,TRUE,TRUE,TRUE,8
+9,300,Other personal care: Unspecified other personal care,TRUE,TRUE,TRUE,7
+10,310,Other personal care: Wash and dress,TRUE,TRUE,TRUE,7
+11,390,Other personal care: Other specified personal care,TRUE,TRUE,TRUE,7
+12,1000,Unspecified employment,TRUE,TRUE,TRUE,10
+13,1100,Main job: unspecified main job,FALSE,TRUE,FALSE,10
+14,1110,Main job: Working time in main job,TRUE,TRUE,TRUE,10
+15,1120,Main job: Coffee and other breaks in main job,TRUE,TRUE,TRUE,10
+16,1210,Second job: Working time in second job,TRUE,TRUE,TRUE,10
+17,1220,Second job: Coffee and other breaks in second job,TRUE,TRUE,TRUE,10
+18,1300,Activities related to employment: Unspecified activities related to employment,TRUE,TRUE,TRUE,10
+19,1310,Activities related to employment: Lunch break,TRUE,TRUE,TRUE,10
+20,1390,Activities related to employment: Other specified activities related to employment,TRUE,TRUE,TRUE,10
+21,1391,Activities related to employment: Activities related to job seeking,TRUE,TRUE,TRUE,10
+22,1399,Activities related to employment: Other unspecified activities related to employment,TRUE,TRUE,TRUE,10
+23,2000,Study: Unspecified study school or university,TRUE,TRUE,TRUE,2
+24,2100,Study: Unspecified activities related to school or university,TRUE,TRUE,TRUE,2
+25,2110,Study: Classes and lectures,TRUE,TRUE,TRUE,2
+26,2120,Study: Homework,TRUE,TRUE,TRUE,2
+27,2190,Study: other specified activities related to school or university,TRUE,TRUE,TRUE,2
+28,2210,Free time study,TRUE,TRUE,TRUE,2
+29,3000,Unspecified household and family care,TRUE,TRUE,TRUE,6
+30,3100,Unspecified food management,TRUE,TRUE,TRUE,5
+31,3110,Food preparation and baking,TRUE,TRUE,TRUE,5
+32,3120,Baking,TRUE,FALSE,FALSE,5
+33,3130,Dish washing,TRUE,TRUE,TRUE,9
+34,3140,Preserving,TRUE,TRUE,TRUE,5
+35,3190,Other specified food management,TRUE,TRUE,TRUE,5
+36,3200,Unspecified household upkeep,TRUE,TRUE,TRUE,6
+37,3210,Cleaning dwelling,TRUE,TRUE,TRUE,6
+38,3220,Cleaning yard,TRUE,TRUE,TRUE,6
+39,3230,Heating and water,TRUE,TRUE,TRUE,9
+40,3240,Arranging household goods and materials,TRUE,TRUE,TRUE,6
+41,3250,Disposal of waste,TRUE,TRUE,TRUE,6
+42,3290,Other or unspecified household upkeep,TRUE,TRUE,TRUE,6
+43,3300,Unspecified making and care for textiles,TRUE,TRUE,TRUE,6
+44,3310,Laundry,TRUE,TRUE,TRUE,9
+45,3320,Ironing,TRUE,TRUE,TRUE,7
+46,3330,Handicraft and producing textiles,TRUE,TRUE,TRUE,2
+47,3390,Other specified making and care for textiles,TRUE,TRUE,TRUE,2
+48,3400,Unspecified gardening and pet care,TRUE,FALSE,FALSE,10
+49,3410,Gardening,TRUE,TRUE,TRUE,10
+50,3420,Tending domestic animals,TRUE,TRUE,TRUE,10
+51,3430,Caring for pets,TRUE,TRUE,TRUE,10
+52,3440,Walking the dog,TRUE,TRUE,TRUE,10
+53,3490,Other specified gardening and pet care,TRUE,TRUE,TRUE,10
+54,3500,Unspecified construction and repairs,TRUE,TRUE,TRUE,10
+55,3510,House construction and renovation,TRUE,TRUE,TRUE,10
+56,3520,Repairs of dwelling,TRUE,TRUE,TRUE,10
+57,3530,Making repairing and maintaining equipment,TRUE,TRUE,TRUE,10
+58,3531,Woodcraft metalcraft sculpture and pottery,TRUE,TRUE,TRUE,10
+59,3539,Other specified making repairing and maintaining equipment,TRUE,TRUE,TRUE,10
+60,3540,Vehicle maintenance,TRUE,TRUE,TRUE,10
+61,3590,Other specified construction and repairs,TRUE,TRUE,TRUE,10
+62,3600,Unspecified shopping and services,TRUE,TRUE,TRUE,10
+63,3610,Unspecified shopping,TRUE,TRUE,TRUE,10
+64,3611,Shopping mainly for food,TRUE,TRUE,TRUE,10
+65,3612,Shopping mainly for clothing,TRUE,TRUE,TRUE,10
+66,3613,Shopping mainly related to accommodation,TRUE,TRUE,TRUE,10
+67,3614,Shopping or browsing at car boot sales or antique fairs,TRUE,TRUE,TRUE,10
+68,3615,Window shopping or other shopping as leisure,TRUE,TRUE,TRUE,10
+69,3619,Other specified shopping,TRUE,TRUE,TRUE,10
+70,3620,Commercial and administrative services,TRUE,TRUE,TRUE,10
+71,3630,Personal services,TRUE,TRUE,TRUE,10
+72,3690,Other specified shopping and services,TRUE,TRUE,TRUE,10
+73,3710,Household management not using the internet,TRUE,TRUE,TRUE,10
+74,3713,Shopping for and ordering clothing via the internet,FALSE,TRUE,FALSE,4
+75,3720,Unspecified household management using the internet,TRUE,TRUE,TRUE,4
+76,3721,Shopping for and ordering unspecified goods and services via the internet,TRUE,TRUE,TRUE,4
+77,3722,Shopping for and ordering food via the internet,TRUE,TRUE,TRUE,4
+78,3723,Shping for&ordring clothing via the internet,TRUE,FALSE,FALSE,4
+79,3724,Shopping for and ordering goods and services related to accommodation via the internet,TRUE,TRUE,TRUE,4
+80,3725,Shopping for and ordering mass media via the internet,TRUE,TRUE,TRUE,4
+81,3726,Shopping for and ordering entertainment via the internet,TRUE,TRUE,TRUE,4
+82,3727,Banking and bill paying via the internet,TRUE,TRUE,TRUE,4
+83,3729,Other specified household management using the internet,TRUE,TRUE,TRUE,4
+84,3800,Unspecified childcare,TRUE,TRUE,TRUE,2
+85,3810,Unspecified physical care & supervision of a child,TRUE,TRUE,TRUE,2
+86,3811,Feeding the child,TRUE,TRUE,TRUE,2
+87,3819,Other and unspecified physical care & supervision of a child,TRUE,TRUE,TRUE,2
+88,3820,Teaching the child,TRUE,TRUE,TRUE,2
+89,3830,Reading playing and talking with child,TRUE,TRUE,TRUE,2
+90,3840,Accompanying child,TRUE,TRUE,TRUE,2
+91,3890,Other or unspecified childcare,TRUE,TRUE,TRUE,2
+92,3910,Unspecified help to a non-dependent eg injured adult household member,TRUE,TRUE,TRUE,2
+93,3911,Physical care of a non-dependent e.g. injured adult household member,TRUE,TRUE,TRUE,2
+94,3914,Accompanying a non-dependent adult household member e.g. to hospital,TRUE,TRUE,TRUE,2
+95,3919,Other specified help to a non-dependent adult household member,TRUE,TRUE,TRUE,2
+96,3920,Unspecified help to a dependent adult household member,FALSE,TRUE,FALSE,2
+97,3921,Physical care of a dependent adult household member e.g. Alzheimic parent,FALSE,TRUE,FALSE,2
+98,3924,Accompanying a dependent adult household member e.g. Alzheimic,FALSE,TRUE,FALSE,2
+99,3929,Other specified help to a dependent adult household member,FALSE,TRUE,FALSE,2
+100,4000,Unspecified volunteer work and meetings,TRUE,TRUE,TRUE,10
+101,4100,Unspecified organisational work,TRUE,TRUE,TRUE,10
+102,4110,Work for an organisation,TRUE,TRUE,TRUE,10
+103,4120,Volunteer work through an organisation,TRUE,TRUE,TRUE,10
+104,4190,Other specified organisational work,TRUE,TRUE,TRUE,10
+105,4200,Unspecified informal help to other households,TRUE,TRUE,TRUE,10
+106,4210,Food management as help to other households,TRUE,TRUE,TRUE,10
+107,4220,Household upkeep as help to other households,TRUE,TRUE,TRUE,10
+108,4230,Gardening and pet care as help to other households,TRUE,TRUE,TRUE,10
+109,4240,Construction and repairs as help to other households,TRUE,TRUE,TRUE,10
+110,4250,Shopping and services as help to other households,TRUE,TRUE,TRUE,10
+111,4260,Help to other households in employment and farming,TRUE,TRUE,TRUE,10
+112,4270,Unspecified childcare as help to other households,TRUE,TRUE,TRUE,10
+113,4271,Physical care and supervision of child as help to other household,TRUE,TRUE,TRUE,10
+114,4272,Teaching non-coresident child,TRUE,TRUE,TRUE,10
+115,4273,Reading playing & talking to non-coresident child,TRUE,TRUE,TRUE,10
+116,4274,Accompanying non-coresident child,TRUE,TRUE,TRUE,10
+117,4275,Physical care and supervision of own child as help to other household,FALSE,TRUE,FALSE,10
+118,4277,Reading playing & talking to own non-coresident child,FALSE,TRUE,FALSE,10
+119,4278,Accompanying own non-coresident child,FALSE,TRUE,FALSE,10
+120,4279,Other specified childcare as help to other household,TRUE,TRUE,TRUE,10
+121,4280,Unspecified help to an adult of another household,TRUE,TRUE,TRUE,10
+122,4281,Physical care and supervision of an adult as help to another household,TRUE,TRUE,TRUE,10
+123,4282,Accompanying an adult as help to another household,FALSE,TRUE,FALSE,10
+124,4283,Other specified help to an adult member of another household,FALSE,TRUE,FALSE,10
+125,4284,Accompanying an adult as help,TRUE,FALSE,FALSE,10
+126,4289,Other specified informal help to another household,TRUE,TRUE,TRUE,10
+127,4290,Other specified informal help,TRUE,TRUE,TRUE,10
+128,4300,Unspecified participatory activities,TRUE,TRUE,TRUE,10
+129,4310,Meetings,TRUE,TRUE,TRUE,10
+130,4320,Religious activities,TRUE,TRUE,TRUE,10
+131,4390,Other specified participatory activities,TRUE,TRUE,TRUE,10
+132,5000,Unspecified social life and entertainment,TRUE,TRUE,TRUE,10
+133,5100,Unspecified social life,TRUE,TRUE,TRUE,10
+134,5110,Socialising with family,TRUE,TRUE,TRUE,10
+135,5120,Visiting and receiving visitors,TRUE,TRUE,TRUE,10
+136,5130,Celebrations,TRUE,TRUE,TRUE,10
+137,5140,Telephone conversation,TRUE,TRUE,TRUE,10
+138,5190,Other specified social life,TRUE,TRUE,TRUE,10
+139,5200,Unspecified entertainment and culture,TRUE,TRUE,TRUE,10
+140,5210,Cinema,TRUE,TRUE,TRUE,10
+141,5220,Unspecified theatre or concerts,TRUE,TRUE,TRUE,10
+142,5221,Plays musicals or pantomimes,TRUE,TRUE,TRUE,10
+143,5222,Opera operetta or light opera,TRUE,TRUE,TRUE,10
+144,5223,Concerts or other performances of classical music,TRUE,TRUE,TRUE,10
+145,5224,Live music other than classical concerts opera and musicals,TRUE,TRUE,TRUE,10
+146,5225,Dance performances,TRUE,TRUE,TRUE,10
+147,5229,Other specified theatre or concerts,TRUE,TRUE,TRUE,10
+148,5230,Art exhibitions and museums,TRUE,TRUE,TRUE,10
+149,5240,Unspecified library,TRUE,TRUE,TRUE,10
+150,5241,Borrowing books records audiotapes videotapes CDs VDs etc. from a library,TRUE,TRUE,TRUE,10
+151,5242,Reference to books and other library materials within a library,TRUE,TRUE,TRUE,10
+152,5243,Using internet in the library,TRUE,TRUE,TRUE,10
+153,5244,Using computers in the library other than internet use,TRUE,TRUE,TRUE,10
+154,5245,Reading newspapers in a library,TRUE,TRUE,TRUE,10
+155,5246,Listening to music in a library,TRUE,FALSE,FALSE,10
+156,5249,Other specified library activities,TRUE,TRUE,TRUE,10
+157,5250,Sports events,TRUE,TRUE,TRUE,10
+158,5290,Other unspecified entertainment and culture,TRUE,TRUE,TRUE,10
+159,5291,Visiting a historical site,TRUE,TRUE,TRUE,10
+160,5292,Visiting a wildlife site,TRUE,TRUE,TRUE,10
+161,5293,Visiting a botanical site,TRUE,TRUE,TRUE,10
+162,5294,Visiting a leisure park,TRUE,TRUE,TRUE,10
+163,5295,Visiting an urban park playground designated play area,TRUE,TRUE,TRUE,10
+164,5299,Other or unspecified entertainment or culture,TRUE,TRUE,TRUE,10
+165,5310,Resting - Time out,TRUE,TRUE,TRUE,10
+166,6000,Unspecified sports and outdoor activities,TRUE,TRUE,TRUE,10
+167,6100,Unspecified physical exercise,TRUE,TRUE,TRUE,10
+168,6110,Walking and hiking,TRUE,TRUE,TRUE,10
+169,6111,Taking a walk or hike that lasts at least miles or 1 hour,TRUE,TRUE,TRUE,10
+170,6119,Other walk or hike,TRUE,TRUE,TRUE,10
+171,6120,Jogging and running,TRUE,TRUE,TRUE,10
+172,6130,Biking skiing and skating,TRUE,TRUE,TRUE,10
+173,6131,Biking,TRUE,TRUE,TRUE,10
+174,6132,Skiing or skating,TRUE,TRUE,TRUE,10
+175,6140,Unspecified ball games,TRUE,TRUE,TRUE,10
+176,6141,Indoor pairs or doubles games,TRUE,TRUE,TRUE,10
+177,6142,Indoor team games,TRUE,TRUE,TRUE,10
+178,6143,Outdoor pairs or doubles games,TRUE,TRUE,TRUE,10
+179,6144,Outdoor team games,TRUE,TRUE,TRUE,10
+180,6149,Other specified ball games,TRUE,TRUE,TRUE,10
+181,6150,Gymnastics,TRUE,TRUE,TRUE,10
+182,6160,Fitness,TRUE,TRUE,TRUE,10
+183,6170,Unspecified water sports,TRUE,TRUE,TRUE,10
+184,6171,Swimming,TRUE,TRUE,TRUE,10
+185,6179,Other specified water sports,TRUE,TRUE,TRUE,10
+186,6190,Other specified physical exercise,TRUE,TRUE,TRUE,10
+187,6200,Unspecified productive exercise,TRUE,TRUE,TRUE,10
+188,6210,Hunting and fishing,TRUE,TRUE,TRUE,10
+189,6220,Picking berries mushroom and herbs,TRUE,TRUE,TRUE,10
+190,6290,Other specified productive exercise,TRUE,TRUE,TRUE,10
+191,6310,Unspecified sports related activities,TRUE,TRUE,TRUE,10
+192,6311,Activities related to sports,TRUE,TRUE,TRUE,10
+193,6312,Activities related to productive exercise,TRUE,TRUE,TRUE,10
+194,7000,Unspecified hobbies games and computing,TRUE,TRUE,TRUE,4
+195,7100,Unspecified arts,TRUE,TRUE,TRUE,2
+196,7110,Unspecified visual arts,TRUE,TRUE,TRUE,2
+197,7111,Painting drawing or other graphic arts,TRUE,TRUE,TRUE,2
+198,7112,Making videos taking photographs or related photographic activities,TRUE,TRUE,TRUE,2
+199,7119,Other specified visual arts,TRUE,TRUE,TRUE,2
+200,7120,Unspecified performing arts,TRUE,TRUE,TRUE,2
+201,7121,Singing or other musical activities,TRUE,TRUE,TRUE,8
+202,7129,Other specified performing arts,TRUE,TRUE,TRUE,8
+203,7130,Literary arts,TRUE,TRUE,TRUE,2
+204,7140,Other specified arts,FALSE,TRUE,FALSE,2
+205,7150,Unspecified hobbies,FALSE,TRUE,FALSE,2
+206,7160,Collecting,FALSE,TRUE,FALSE,2
+207,7170,Correspondence,FALSE,TRUE,FALSE,2
+208,7190,Other specified or unspecified arts and hobbies,TRUE,TRUE,TRUE,2
+209,7200,Unspecified hobbies,TRUE,FALSE,FALSE,2
+210,7210,Collecting,TRUE,FALSE,FALSE,2
+211,7220,Computing - programming,TRUE,TRUE,TRUE,4
+212,7230,Unspecified information by computing,TRUE,TRUE,TRUE,4
+213,7231,Information searching on the internet,TRUE,TRUE,TRUE,4
+214,7239,Other specified information by computing,TRUE,TRUE,TRUE,4
+215,7240,Unspecified communication by computer,TRUE,TRUE,TRUE,4
+216,7241,Communication on the internet,TRUE,TRUE,TRUE,4
+217,7249,Other specified communication by computing,TRUE,TRUE,TRUE,4
+218,7250,Unspecified other computing,TRUE,TRUE,TRUE,4
+219,7251,Skype or other video call,TRUE,TRUE,TRUE,4
+220,7259,Other specified computing,TRUE,TRUE,TRUE,4
+221,7260,Correspondence,TRUE,FALSE,FALSE,2
+222,7290,Other specified hobbies,TRUE,FALSE,FALSE,2
+223,7300,Unspecified games,TRUE,TRUE,TRUE,2
+224,7310,Solo games and play,TRUE,TRUE,TRUE,2
+225,7320,Unspecified games and play with others,TRUE,TRUE,TRUE,2
+226,7321,Billiards pool snooker or petanque,TRUE,TRUE,TRUE,2
+227,7322,Chess and bridge,TRUE,TRUE,TRUE,2
+228,7329,Other specified parlour games and play,TRUE,TRUE,TRUE,2
+229,7330,Computer games,TRUE,TRUE,TRUE,4
+230,7340,Gambling,TRUE,TRUE,TRUE,2
+231,7390,Other specified games,TRUE,TRUE,TRUE,2
+232,8000,Unspecified mass media,TRUE,TRUE,TRUE,2
+233,8100,Unspecified reading,TRUE,TRUE,TRUE,2
+234,8110,Reading periodicals,TRUE,TRUE,TRUE,2
+235,8120,Reading books,TRUE,TRUE,TRUE,2
+236,8190,Other specified reading,TRUE,TRUE,TRUE,2
+237,8210,Unspecified TV video or DVD watching,TRUE,TRUE,TRUE,3
+238,8211,Watching a film on TV,TRUE,TRUE,TRUE,3
+239,8212,Watching sport on TV,TRUE,TRUE,TRUE,3
+240,8219,Other specified TV watching,TRUE,TRUE,TRUE,3
+241,8220,Unspecified video watching,TRUE,TRUE,TRUE,3
+242,8221,Watching a film on video,TRUE,TRUE,TRUE,3
+243,8222,Watching sport on video,TRUE,TRUE,TRUE,3
+244,8229,Other specified video watching,TRUE,TRUE,TRUE,3
+245,8300,Unspecified listening to radio and music,TRUE,TRUE,TRUE,3
+246,8310,Unspecified radio listening,TRUE,TRUE,TRUE,3
+247,8311,Listening to music on the radio,TRUE,TRUE,TRUE,3
+248,8312,Listening to sport on the radio,TRUE,TRUE,TRUE,3
+249,8319,Other specified radio listening,TRUE,TRUE,TRUE,3
+250,8320,Listening to recordings,TRUE,TRUE,TRUE,3
+251,9000,Travel related to unspecified time use,TRUE,TRUE,TRUE,10
+252,9010,Travel related to personal business,TRUE,TRUE,TRUE,10
+253,9100,Travel to/from work,FALSE,TRUE,FALSE,10
+254,9110,Travel in the course of work,TRUE,TRUE,TRUE,10
+255,9120,Travel to work from home and back only,FALSE,TRUE,FALSE,10
+256,9130,Travel to work from a place other than home,TRUE,TRUE,TRUE,10
+257,9140,Travel to work from a place other than home,TRUE,FALSE,FALSE,10
+258,9210,Travel related to education,TRUE,TRUE,TRUE,10
+259,9230,Travel escorting to/ from education,TRUE,TRUE,TRUE,10
+260,9310,Travel related to household care,TRUE,TRUE,TRUE,10
+261,9360,Travel related to shopping,TRUE,TRUE,TRUE,10
+262,9370,Travel related to services,TRUE,TRUE,TRUE,10
+263,9380,Travel escorting a child other than education,TRUE,TRUE,TRUE,10
+264,9390,Travel escorting an adult other than education,TRUE,TRUE,TRUE,10
+265,9400,Travel related to organisational work,FALSE,TRUE,FALSE,10
+266,9410,Travel related to voluntary work and meetings,TRUE,TRUE,TRUE,10
+267,9420,Travel related to informal help to other households,TRUE,TRUE,TRUE,10
+268,9430,Travel related to religious activities,TRUE,TRUE,TRUE,10
+269,9440,Travel related to participatory activities other than religious activities,TRUE,TRUE,TRUE,10
+270,9500,Travel to visit friends/relatives in their homes not respondents household,TRUE,TRUE,TRUE,10
+271,9510,Travel related to other social activities,TRUE,TRUE,TRUE,10
+272,9520,Travel related to entertainment and culture,TRUE,TRUE,TRUE,10
+273,9600,Travel related to other leisure,FALSE,TRUE,FALSE,10
+274,9610,Travel related to physical exercise,TRUE,TRUE,TRUE,10
+275,9620,Travel related to hunting & fishing,TRUE,TRUE,TRUE,10
+276,9630,Travel related to productive exercise other than hunting & fishing,TRUE,TRUE,TRUE,10
+277,9710,Travel related to gambling,TRUE,TRUE,TRUE,10
+278,9720,Travel related to hobbies other than gambling,TRUE,TRUE,TRUE,10
+279,9800,Travel related to changing locality,FALSE,TRUE,FALSE,10
+280,9810,Travel to holiday base,TRUE,TRUE,TRUE,10
+281,9820,Travel for day trip/just walk,TRUE,TRUE,TRUE,10
+282,9890,Other specified travel,TRUE,TRUE,TRUE,10
+283,9940,Punctuating activity,TRUE,TRUE,TRUE,10
+284,9941,Unknown: at home,FALSE,TRUE,FALSE,2
+285,9950,Filling in the time use diary,TRUE,TRUE,TRUE,2
+286,9960,No main activity no idea what it might be,TRUE,TRUE,TRUE,2
+287,9970,No main activity some idea what it might be,TRUE,TRUE,TRUE,2
+288,9980,Illegible activity,TRUE,TRUE,TRUE,0
+289,9990,Unspecified time use,TRUE,TRUE,TRUE,0
+290,9999,Queryable,FALSE,TRUE,FALSE,0

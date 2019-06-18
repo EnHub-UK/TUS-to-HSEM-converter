@@ -1,0 +1,1705 @@
+###  Translation from RTF performed by UnRTF, version 0.21.9 
+### font table contains 6 fonts total
+
+-----------------
+
+UK Data Archive Data Dictionary
+
+File-level information:
+
+File Name = uktus15_diary_ep_long
+Number of variables = 50
+Number of cases = 587632
+
+
+Variable-level information:
+
+Pos. = 1 Variable = serial Variable label = Household number
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for serial
+
+Pos. = 2 Variable = strata Variable label = Strata
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for strata
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 3 Variable = psu Variable label = Primary sampling unit
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for psu
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 4 Variable = pnum Variable label = Person number
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for pnum
+
+Pos. = 5 Variable = daynum Variable label = Diary number
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for daynum
+Value = -8.0 Label = Don't know
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+Value = -1.0 Label = Item not applicable
+Value = -9.0 Label = No answer/refused
+
+Pos. = 6 Variable = HhOut Variable label = Final outcome - household
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for HhOut
+Value = 640.0 Label = Unknown whether address is residential: No contact after 6+ calls
+Value = 214.0 Label = Productive : Household questionnaire completed  no individual interviews
+Value = 520.0 Label = Away / in hospital during survey period
+Value = 650.0 Label = Residential: unknown if eligible person(s) due to no-contact after 6+ calls
+Value = 531.0 Label = Physically unable / incompetent
+Value = 532.0 Label = Mentally unable / incompetent
+Value = 110.0 Label = Productive : Household interview completed, all eligible household members completed individual interviews and diary
+Value = 790.0 Label = Other ineligible
+Value = 410.0 Label = Office refusal
+Value = 540.0 Label = Language difficulties
+Value = 421.0 Label = Information refused about number of DUs/HHs at address
+Value = 422.0 Label = Information refused about people in household
+Value = 810.0 Label = Information refused about whether address is residential
+Value = 430.0 Label = Refusal before household interview
+Value = 690.0 Label = Other unknown eligibility (due to non-contact)
+Value = 820.0 Label = Contact made but no-one can confirm the presence of a resident hhold
+Value = 310.0 Label = No contact with anyone at address after 6+ calls
+Value = 830.0 Label = Information refused about whether resident(s) are eligible
+Value = 321.0 Label = Contact made at address. but not at selected DU/HH (USE IF MULTIPLE DUs/HHs ONLY)
+Value = 322.0 Label = Contact made. but not with responsible resident
+Value = 451.0 Label = Broken appointment. no re-contact
+Value = 710.0 Label = Not yet built / under construction
+Value = 591.0 Label = Full interview but respondent requested deletion
+Value = 592.0 Label = Partial interview but resp requested deletion
+Value = 210.0 Label = Productive : At least one individual interview but not from all eligible household members
+Value = 598.0 Label = Other reasons why unproductive
+Value = 599.0 Label = Other reasons why no individual interviews
+Value = 612.0 Label = Issued not attempted
+Value = 730.0 Label = Vacant / empty
+Value = 720.0 Label = Demolished / derelict
+Value = 611.0 Label = Not issued to an interviewer
+Value = 740.0 Label = Non-residential address (e.g. business. school. office. factory etc)
+Value = 620.0 Label = Inaccessible
+Value = 850.0 Label = Unable to confirm eligibility of resident(s) due to a language barrier
+Value = 750.0 Label = Occupied. no resident household (e.g. occupied holiday/weekend home)
+Value = 630.0 Label = Unable to locate address
+Value = 760.0 Label = Communal establishment/institution  no private dwellings
+Value = 890.0 Label = Other unknown eligibility (contact made)
+Value = 510.0 Label = Ill at home during survey period
+
+Pos. = 7 Variable = IndOut Variable label = Final outcome - individual
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IndOut
+Value = 34.0 Label = No contact with selected individual
+Value = 11.0 Label = Individual interview complete, diary collected
+Value = 22.0 Label = Individual interview not complete, diary collected
+Value = 43.0 Label = Refusal before interview
+Value = 44.0 Label = Refusal during interview
+Value = 45.0 Label = Broken appointment
+Value = 51.0 Label = Ill at home
+Value = 52.0 Label = Ill/away
+Value = 21.0 Label = Individual interview complete, no diary collected
+Value = 54.0 Label = Language difficulties
+Value = 55.0 Label = Mentally unable
+Value = -7.0 Label = Interview not achieved
+Value = 59.0 Label = Other reason
+Value = -2.0 Label = Schedule not applicable
+Value = 53.0 Label = Physically unable
+
+Pos. = 8 Variable = DMFlag Variable label = Final case status flag (IND)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DMFlag
+Value = 1.0 Label = Fully productive adult, from full prod HH
+Value = 2.0 Label = Fully productive adult, from part prod HH
+Value = 3.0 Label = Fully productive teen aged 8-15 yrs (from full/part prod HH)
+Value = 4.0 Label = Non-productive, from part prod HH
+Value = 5.0 Label = Child aged 0-7 yrs (from full/part prod HH)
+Value = -7.0 Label = Non-productive HH
+Value = -6.0 Label = Partial Ind from non-prod HH
+
+Pos. = 9 Variable = IMonth Variable label = Interview month
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IMonth
+Value = 1.0 Label = January
+Value = 2.0 Label = February
+Value = 3.0 Label = March
+Value = 4.0 Label = April
+Value = 5.0 Label = May
+Value = 6.0 Label = June
+Value = 7.0 Label = July
+Value = 8.0 Label = August
+Value = 9.0 Label = September
+Value = 10.0 Label = October
+Value = 11.0 Label = November
+Value = 12.0 Label = December
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 10 Variable = IYear Variable label = Interview Year
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IYear
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 11 Variable = DVAge Variable label = Age
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DVAge
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 12 Variable = DayNum_DiaryDay Variable label = Completed diary day
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DayNum_DiaryDay
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 13 Variable = DPday Variable label = Diary Day - ASSIGNED DATE
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DPday
+
+Pos. = 14 Variable = DiaryDate_Act Variable label = Diary Day - ACTUAL DATE
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DiaryDate_Act
+
+Pos. = 15 Variable = DiaryDay_Act Variable label = Diary Day - ACTUAL DAY
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DiaryDay_Act
+Value = 1.0 Label = Sunday
+Value = 2.0 Label = Monday
+Value = 3.0 Label = Tuesday
+Value = 4.0 Label = Wednesday
+Value = 5.0 Label = Thursday
+Value = 6.0 Label = Friday
+Value = 7.0 Label = Saturday
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 16 Variable = DiaryDateDiff Variable label = Diary Day - difference between assigned and actual
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DiaryDateDiff
+Value = -999.0 Label = No answer/refused
+Value = -222.0 Label = Schedule not applicable
+Value = -777.0 Label = Interview not achieved
+
+Pos. = 17 Variable = dmonth Variable label = DV: Diary month
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dmonth
+Value = 1.0 Label = January
+Value = 2.0 Label = February
+Value = 3.0 Label = March
+Value = 4.0 Label = April
+Value = 5.0 Label = May
+Value = 6.0 Label = June
+Value = 7.0 Label = July
+Value = 8.0 Label = August
+Value = 9.0 Label = September
+Value = 10.0 Label = October
+Value = 11.0 Label = November
+Value = 12.0 Label = December
+
+Pos. = 18 Variable = dyear Variable label = DV: Diary year
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dyear
+
+Pos. = 19 Variable = ddayw Variable label = DV: Day of week: Weekday, Saturday, Sunday
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for ddayw
+Value = 1.0 Label = Mon-Fri
+Value = 2.0 Label = Saturday
+Value = 3.0 Label = Sunday
+
+Pos. = 20 Variable = DiaryType Variable label = Diary type
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DiaryType
+Value = 1.0 Label = Version 1 Adult (14+ yrs) (with Enjoyment question)
+Value = 2.0 Label = Version 2 Adult (14+ yrs)
+Value = 3.0 Label = Version 3 Child (0-13 yrs) (with Enjoyment question)
+Value = 4.0 Label = Version 4 Child (0-13 yrs)
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 21 Variable = WhenDiary Variable label = When diary filled in
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhenDiary
+Value = 1.0 Label = Now and then during the diary day
+Value = 2.0 Label = At the end of the diary day
+Value = 3.0 Label = The day after the diary day
+Value = 4.0 Label = Later, some days after the diary day
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 22 Variable = AfterDiaryDay Variable label = No. of days later (if filled in after diary day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for AfterDiaryDay
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+Value = -1.0 Label = Item not applicable
+Value = -9.0 Label = No answer/refused
+
+Pos. = 23 Variable = WhereStart Variable label = Location at start of diary day (4am)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhereStart
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = Somewhere else
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = At home
+
+Pos. = 24 Variable = WhereEnd Variable label = Location at end of diary day (4am)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhereEnd
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = Somewhere else
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = At home
+
+Pos. = 25 Variable = RushedD Variable label = Whether felt rushed
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for RushedD
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = No
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = Yes
+
+Pos. = 26 Variable = Ordinary Variable label = Whether an ordinary day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Ordinary
+Value = -9.0 Label = No answer/refused
+
+Pos. = 27 Variable = KindOfDay Variable label = Kind of day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for KindOfDay
+Value = 1.0 Label = A workday
+Value = 2.0 Label = A school or college day
+Value = 3.0 Label = A day off due to the weekend/holiday or work schedule
+Value = 4.0 Label = A sick leave day
+Value = 5.0 Label = A vacation/annual leave day
+Value = 6.0 Label = On leave for other reasons
+Value = 7.0 Label = None of the above
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 28 Variable = Trip Variable label = Whether on a trip during diary day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Trip
+Value = 1.0 Label = No
+Value = 2.0 Label = Yes, on a single day trip within the country
+Value = 3.0 Label = Yes, on a single day trip abroad
+Value = 4.0 Label = Yes, on an overnight trip within the country
+Value = 5.0 Label = Yes, on an overnight trip abroad
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 29 Variable = dia_wt_a Variable label = Diary weight - analysis at diary level/event level
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dia_wt_a
+
+Pos. = 30 Variable = dia_wt_b Variable label = Diary weight - analysis at individual level
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dia_wt_b
+
+Pos. = 31 Variable = epnum Variable label = Episode Number
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for epnum
+
+Pos. = 32 Variable = tid Variable label = Diary file time slot
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for tid
+Value = 1.0 Label = 04:00-04:10
+Value = 2.0 Label = 04:10-04:20
+Value = 3.0 Label = 04:20-04:30
+Value = 4.0 Label = 04:30-04:40
+Value = 5.0 Label = 04:40-04:50
+Value = 6.0 Label = 04:50-05:00
+Value = 7.0 Label = 05:00-05:10
+Value = 8.0 Label = 05:10-05:20
+Value = 9.0 Label = 05:20-05:30
+Value = 10.0 Label = 05:30-05:40
+Value = 11.0 Label = 05:40-05:50
+Value = 12.0 Label = 05:50-06:00
+Value = 13.0 Label = 06:00-06:10
+Value = 14.0 Label = 06:10-06:20
+Value = 15.0 Label = 06:20-06:30
+Value = 16.0 Label = 06:30-06:40
+Value = 17.0 Label = 06:40-06:50
+Value = 18.0 Label = 06:50-07:00
+Value = 19.0 Label = 07:00-07:10
+Value = 20.0 Label = 07:10-07:20
+Value = 21.0 Label = 07:20-07:30
+Value = 22.0 Label = 07:30-07:40
+Value = 23.0 Label = 07:40-07:50
+Value = 24.0 Label = 07:50-08:00
+Value = 25.0 Label = 08:00-08:10
+Value = 26.0 Label = 08:10-08:20
+Value = 27.0 Label = 08:20-08:30
+Value = 28.0 Label = 08:30-08:40
+Value = 29.0 Label = 08:40-08:50
+Value = 30.0 Label = 08:50-09:00
+Value = 31.0 Label = 09:00-09:10
+Value = 32.0 Label = 09:10-09:20
+Value = 33.0 Label = 09:20-09:30
+Value = 34.0 Label = 09:30-09:40
+Value = 35.0 Label = 09:40-09:50
+Value = 36.0 Label = 09:50-10:00
+Value = 37.0 Label = 10:00-10:10
+Value = 38.0 Label = 10:10-10:20
+Value = 39.0 Label = 10:20-10:30
+Value = 40.0 Label = 10:30-10:40
+Value = 41.0 Label = 10:40-10:50
+Value = 42.0 Label = 10:50-11:00
+Value = 43.0 Label = 11:00-11:10
+Value = 44.0 Label = 11:10-11:20
+Value = 45.0 Label = 11:20-11:30
+Value = 46.0 Label = 11:30-11:40
+Value = 47.0 Label = 11:40-11:50
+Value = 48.0 Label = 11:50-12:00
+Value = 49.0 Label = 12:00-12:10
+Value = 50.0 Label = 12:10-12:20
+Value = 51.0 Label = 12:20-12:30
+Value = 52.0 Label = 12:30-12:40
+Value = 53.0 Label = 12:40-12:50
+Value = 54.0 Label = 12:50-13:00
+Value = 55.0 Label = 13:00-13:10
+Value = 56.0 Label = 13:10-13:20
+Value = 57.0 Label = 13:20-13:30
+Value = 58.0 Label = 13:30-13:40
+Value = 59.0 Label = 13:40-13:50
+Value = 60.0 Label = 13:50-14:00
+Value = 61.0 Label = 14:00-14:10
+Value = 62.0 Label = 14:10-14:20
+Value = 63.0 Label = 14:20-14:30
+Value = 64.0 Label = 14:30-14:40
+Value = 65.0 Label = 14:40-14:50
+Value = 66.0 Label = 14:50-15:00
+Value = 67.0 Label = 15:00-15:10
+Value = 68.0 Label = 15:10-15:20
+Value = 69.0 Label = 15:20-15:30
+Value = 70.0 Label = 15:30-15:40
+Value = 71.0 Label = 15:40-15:50
+Value = 72.0 Label = 15:50-16:00
+Value = 73.0 Label = 16:00-16:10
+Value = 74.0 Label = 16:10-16:20
+Value = 75.0 Label = 16:20-16:30
+Value = 76.0 Label = 16:30-16:40
+Value = 77.0 Label = 16:40-16:50
+Value = 78.0 Label = 16:50-17:00
+Value = 79.0 Label = 17:00-17:10
+Value = 80.0 Label = 17:10-17:20
+Value = 81.0 Label = 17:20-17:30
+Value = 82.0 Label = 17:30-17:40
+Value = 83.0 Label = 17:40-17:50
+Value = 84.0 Label = 17:50-18:00
+Value = 85.0 Label = 18:00-18:10
+Value = 86.0 Label = 18:10-18:20
+Value = 87.0 Label = 18:20-18:30
+Value = 88.0 Label = 18:30-18:40
+Value = 89.0 Label = 18:40-18:50
+Value = 90.0 Label = 18:50-19:00
+Value = 91.0 Label = 19:00-19:10
+Value = 92.0 Label = 19:10-19:20
+Value = 93.0 Label = 19:20-19:30
+Value = 94.0 Label = 19:30-19:40
+Value = 95.0 Label = 19:40-19:50
+Value = 96.0 Label = 19:50-20:00
+Value = 97.0 Label = 20:00-20:10
+Value = 98.0 Label = 20:10-20:20
+Value = 99.0 Label = 20:20-20:30
+Value = 100.0 Label = 20:30-20:40
+Value = 101.0 Label = 20:40-20:50
+Value = 102.0 Label = 20:50-21:00
+Value = 103.0 Label = 21:00-21:10
+Value = 104.0 Label = 21:10-21:20
+Value = 105.0 Label = 21:20-21:30
+Value = 106.0 Label = 21:30-21:40
+Value = 107.0 Label = 21:40-21:50
+Value = 108.0 Label = 21:50-22:00
+Value = 109.0 Label = 22:00-22:10
+Value = 110.0 Label = 22:10-22:20
+Value = 111.0 Label = 22:20-22:30
+Value = 112.0 Label = 22:30-22:40
+Value = 113.0 Label = 22:40-22:50
+Value = 114.0 Label = 22:50-23:00
+Value = 115.0 Label = 23:00-23:10
+Value = 116.0 Label = 23:10-23:20
+Value = 117.0 Label = 23:20-23:30
+Value = 118.0 Label = 23:30-23:40
+Value = 119.0 Label = 23:40-23:50
+Value = 120.0 Label = 23:50-00:00
+Value = 121.0 Label = 00:00-00:10
+Value = 122.0 Label = 00:10-00:20
+Value = 123.0 Label = 00:20-00:30
+Value = 124.0 Label = 00:30-00:40
+Value = 125.0 Label = 00:40-00:50
+Value = 127.0 Label = 01:00-01:10
+Value = 128.0 Label = 01:10-01:20
+Value = 129.0 Label = 01:20-01:30
+Value = 131.0 Label = 01:40-01:50
+Value = 132.0 Label = 01:50-02:00
+Value = 133.0 Label = 02:00-02:10
+Value = 134.0 Label = 02:10-02:20
+Value = 135.0 Label = 02:20-02:30
+Value = 136.0 Label = 02:30-02:40
+Value = 137.0 Label = 02:40-02:50
+Value = 138.0 Label = 02:50-03:00
+Value = 140.0 Label = 03:10-03:20
+Value = 141.0 Label = 03:20-03:30
+Value = 142.0 Label = 03:30-03:40
+Value = 143.0 Label = 03:40-03:50
+Value = 144.0 Label = 03:50-04:00
+
+Pos. = 33 Variable = eptime Variable label = Episode duration
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for eptime
+
+Pos. = 34 Variable = whatdoing Variable label = Primary activity
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for whatdoing
+Value = 0.0 Label = Unspecified personal care
+Value = 5120.0 Label = Visiting and receiving visitors
+Value = 7170.0 Label = Correspondence
+Value = 4100.0 Label = Unspecified organisational work
+Value = 6149.0 Label = Other specified ball games
+Value = 6150.0 Label = Gymnastics
+Value = 5292.0 Label = Visiting a wildlife site
+Value = 5130.0 Label = Celebrations
+Value = 4110.0 Label = Work for an organisation
+Value = 6160.0 Label = Fitness
+Value = 8210.0 Label = Unspecified TV video or DVD watching
+Value = 8211.0 Label = Watching a film on TV
+Value = 5140.0 Label = Telephone conversation
+Value = 4270.0 Label = Unspecified childcare as help to other households
+Value = 7190.0 Label = Other specified or unspecified arts and hobbies
+Value = 4120.0 Label = Volunteer work through an organisation
+Value = 6170.0 Label = Unspecified water sports
+Value = 8219.0 Label = Other specified TV watching
+Value = 3100.0 Label = Unspecified food management
+Value = 8221.0 Label = Watching a film on video
+Value = 8222.0 Label = Watching sport on video
+Value = 6179.0 Label = Other specified water sports
+Value = 8229.0 Label = Other specified video watching
+Value = 3110.0 Label = Food preparation and baking
+Value = 3250.0 Label = Disposal of waste
+Value = 6190.0 Label = Other specified physical exercise
+Value = 4275.0 Label = Physical care and supervision of own child as help to other household
+Value = 2100.0 Label = Study: Unspecified activities related to school or university
+Value = 6200.0 Label = Unspecified productive exercise
+Value = 3130.0 Label = Dish washing
+Value = 2110.0 Label = Study: Classes and lectures
+Value = 7231.0 Label = Information searching on the internet
+Value = 6210.0 Label = Hunting and fishing
+Value = 3140.0 Label = Preserving
+Value = 5190.0 Label = Other specified social life
+Value = 7239.0 Label = Other specified information by computing
+Value = 2120.0 Label = Study: Homework
+Value = 7241.0 Label = Communication on the internet
+Value = 1100.0 Label = Main job: unspecified main job
+Value = 5200.0 Label = Unspecified entertainment and culture
+Value = 7249.0 Label = Other specified communication by computing
+Value = 7250.0 Label = Unspecified other computing
+Value = 7251.0 Label = Skype or other video call
+Value = 9230.0 Label = Travel escorting to/ from education
+Value = 1110.0 Label = Main job: Working time in main job
+Value = 5210.0 Label = Cinema
+Value = 7259.0 Label = Other specified computing
+Value = 1210.0 Label = Second job: Working time in second job
+Value = 9310.0 Label = Travel related to household care
+Value = 1120.0 Label = Main job: Coffee and other breaks in main job
+Value = 5220.0 Label = Unspecified theatre or concerts
+Value = 5221.0 Label = Plays musicals or pantomimes
+Value = 5222.0 Label = Opera operetta or light opera
+Value = 5223.0 Label = Concerts or other performances of classical music
+Value = 4200.0 Label = Unspecified informal help to other households
+Value = 5225.0 Label = Dance performances
+Value = 8300.0 Label = Unspecified listening to radio and music
+Value = 5229.0 Label = Other specified theatre or concerts
+Value = 110.0 Label = Sleep
+Value = 111.0 Label = Sleep: In bed not asleep
+Value = 4210.0 Label = Food management as help to other households
+Value = 3190.0 Label = Other specified food management
+Value = 8311.0 Label = Listening to music on the radio
+Value = 120.0 Label = Sleep: Sick in bed
+Value = 5241.0 Label = Borrowing books records audiotapes videotapes CDs VDs etc. from a library
+Value = 5242.0 Label = Reference to books and other library materials within a library
+Value = 5243.0 Label = Using internet in the library
+Value = 4220.0 Label = Household upkeep as help to other households
+Value = 5245.0 Label = Reading newspapers in a library
+Value = 8319.0 Label = Other specified radio listening
+Value = 3200.0 Label = Unspecified household upkeep
+Value = 5249.0 Label = Other specified library activities
+Value = 5250.0 Label = Sports events
+Value = 7300.0 Label = Unspecified games
+Value = 4230.0 Label = Gardening and pet care as help to other households
+Value = 3210.0 Label = Cleaning dwelling
+Value = 9410.0 Label = Travel related to voluntary work and meetings
+Value = 2190.0 Label = Study: other specified activities related to school or university
+Value = 4240.0 Label = Construction and repairs as help to other households
+Value = 6290.0 Label = Other specified productive exercise
+Value = 3220.0 Label = Cleaning yard
+Value = 7320.0 Label = Unspecified games and play with others
+Value = 7321.0 Label = Billiards pool snooker or petanque
+Value = 4250.0 Label = Shopping and services as help to other households
+Value = 3230.0 Label = Heating and water
+Value = 7329.0 Label = Other specified parlour games and play
+Value = 2210.0 Label = Free time study
+Value = 6171.0 Label = Swimming
+Value = 9380.0 Label = Travel escorting a child other than education
+Value = 6310.0 Label = Unspecified sports related activities
+Value = 6311.0 Label = Activities related to sports
+Value = 3240.0 Label = Arranging household goods and materials
+Value = 8220.0 Label = Unspecified video watching
+Value = 5290.0 Label = Other unspecified entertainment and culture
+Value = 5291.0 Label = Visiting a historical site
+Value = 7340.0 Label = Gambling
+Value = 5293.0 Label = Visiting a botanical site
+Value = 5294.0 Label = Visiting a leisure park
+Value = 4271.0 Label = Physical care and supervision of child as help to other household
+Value = 4272.0 Label = Teaching non-coresident child
+Value = 4273.0 Label = Reading playing & talking to non-coresident child
+Value = 4274.0 Label = Accompanying non-coresident child
+Value = 5299.0 Label = Other or unspecified entertainment or culture
+Value = 4277.0 Label = Reading playing & talking to own non-coresident child
+Value = 4278.0 Label = Accompanying own non-coresident child
+Value = 4279.0 Label = Other specified childcare as help to other household
+Value = 9400.0 Label = Travel related to organisational work
+Value = 4281.0 Label = Physical care and supervision of an adult as help to another household
+Value = 4282.0 Label = Accompanying an adult as help to another household
+Value = 4283.0 Label = Other specified help to an adult member of another household
+Value = 4280.0 Label = Unspecified help to an adult of another household
+Value = 5310.0 Label = Resting - Time out
+Value = 4289.0 Label = Other specified informal help to another household
+Value = 4290.0 Label = Other specified informal help
+Value = 1220.0 Label = Second job: Coffee and other breaks in second job
+Value = 6144.0 Label = Outdoor team games
+Value = 9420.0 Label = Travel related to informal help to other households
+Value = 4300.0 Label = Unspecified participatory activities
+Value = 210.0 Label = Eating
+Value = 4310.0 Label = Meetings
+Value = 3290.0 Label = Other or unspecified household upkeep
+Value = 7390.0 Label = Other specified games
+Value = 4320.0 Label = Religious activities
+Value = 3300.0 Label = Unspecified making and care for textiles
+Value = 3310.0 Label = Laundry
+Value = 3320.0 Label = Ironing
+Value = 3330.0 Label = Handicraft and producing textiles
+Value = 9430.0 Label = Travel related to religious activities
+Value = 1300.0 Label = Activities related to employment: Unspecified activities related to employment
+Value = 9500.0 Label = Travel to visit friends/relatives in their homes not respondents household
+Value = 1310.0 Label = Activities related to employment: Lunch break
+Value = 9510.0 Label = Travel related to other social activities
+Value = 300.0 Label = Other personal care: Unspecified other personal care
+Value = 5295.0 Label = Visiting an urban park playground designated play area
+Value = 9520.0 Label = Travel related to entertainment and culture
+Value = 310.0 Label = Other personal care: Wash and dress
+Value = 7220.0 Label = Computing - programming
+Value = 3390.0 Label = Other specified making and care for textiles
+Value = 9440.0 Label = Travel related to participatory activities other than religious activities
+Value = 3410.0 Label = Gardening
+Value = 3420.0 Label = Tending domestic animals
+Value = 3430.0 Label = Caring for pets
+Value = 1390.0 Label = Activities related to employment: Other specified activities related to employment
+Value = 1391.0 Label = Activities related to employment: Activities related to job seeking
+Value = 3440.0 Label = Walking the dog
+Value = 7230.0 Label = Unspecified information by computing
+Value = 1399.0 Label = Activities related to employment: Other unspecified activities related to employment
+Value = 9600.0 Label = Travel related to other leisure
+Value = 390.0 Label = Other personal care: Other specified personal care
+Value = 9610.0 Label = Travel related to physical exercise
+Value = 9390.0 Label = Travel escorting an adult other than education
+Value = 9620.0 Label = Travel related to hunting & fishing
+Value = 9630.0 Label = Travel related to productive exercise other than hunting & fishing
+Value = 3490.0 Label = Other specified gardening and pet care
+Value = 3500.0 Label = Unspecified construction and repairs
+Value = 7240.0 Label = Unspecified communication by computer
+Value = 3510.0 Label = House construction and renovation
+Value = 3520.0 Label = Repairs of dwelling
+Value = 9120.0 Label = Travel to work from home and back only
+Value = 6220.0 Label = Picking berries mushroom and herbs
+Value = 3530.0 Label = Making repairing and maintaining equipment
+Value = 3531.0 Label = Woodcraft metalcraft sculpture and pottery
+Value = 3539.0 Label = Other specified making repairing and maintaining equipment
+Value = 3540.0 Label = Vehicle maintenance
+Value = 9710.0 Label = Travel related to gambling
+Value = 9720.0 Label = Travel related to hobbies other than gambling
+Value = 3590.0 Label = Other specified construction and repairs
+Value = 3600.0 Label = Unspecified shopping and services
+Value = 3610.0 Label = Unspecified shopping
+Value = 3611.0 Label = Shopping mainly for food
+Value = 3612.0 Label = Shopping mainly for clothing
+Value = 3613.0 Label = Shopping mainly related to accommodation
+Value = 3614.0 Label = Shopping or browsing at car boot sales or antique fairs
+Value = 3615.0 Label = Window shopping or other shopping as leisure
+Value = 3619.0 Label = Other specified shopping
+Value = 3620.0 Label = Commercial and administrative services
+Value = 3630.0 Label = Personal services
+Value = 4190.0 Label = Other specified organisational work
+Value = 9800.0 Label = Travel related to changing locality
+Value = 3000.0 Label = Unspecified household and family care
+Value = 9810.0 Label = Travel to holiday base
+Value = 9820.0 Label = Travel for day trip/just walk
+Value = 3690.0 Label = Other specified shopping and services
+Value = 5224.0 Label = Live music other than classical concerts opera and musicals
+Value = 3710.0 Label = Household management not using the internet
+Value = 3713.0 Label = Shopping for and ordering clothing via the internet
+Value = 3720.0 Label = Unspecified household management using the internet
+Value = 3721.0 Label = Shopping for and ordering unspecified goods and services via the internet
+Value = 3722.0 Label = Shopping for and ordering food via the internet
+Value = 3724.0 Label = Shopping for and ordering goods and services related to accommodation via the internet
+Value = 3725.0 Label = Shopping for and ordering mass media via the internet
+Value = 3726.0 Label = Shopping for and ordering entertainment via the internet
+Value = 3727.0 Label = Banking and bill paying via the internet
+Value = 3729.0 Label = Other specified household management using the internet
+Value = 5230.0 Label = Art exhibitions and museums
+Value = 9890.0 Label = Other specified travel
+Value = 8310.0 Label = Unspecified radio listening
+Value = 5240.0 Label = Unspecified library
+Value = 9940.0 Label = Punctuating activity
+Value = 9941.0 Label = Unknown: at home
+Value = 3800.0 Label = Unspecified childcare
+Value = 9950.0 Label = Filling in the time use diary
+Value = 2000.0 Label = Study: Unspecified study school or university
+Value = 3810.0 Label = Unspecified physical care & supervision of a child
+Value = 3811.0 Label = Feeding the child
+Value = 4390.0 Label = Other specified participatory activities
+Value = 9960.0 Label = No main activity no idea what it might be
+Value = 5244.0 Label = Using computers in the library other than internet use
+Value = 3819.0 Label = Other and unspecified physical care & supervision of a child
+Value = 3820.0 Label = Teaching the child
+Value = 9970.0 Label = No main activity some idea what it might be
+Value = 3830.0 Label = Reading playing and talking with child
+Value = 9980.0 Label = Illegible activity
+Value = 3840.0 Label = Accompanying child
+Value = 8320.0 Label = Listening to recordings
+Value = 9990.0 Label = Unspecified time use
+Value = 9999.0 Label = Queryable
+Value = 7129.0 Label = Other specified performing arts
+Value = 8312.0 Label = Listening to sport on the radio
+Value = 9000.0 Label = Travel related to unspecified time use
+Value = 3890.0 Label = Other or unspecified childcare
+Value = 9010.0 Label = Travel related to personal business
+Value = 9370.0 Label = Travel related to services
+Value = 8000.0 Label = Unspecified mass media
+Value = 3910.0 Label = Unspecified help to a non-dependent eg injured adult household member
+Value = 3911.0 Label = Physical care of a non-dependent e.g. injured adult household member
+Value = 3914.0 Label = Accompanying a non-dependent adult household member e.g. to hospital
+Value = 3919.0 Label = Other specified help to a non-dependent adult household member
+Value = 3920.0 Label = Unspecified help to a dependent adult household member
+Value = 3921.0 Label = Physical care of a dependent adult household member e.g. Alzheimic parent
+Value = 3924.0 Label = Accompanying a dependent adult household member e.g. Alzheimic
+Value = 7310.0 Label = Solo games and play
+Value = 7000.0 Label = Unspecified hobbies games and computing
+Value = 3929.0 Label = Other specified help to a dependent adult household member
+Value = 8212.0 Label = Watching sport on TV
+Value = 9360.0 Label = Travel related to shopping
+Value = 6000.0 Label = Unspecified sports and outdoor activities
+Value = 1000.0 Label = Unspecified employment
+Value = 5000.0 Label = Unspecified social life and entertainment
+Value = 9100.0 Label = Travel to/from work
+Value = 9110.0 Label = Travel in the course of work
+Value = 7322.0 Label = Chess and bridge
+Value = 4000.0 Label = Unspecified volunteer work and meetings
+Value = 8100.0 Label = Unspecified reading
+Value = 9130.0 Label = Travel to work from a place other than home
+Value = 8110.0 Label = Reading periodicals
+Value = 8120.0 Label = Reading books
+Value = 7100.0 Label = Unspecified arts
+Value = 7110.0 Label = Unspecified visual arts
+Value = 7111.0 Label = Painting drawing or other graphic arts
+Value = 7112.0 Label = Making videos taking photographs or related photographic activities
+Value = -1.0 Label = Not applicable
+Value = 7330.0 Label = Computer games
+Value = 7119.0 Label = Other specified visual arts
+Value = 7120.0 Label = Unspecified performing arts
+Value = 7121.0 Label = Singing or other musical activities
+Value = 6100.0 Label = Unspecified physical exercise
+Value = 4260.0 Label = Help to other households in employment and farming
+Value = 7130.0 Label = Literary arts
+Value = 6110.0 Label = Walking and hiking
+Value = 6111.0 Label = Taking a walk or hike that lasts at least miles or 1 hour
+Value = 7140.0 Label = Other specified arts
+Value = 6119.0 Label = Other walk or hike
+Value = 6120.0 Label = Jogging and running
+Value = 5100.0 Label = Unspecified social life
+Value = 7150.0 Label = Unspecified hobbies
+Value = 6312.0 Label = Activities related to productive exercise
+Value = 6130.0 Label = Biking skiing and skating
+Value = 6131.0 Label = Biking
+Value = 6132.0 Label = Skiing or skating
+Value = 6142.0 Label = Indoor team games
+Value = 5110.0 Label = Socialising with family
+Value = 7160.0 Label = Collecting
+Value = 9210.0 Label = Travel related to education
+Value = 6140.0 Label = Unspecified ball games
+Value = 6141.0 Label = Indoor pairs or doubles games
+Value = 8190.0 Label = Other specified reading
+Value = 6143.0 Label = Outdoor pairs or doubles games
+
+Pos. = 35 Variable = What_Oth1 Variable label = Other activity 1
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for What_Oth1
+Value = 0.0 Label = Unspecified personal care
+Value = 5120.0 Label = Visiting and receiving visitors
+Value = 7170.0 Label = Correspondence
+Value = 4100.0 Label = Unspecified organisational work
+Value = 6149.0 Label = Other specified ball games
+Value = 6150.0 Label = Gymnastics
+Value = 5292.0 Label = Visiting a wildlife site
+Value = 5130.0 Label = Celebrations
+Value = 4110.0 Label = Work for an organisation
+Value = 6160.0 Label = Fitness
+Value = 8210.0 Label = Unspecified TV video or DVD watching
+Value = 8211.0 Label = Watching a film on TV
+Value = 5140.0 Label = Telephone conversation
+Value = 4270.0 Label = Unspecified childcare as help to other households
+Value = 7190.0 Label = Other specified or unspecified arts and hobbies
+Value = 4120.0 Label = Volunteer work through an organisation
+Value = 6170.0 Label = Unspecified water sports
+Value = 8219.0 Label = Other specified TV watching
+Value = 3100.0 Label = Unspecified food management
+Value = 8221.0 Label = Watching a film on video
+Value = 8222.0 Label = Watching sport on video
+Value = 6179.0 Label = Other specified water sports
+Value = 8229.0 Label = Other specified video watching
+Value = 3110.0 Label = Food preparation and baking
+Value = 3250.0 Label = Disposal of waste
+Value = 6190.0 Label = Other specified physical exercise
+Value = 4275.0 Label = Physical care and supervision of own child as help to other household
+Value = 2100.0 Label = Study: Unspecified activities related to school or university
+Value = 6200.0 Label = Unspecified productive exercise
+Value = 3130.0 Label = Dish washing
+Value = 2110.0 Label = Study: Classes and lectures
+Value = 7231.0 Label = Information searching on the internet
+Value = 6210.0 Label = Hunting and fishing
+Value = 3140.0 Label = Preserving
+Value = 5190.0 Label = Other specified social life
+Value = 7239.0 Label = Other specified information by computing
+Value = 2120.0 Label = Study: Homework
+Value = 7241.0 Label = Communication on the internet
+Value = 1100.0 Label = Main job: unspecified main job
+Value = 5200.0 Label = Unspecified entertainment and culture
+Value = 7249.0 Label = Other specified communication by computing
+Value = 7250.0 Label = Unspecified other computing
+Value = 7251.0 Label = Skype or other video call
+Value = 9230.0 Label = Travel escorting to/ from education
+Value = 1110.0 Label = Main job: Working time in main job
+Value = 5210.0 Label = Cinema
+Value = 7259.0 Label = Other specified computing
+Value = 1210.0 Label = Second job: Working time in second job
+Value = 9310.0 Label = Travel related to household care
+Value = 1120.0 Label = Main job: Coffee and other breaks in main job
+Value = 5220.0 Label = Unspecified theatre or concerts
+Value = 5221.0 Label = Plays musicals or pantomimes
+Value = 5222.0 Label = Opera operetta or light opera
+Value = 5223.0 Label = Concerts or other performances of classical music
+Value = 4200.0 Label = Unspecified informal help to other households
+Value = 5225.0 Label = Dance performances
+Value = 8300.0 Label = Unspecified listening to radio and music
+Value = 5229.0 Label = Other specified theatre or concerts
+Value = 110.0 Label = Sleep
+Value = 111.0 Label = Sleep: In bed not asleep
+Value = 4210.0 Label = Food management as help to other households
+Value = 3190.0 Label = Other specified food management
+Value = 8311.0 Label = Listening to music on the radio
+Value = 120.0 Label = Sleep: Sick in bed
+Value = 5241.0 Label = Borrowing books records audiotapes videotapes CDs VDs etc. from a library
+Value = 5242.0 Label = Reference to books and other library materials within a library
+Value = 5243.0 Label = Using internet in the library
+Value = 4220.0 Label = Household upkeep as help to other households
+Value = 5245.0 Label = Reading newspapers in a library
+Value = 8319.0 Label = Other specified radio listening
+Value = 3200.0 Label = Unspecified household upkeep
+Value = 5249.0 Label = Other specified library activities
+Value = 5250.0 Label = Sports events
+Value = 7300.0 Label = Unspecified games
+Value = 4230.0 Label = Gardening and pet care as help to other households
+Value = 3210.0 Label = Cleaning dwelling
+Value = 9410.0 Label = Travel related to voluntary work and meetings
+Value = 2190.0 Label = Study: other specified activities related to school or university
+Value = 4240.0 Label = Construction and repairs as help to other households
+Value = 6290.0 Label = Other specified productive exercise
+Value = 3220.0 Label = Cleaning yard
+Value = 7320.0 Label = Unspecified games and play with others
+Value = 7321.0 Label = Billiards pool snooker or petanque
+Value = 4250.0 Label = Shopping and services as help to other households
+Value = 3230.0 Label = Heating and water
+Value = 7329.0 Label = Other specified parlour games and play
+Value = 2210.0 Label = Free time study
+Value = 6171.0 Label = Swimming
+Value = 9380.0 Label = Travel escorting a child other than education
+Value = 6310.0 Label = Unspecified sports related activities
+Value = 6311.0 Label = Activities related to sports
+Value = 3240.0 Label = Arranging household goods and materials
+Value = 8220.0 Label = Unspecified video watching
+Value = 5290.0 Label = Other unspecified entertainment and culture
+Value = 5291.0 Label = Visiting a historical site
+Value = 7340.0 Label = Gambling
+Value = 5293.0 Label = Visiting a botanical site
+Value = 5294.0 Label = Visiting a leisure park
+Value = 4271.0 Label = Physical care and supervision of child as help to other household
+Value = 4272.0 Label = Teaching non-coresident child
+Value = 4273.0 Label = Reading playing & talking to non-coresident child
+Value = 4274.0 Label = Accompanying non-coresident child
+Value = 5299.0 Label = Other or unspecified entertainment or culture
+Value = 4277.0 Label = Reading playing & talking to own non-coresident child
+Value = 4278.0 Label = Accompanying own non-coresident child
+Value = 4279.0 Label = Other specified childcare as help to other household
+Value = 9400.0 Label = Travel related to organisational work
+Value = 4281.0 Label = Physical care and supervision of an adult as help to another household
+Value = 4282.0 Label = Accompanying an adult as help to another household
+Value = 4283.0 Label = Other specified help to an adult member of another household
+Value = 4280.0 Label = Unspecified help to an adult of another household
+Value = 5310.0 Label = Resting - Time out
+Value = 4289.0 Label = Other specified informal help to another household
+Value = 4290.0 Label = Other specified informal help
+Value = 1220.0 Label = Second job: Coffee and other breaks in second job
+Value = 6144.0 Label = Outdoor team games
+Value = 9420.0 Label = Travel related to informal help to other households
+Value = 4300.0 Label = Unspecified participatory activities
+Value = 210.0 Label = Eating
+Value = 4310.0 Label = Meetings
+Value = 3290.0 Label = Other or unspecified household upkeep
+Value = 7390.0 Label = Other specified games
+Value = 4320.0 Label = Religious activities
+Value = 3300.0 Label = Unspecified making and care for textiles
+Value = 3310.0 Label = Laundry
+Value = 3320.0 Label = Ironing
+Value = 3330.0 Label = Handicraft and producing textiles
+Value = 9430.0 Label = Travel related to religious activities
+Value = 1300.0 Label = Activities related to employment: Unspecified activities related to employment
+Value = 9500.0 Label = Travel to visit friends/relatives in their homes not respondents household
+Value = 1310.0 Label = Activities related to employment: Lunch break
+Value = 9510.0 Label = Travel related to other social activities
+Value = 300.0 Label = Other personal care: Unspecified other personal care
+Value = 5295.0 Label = Visiting an urban park playground designated play area
+Value = 9520.0 Label = Travel related to entertainment and culture
+Value = 310.0 Label = Other personal care: Wash and dress
+Value = 7220.0 Label = Computing - programming
+Value = 3390.0 Label = Other specified making and care for textiles
+Value = 9440.0 Label = Travel related to participatory activities other than religious activities
+Value = 3410.0 Label = Gardening
+Value = 3420.0 Label = Tending domestic animals
+Value = 3430.0 Label = Caring for pets
+Value = 1390.0 Label = Activities related to employment: Other specified activities related to employment
+Value = 1391.0 Label = Activities related to employment: Activities related to job seeking
+Value = 3440.0 Label = Walking the dog
+Value = 7230.0 Label = Unspecified information by computing
+Value = 1399.0 Label = Activities related to employment: Other unspecified activities related to employment
+Value = 9600.0 Label = Travel related to other leisure
+Value = 390.0 Label = Other personal care: Other specified personal care
+Value = 9610.0 Label = Travel related to physical exercise
+Value = 9390.0 Label = Travel escorting an adult other than education
+Value = 9620.0 Label = Travel related to hunting & fishing
+Value = 9630.0 Label = Travel related to productive exercise other than hunting & fishing
+Value = 3490.0 Label = Other specified gardening and pet care
+Value = 3500.0 Label = Unspecified construction and repairs
+Value = 7240.0 Label = Unspecified communication by computer
+Value = 3510.0 Label = House construction and renovation
+Value = 3520.0 Label = Repairs of dwelling
+Value = 9120.0 Label = Travel to work from home and back only
+Value = 6220.0 Label = Picking berries mushroom and herbs
+Value = 3530.0 Label = Making repairing and maintaining equipment
+Value = 3531.0 Label = Woodcraft metalcraft sculpture and pottery
+Value = 3539.0 Label = Other specified making repairing and maintaining equipment
+Value = 3540.0 Label = Vehicle maintenance
+Value = 9710.0 Label = Travel related to gambling
+Value = 9720.0 Label = Travel related to hobbies other than gambling
+Value = 3590.0 Label = Other specified construction and repairs
+Value = 3600.0 Label = Unspecified shopping and services
+Value = 3610.0 Label = Unspecified shopping
+Value = 3611.0 Label = Shopping mainly for food
+Value = 3612.0 Label = Shopping mainly for clothing
+Value = 3613.0 Label = Shopping mainly related to accommodation
+Value = 3614.0 Label = Shopping or browsing at car boot sales or antique fairs
+Value = 3615.0 Label = Window shopping or other shopping as leisure
+Value = 3619.0 Label = Other specified shopping
+Value = 3620.0 Label = Commercial and administrative services
+Value = 3630.0 Label = Personal services
+Value = 4190.0 Label = Other specified organisational work
+Value = 9800.0 Label = Travel related to changing locality
+Value = 3000.0 Label = Unspecified household and family care
+Value = 9810.0 Label = Travel to holiday base
+Value = 9820.0 Label = Travel for day trip/just walk
+Value = 3690.0 Label = Other specified shopping and services
+Value = 5224.0 Label = Live music other than classical concerts opera and musicals
+Value = 3710.0 Label = Household management not using the internet
+Value = 3713.0 Label = Shopping for and ordering clothing via the internet
+Value = 3720.0 Label = Unspecified household management using the internet
+Value = 3721.0 Label = Shopping for and ordering unspecified goods and services via the internet
+Value = 3722.0 Label = Shopping for and ordering food via the internet
+Value = 3724.0 Label = Shopping for and ordering goods and services related to accommodation via the internet
+Value = 3725.0 Label = Shopping for and ordering mass media via the internet
+Value = 3726.0 Label = Shopping for and ordering entertainment via the internet
+Value = 3727.0 Label = Banking and bill paying via the internet
+Value = 3729.0 Label = Other specified household management using the internet
+Value = 5230.0 Label = Art exhibitions and museums
+Value = 9890.0 Label = Other specified travel
+Value = 8310.0 Label = Unspecified radio listening
+Value = 5240.0 Label = Unspecified library
+Value = 9940.0 Label = Punctuating activity
+Value = 9941.0 Label = Unknown: at home
+Value = 3800.0 Label = Unspecified childcare
+Value = 9950.0 Label = Filling in the time use diary
+Value = 2000.0 Label = Study: Unspecified study school or university
+Value = 3810.0 Label = Unspecified physical care & supervision of a child
+Value = 3811.0 Label = Feeding the child
+Value = 4390.0 Label = Other specified participatory activities
+Value = 9960.0 Label = No main activity no idea what it might be
+Value = 5244.0 Label = Using computers in the library other than internet use
+Value = 3819.0 Label = Other and unspecified physical care & supervision of a child
+Value = 3820.0 Label = Teaching the child
+Value = 9970.0 Label = No main activity some idea what it might be
+Value = 3830.0 Label = Reading playing and talking with child
+Value = 9980.0 Label = Illegible activity
+Value = 3840.0 Label = Accompanying child
+Value = 8320.0 Label = Listening to recordings
+Value = 9990.0 Label = Unspecified time use
+Value = 9999.0 Label = Queryable
+Value = 7129.0 Label = Other specified performing arts
+Value = 8312.0 Label = Listening to sport on the radio
+Value = 9000.0 Label = Travel related to unspecified time use
+Value = 3890.0 Label = Other or unspecified childcare
+Value = 9010.0 Label = Travel related to personal business
+Value = 9370.0 Label = Travel related to services
+Value = 8000.0 Label = Unspecified mass media
+Value = 3910.0 Label = Unspecified help to a non-dependent eg injured adult household member
+Value = 3911.0 Label = Physical care of a non-dependent e.g. injured adult household member
+Value = 3914.0 Label = Accompanying a non-dependent adult household member e.g. to hospital
+Value = 3919.0 Label = Other specified help to a non-dependent adult household member
+Value = 3920.0 Label = Unspecified help to a dependent adult household member
+Value = 3921.0 Label = Physical care of a dependent adult household member e.g. Alzheimic parent
+Value = 3924.0 Label = Accompanying a dependent adult household member e.g. Alzheimic
+Value = 7310.0 Label = Solo games and play
+Value = 7000.0 Label = Unspecified hobbies games and computing
+Value = 3929.0 Label = Other specified help to a dependent adult household member
+Value = 8212.0 Label = Watching sport on TV
+Value = 9360.0 Label = Travel related to shopping
+Value = 6000.0 Label = Unspecified sports and outdoor activities
+Value = 1000.0 Label = Unspecified employment
+Value = 5000.0 Label = Unspecified social life and entertainment
+Value = 9100.0 Label = Travel to/from work
+Value = 9110.0 Label = Travel in the course of work
+Value = 7322.0 Label = Chess and bridge
+Value = 4000.0 Label = Unspecified volunteer work and meetings
+Value = 8100.0 Label = Unspecified reading
+Value = 9130.0 Label = Travel to work from a place other than home
+Value = 8110.0 Label = Reading periodicals
+Value = 8120.0 Label = Reading books
+Value = 7100.0 Label = Unspecified arts
+Value = 7110.0 Label = Unspecified visual arts
+Value = 7111.0 Label = Painting drawing or other graphic arts
+Value = 7112.0 Label = Making videos taking photographs or related photographic activities
+Value = -1.0 Label = Not applicable
+Value = 7330.0 Label = Computer games
+Value = 7119.0 Label = Other specified visual arts
+Value = 7120.0 Label = Unspecified performing arts
+Value = 7121.0 Label = Singing or other musical activities
+Value = 6100.0 Label = Unspecified physical exercise
+Value = 4260.0 Label = Help to other households in employment and farming
+Value = 7130.0 Label = Literary arts
+Value = 6110.0 Label = Walking and hiking
+Value = 6111.0 Label = Taking a walk or hike that lasts at least miles or 1 hour
+Value = 7140.0 Label = Other specified arts
+Value = 6119.0 Label = Other walk or hike
+Value = 6120.0 Label = Jogging and running
+Value = 5100.0 Label = Unspecified social life
+Value = 7150.0 Label = Unspecified hobbies
+Value = 6312.0 Label = Activities related to productive exercise
+Value = 6130.0 Label = Biking skiing and skating
+Value = 6131.0 Label = Biking
+Value = 6132.0 Label = Skiing or skating
+Value = 6142.0 Label = Indoor team games
+Value = 5110.0 Label = Socialising with family
+Value = -9.0 Label = No answer/refused
+Value = 7160.0 Label = Collecting
+Value = 9210.0 Label = Travel related to education
+Value = 6140.0 Label = Unspecified ball games
+Value = 6141.0 Label = Indoor pairs or doubles games
+Value = 8190.0 Label = Other specified reading
+Value = 6143.0 Label = Outdoor pairs or doubles games
+
+Pos. = 36 Variable = What_Oth2 Variable label = Other activity 2
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for What_Oth2
+Value = 0.0 Label = Unspecified personal care
+Value = 5120.0 Label = Visiting and receiving visitors
+Value = 7170.0 Label = Correspondence
+Value = 4100.0 Label = Unspecified organisational work
+Value = 6149.0 Label = Other specified ball games
+Value = 6150.0 Label = Gymnastics
+Value = 5292.0 Label = Visiting a wildlife site
+Value = 5130.0 Label = Celebrations
+Value = 4110.0 Label = Work for an organisation
+Value = 6160.0 Label = Fitness
+Value = 8210.0 Label = Unspecified TV video or DVD watching
+Value = 8211.0 Label = Watching a film on TV
+Value = 5140.0 Label = Telephone conversation
+Value = 4270.0 Label = Unspecified childcare as help to other households
+Value = 7190.0 Label = Other specified or unspecified arts and hobbies
+Value = 4120.0 Label = Volunteer work through an organisation
+Value = 6170.0 Label = Unspecified water sports
+Value = 8219.0 Label = Other specified TV watching
+Value = 3100.0 Label = Unspecified food management
+Value = 8221.0 Label = Watching a film on video
+Value = 8222.0 Label = Watching sport on video
+Value = 6179.0 Label = Other specified water sports
+Value = 8229.0 Label = Other specified video watching
+Value = 3110.0 Label = Food preparation and baking
+Value = 3250.0 Label = Disposal of waste
+Value = 6190.0 Label = Other specified physical exercise
+Value = 4275.0 Label = Physical care and supervision of own child as help to other household
+Value = 2100.0 Label = Study: Unspecified activities related to school or university
+Value = 6200.0 Label = Unspecified productive exercise
+Value = 3130.0 Label = Dish washing
+Value = 2110.0 Label = Study: Classes and lectures
+Value = 7231.0 Label = Information searching on the internet
+Value = 6210.0 Label = Hunting and fishing
+Value = 3140.0 Label = Preserving
+Value = 5190.0 Label = Other specified social life
+Value = 7239.0 Label = Other specified information by computing
+Value = 2120.0 Label = Study: Homework
+Value = 7241.0 Label = Communication on the internet
+Value = 1100.0 Label = Main job: unspecified main job
+Value = 5200.0 Label = Unspecified entertainment and culture
+Value = 7249.0 Label = Other specified communication by computing
+Value = 7250.0 Label = Unspecified other computing
+Value = 7251.0 Label = Skype or other video call
+Value = 9230.0 Label = Travel escorting to/ from education
+Value = 1110.0 Label = Main job: Working time in main job
+Value = 5210.0 Label = Cinema
+Value = 7259.0 Label = Other specified computing
+Value = 1210.0 Label = Second job: Working time in second job
+Value = 9310.0 Label = Travel related to household care
+Value = 1120.0 Label = Main job: Coffee and other breaks in main job
+Value = 5220.0 Label = Unspecified theatre or concerts
+Value = 5221.0 Label = Plays musicals or pantomimes
+Value = 5222.0 Label = Opera operetta or light opera
+Value = 5223.0 Label = Concerts or other performances of classical music
+Value = 4200.0 Label = Unspecified informal help to other households
+Value = 5225.0 Label = Dance performances
+Value = 8300.0 Label = Unspecified listening to radio and music
+Value = 5229.0 Label = Other specified theatre or concerts
+Value = 110.0 Label = Sleep
+Value = 111.0 Label = Sleep: In bed not asleep
+Value = 4210.0 Label = Food management as help to other households
+Value = 3190.0 Label = Other specified food management
+Value = 8311.0 Label = Listening to music on the radio
+Value = 120.0 Label = Sleep: Sick in bed
+Value = 5241.0 Label = Borrowing books records audiotapes videotapes CDs VDs etc. from a library
+Value = 5242.0 Label = Reference to books and other library materials within a library
+Value = 5243.0 Label = Using internet in the library
+Value = 4220.0 Label = Household upkeep as help to other households
+Value = 5245.0 Label = Reading newspapers in a library
+Value = 8319.0 Label = Other specified radio listening
+Value = 3200.0 Label = Unspecified household upkeep
+Value = 5249.0 Label = Other specified library activities
+Value = 5250.0 Label = Sports events
+Value = 7300.0 Label = Unspecified games
+Value = 4230.0 Label = Gardening and pet care as help to other households
+Value = 3210.0 Label = Cleaning dwelling
+Value = 9410.0 Label = Travel related to voluntary work and meetings
+Value = 2190.0 Label = Study: other specified activities related to school or university
+Value = 4240.0 Label = Construction and repairs as help to other households
+Value = 6290.0 Label = Other specified productive exercise
+Value = 3220.0 Label = Cleaning yard
+Value = 7320.0 Label = Unspecified games and play with others
+Value = 7321.0 Label = Billiards pool snooker or petanque
+Value = 4250.0 Label = Shopping and services as help to other households
+Value = 3230.0 Label = Heating and water
+Value = 7329.0 Label = Other specified parlour games and play
+Value = 2210.0 Label = Free time study
+Value = 6171.0 Label = Swimming
+Value = 9380.0 Label = Travel escorting a child other than education
+Value = 6310.0 Label = Unspecified sports related activities
+Value = 6311.0 Label = Activities related to sports
+Value = 3240.0 Label = Arranging household goods and materials
+Value = 8220.0 Label = Unspecified video watching
+Value = 5290.0 Label = Other unspecified entertainment and culture
+Value = 5291.0 Label = Visiting a historical site
+Value = 7340.0 Label = Gambling
+Value = 5293.0 Label = Visiting a botanical site
+Value = 5294.0 Label = Visiting a leisure park
+Value = 4271.0 Label = Physical care and supervision of child as help to other household
+Value = 4272.0 Label = Teaching non-coresident child
+Value = 4273.0 Label = Reading playing & talking to non-coresident child
+Value = 4274.0 Label = Accompanying non-coresident child
+Value = 5299.0 Label = Other or unspecified entertainment or culture
+Value = 4277.0 Label = Reading playing & talking to own non-coresident child
+Value = 4278.0 Label = Accompanying own non-coresident child
+Value = 4279.0 Label = Other specified childcare as help to other household
+Value = 9400.0 Label = Travel related to organisational work
+Value = 4281.0 Label = Physical care and supervision of an adult as help to another household
+Value = 4282.0 Label = Accompanying an adult as help to another household
+Value = 4283.0 Label = Other specified help to an adult member of another household
+Value = 4280.0 Label = Unspecified help to an adult of another household
+Value = 5310.0 Label = Resting - Time out
+Value = 4289.0 Label = Other specified informal help to another household
+Value = 4290.0 Label = Other specified informal help
+Value = 1220.0 Label = Second job: Coffee and other breaks in second job
+Value = 6144.0 Label = Outdoor team games
+Value = 9420.0 Label = Travel related to informal help to other households
+Value = 4300.0 Label = Unspecified participatory activities
+Value = 210.0 Label = Eating
+Value = 4310.0 Label = Meetings
+Value = 3290.0 Label = Other or unspecified household upkeep
+Value = 7390.0 Label = Other specified games
+Value = 4320.0 Label = Religious activities
+Value = 3300.0 Label = Unspecified making and care for textiles
+Value = 3310.0 Label = Laundry
+Value = 3320.0 Label = Ironing
+Value = 3330.0 Label = Handicraft and producing textiles
+Value = 9430.0 Label = Travel related to religious activities
+Value = 1300.0 Label = Activities related to employment: Unspecified activities related to employment
+Value = 9500.0 Label = Travel to visit friends/relatives in their homes not respondents household
+Value = 1310.0 Label = Activities related to employment: Lunch break
+Value = 9510.0 Label = Travel related to other social activities
+Value = 300.0 Label = Other personal care: Unspecified other personal care
+Value = 5295.0 Label = Visiting an urban park playground designated play area
+Value = 9520.0 Label = Travel related to entertainment and culture
+Value = 310.0 Label = Other personal care: Wash and dress
+Value = 7220.0 Label = Computing - programming
+Value = 3390.0 Label = Other specified making and care for textiles
+Value = 9440.0 Label = Travel related to participatory activities other than religious activities
+Value = 3410.0 Label = Gardening
+Value = 3420.0 Label = Tending domestic animals
+Value = 3430.0 Label = Caring for pets
+Value = 1390.0 Label = Activities related to employment: Other specified activities related to employment
+Value = 1391.0 Label = Activities related to employment: Activities related to job seeking
+Value = 3440.0 Label = Walking the dog
+Value = 7230.0 Label = Unspecified information by computing
+Value = 1399.0 Label = Activities related to employment: Other unspecified activities related to employment
+Value = 9600.0 Label = Travel related to other leisure
+Value = 390.0 Label = Other personal care: Other specified personal care
+Value = 9610.0 Label = Travel related to physical exercise
+Value = 9390.0 Label = Travel escorting an adult other than education
+Value = 9620.0 Label = Travel related to hunting & fishing
+Value = 9630.0 Label = Travel related to productive exercise other than hunting & fishing
+Value = 3490.0 Label = Other specified gardening and pet care
+Value = 3500.0 Label = Unspecified construction and repairs
+Value = 7240.0 Label = Unspecified communication by computer
+Value = 3510.0 Label = House construction and renovation
+Value = 3520.0 Label = Repairs of dwelling
+Value = 9120.0 Label = Travel to work from home and back only
+Value = 6220.0 Label = Picking berries mushroom and herbs
+Value = 3530.0 Label = Making repairing and maintaining equipment
+Value = 3531.0 Label = Woodcraft metalcraft sculpture and pottery
+Value = 3539.0 Label = Other specified making repairing and maintaining equipment
+Value = 3540.0 Label = Vehicle maintenance
+Value = 9710.0 Label = Travel related to gambling
+Value = 9720.0 Label = Travel related to hobbies other than gambling
+Value = 3590.0 Label = Other specified construction and repairs
+Value = 3600.0 Label = Unspecified shopping and services
+Value = 3610.0 Label = Unspecified shopping
+Value = 3611.0 Label = Shopping mainly for food
+Value = 3612.0 Label = Shopping mainly for clothing
+Value = 3613.0 Label = Shopping mainly related to accommodation
+Value = 3614.0 Label = Shopping or browsing at car boot sales or antique fairs
+Value = 3615.0 Label = Window shopping or other shopping as leisure
+Value = 3619.0 Label = Other specified shopping
+Value = 3620.0 Label = Commercial and administrative services
+Value = 3630.0 Label = Personal services
+Value = 4190.0 Label = Other specified organisational work
+Value = 9800.0 Label = Travel related to changing locality
+Value = 3000.0 Label = Unspecified household and family care
+Value = 9810.0 Label = Travel to holiday base
+Value = 9820.0 Label = Travel for day trip/just walk
+Value = 3690.0 Label = Other specified shopping and services
+Value = 5224.0 Label = Live music other than classical concerts opera and musicals
+Value = 3710.0 Label = Household management not using the internet
+Value = 3713.0 Label = Shopping for and ordering clothing via the internet
+Value = 3720.0 Label = Unspecified household management using the internet
+Value = 3721.0 Label = Shopping for and ordering unspecified goods and services via the internet
+Value = 3722.0 Label = Shopping for and ordering food via the internet
+Value = 3724.0 Label = Shopping for and ordering goods and services related to accommodation via the internet
+Value = 3725.0 Label = Shopping for and ordering mass media via the internet
+Value = 3726.0 Label = Shopping for and ordering entertainment via the internet
+Value = 3727.0 Label = Banking and bill paying via the internet
+Value = 3729.0 Label = Other specified household management using the internet
+Value = 5230.0 Label = Art exhibitions and museums
+Value = 9890.0 Label = Other specified travel
+Value = 8310.0 Label = Unspecified radio listening
+Value = 5240.0 Label = Unspecified library
+Value = 9940.0 Label = Punctuating activity
+Value = 9941.0 Label = Unknown: at home
+Value = 3800.0 Label = Unspecified childcare
+Value = 9950.0 Label = Filling in the time use diary
+Value = 2000.0 Label = Study: Unspecified study school or university
+Value = 3810.0 Label = Unspecified physical care & supervision of a child
+Value = 3811.0 Label = Feeding the child
+Value = 4390.0 Label = Other specified participatory activities
+Value = 9960.0 Label = No main activity no idea what it might be
+Value = 5244.0 Label = Using computers in the library other than internet use
+Value = 3819.0 Label = Other and unspecified physical care & supervision of a child
+Value = 3820.0 Label = Teaching the child
+Value = 9970.0 Label = No main activity some idea what it might be
+Value = 3830.0 Label = Reading playing and talking with child
+Value = 9980.0 Label = Illegible activity
+Value = 3840.0 Label = Accompanying child
+Value = 8320.0 Label = Listening to recordings
+Value = 9990.0 Label = Unspecified time use
+Value = 9999.0 Label = Queryable
+Value = 7129.0 Label = Other specified performing arts
+Value = 8312.0 Label = Listening to sport on the radio
+Value = 9000.0 Label = Travel related to unspecified time use
+Value = 3890.0 Label = Other or unspecified childcare
+Value = 9010.0 Label = Travel related to personal business
+Value = 9370.0 Label = Travel related to services
+Value = 8000.0 Label = Unspecified mass media
+Value = 3910.0 Label = Unspecified help to a non-dependent eg injured adult household member
+Value = 3911.0 Label = Physical care of a non-dependent e.g. injured adult household member
+Value = 3914.0 Label = Accompanying a non-dependent adult household member e.g. to hospital
+Value = 3919.0 Label = Other specified help to a non-dependent adult household member
+Value = 3920.0 Label = Unspecified help to a dependent adult household member
+Value = 3921.0 Label = Physical care of a dependent adult household member e.g. Alzheimic parent
+Value = 3924.0 Label = Accompanying a dependent adult household member e.g. Alzheimic
+Value = 7310.0 Label = Solo games and play
+Value = 7000.0 Label = Unspecified hobbies games and computing
+Value = 3929.0 Label = Other specified help to a dependent adult household member
+Value = 8212.0 Label = Watching sport on TV
+Value = 9360.0 Label = Travel related to shopping
+Value = 6000.0 Label = Unspecified sports and outdoor activities
+Value = 1000.0 Label = Unspecified employment
+Value = 5000.0 Label = Unspecified social life and entertainment
+Value = 9100.0 Label = Travel to/from work
+Value = 9110.0 Label = Travel in the course of work
+Value = 7322.0 Label = Chess and bridge
+Value = 4000.0 Label = Unspecified volunteer work and meetings
+Value = 8100.0 Label = Unspecified reading
+Value = 9130.0 Label = Travel to work from a place other than home
+Value = 8110.0 Label = Reading periodicals
+Value = 8120.0 Label = Reading books
+Value = 7100.0 Label = Unspecified arts
+Value = 7110.0 Label = Unspecified visual arts
+Value = 7111.0 Label = Painting drawing or other graphic arts
+Value = 7112.0 Label = Making videos taking photographs or related photographic activities
+Value = -1.0 Label = Not applicable
+Value = 7330.0 Label = Computer games
+Value = 7119.0 Label = Other specified visual arts
+Value = 7120.0 Label = Unspecified performing arts
+Value = 7121.0 Label = Singing or other musical activities
+Value = 6100.0 Label = Unspecified physical exercise
+Value = 4260.0 Label = Help to other households in employment and farming
+Value = 7130.0 Label = Literary arts
+Value = 6110.0 Label = Walking and hiking
+Value = 6111.0 Label = Taking a walk or hike that lasts at least miles or 1 hour
+Value = 7140.0 Label = Other specified arts
+Value = 6119.0 Label = Other walk or hike
+Value = 6120.0 Label = Jogging and running
+Value = 5100.0 Label = Unspecified social life
+Value = 7150.0 Label = Unspecified hobbies
+Value = 6312.0 Label = Activities related to productive exercise
+Value = 6130.0 Label = Biking skiing and skating
+Value = 6131.0 Label = Biking
+Value = 6132.0 Label = Skiing or skating
+Value = 6142.0 Label = Indoor team games
+Value = 5110.0 Label = Socialising with family
+Value = -9.0 Label = No answer/refused
+Value = 7160.0 Label = Collecting
+Value = 9210.0 Label = Travel related to education
+Value = 6140.0 Label = Unspecified ball games
+Value = 6141.0 Label = Indoor pairs or doubles games
+Value = 8190.0 Label = Other specified reading
+Value = 6143.0 Label = Outdoor pairs or doubles games
+
+Pos. = 37 Variable = What_Oth3 Variable label = Other activity 3
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for What_Oth3
+Value = 0.0 Label = Unspecified personal care
+Value = 5120.0 Label = Visiting and receiving visitors
+Value = 7170.0 Label = Correspondence
+Value = 4100.0 Label = Unspecified organisational work
+Value = 6149.0 Label = Other specified ball games
+Value = 6150.0 Label = Gymnastics
+Value = 5292.0 Label = Visiting a wildlife site
+Value = 5130.0 Label = Celebrations
+Value = 4110.0 Label = Work for an organisation
+Value = 6160.0 Label = Fitness
+Value = 8210.0 Label = Unspecified TV video or DVD watching
+Value = 8211.0 Label = Watching a film on TV
+Value = 5140.0 Label = Telephone conversation
+Value = 4270.0 Label = Unspecified childcare as help to other households
+Value = 7190.0 Label = Other specified or unspecified arts and hobbies
+Value = 4120.0 Label = Volunteer work through an organisation
+Value = 6170.0 Label = Unspecified water sports
+Value = 8219.0 Label = Other specified TV watching
+Value = 3100.0 Label = Unspecified food management
+Value = 8221.0 Label = Watching a film on video
+Value = 8222.0 Label = Watching sport on video
+Value = 6179.0 Label = Other specified water sports
+Value = 8229.0 Label = Other specified video watching
+Value = 3110.0 Label = Food preparation and baking
+Value = 3250.0 Label = Disposal of waste
+Value = 6190.0 Label = Other specified physical exercise
+Value = 4275.0 Label = Physical care and supervision of own child as help to other household
+Value = 2100.0 Label = Study: Unspecified activities related to school or university
+Value = 6200.0 Label = Unspecified productive exercise
+Value = 3130.0 Label = Dish washing
+Value = 2110.0 Label = Study: Classes and lectures
+Value = 7231.0 Label = Information searching on the internet
+Value = 6210.0 Label = Hunting and fishing
+Value = 3140.0 Label = Preserving
+Value = 5190.0 Label = Other specified social life
+Value = 7239.0 Label = Other specified information by computing
+Value = 2120.0 Label = Study: Homework
+Value = 7241.0 Label = Communication on the internet
+Value = 1100.0 Label = Main job: unspecified main job
+Value = 5200.0 Label = Unspecified entertainment and culture
+Value = 7249.0 Label = Other specified communication by computing
+Value = 7250.0 Label = Unspecified other computing
+Value = 7251.0 Label = Skype or other video call
+Value = 9230.0 Label = Travel escorting to/ from education
+Value = 1110.0 Label = Main job: Working time in main job
+Value = 5210.0 Label = Cinema
+Value = 7259.0 Label = Other specified computing
+Value = 1210.0 Label = Second job: Working time in second job
+Value = 9310.0 Label = Travel related to household care
+Value = 1120.0 Label = Main job: Coffee and other breaks in main job
+Value = 5220.0 Label = Unspecified theatre or concerts
+Value = 5221.0 Label = Plays musicals or pantomimes
+Value = 5222.0 Label = Opera operetta or light opera
+Value = 5223.0 Label = Concerts or other performances of classical music
+Value = 4200.0 Label = Unspecified informal help to other households
+Value = 5225.0 Label = Dance performances
+Value = 8300.0 Label = Unspecified listening to radio and music
+Value = 5229.0 Label = Other specified theatre or concerts
+Value = 110.0 Label = Sleep
+Value = 111.0 Label = Sleep: In bed not asleep
+Value = 4210.0 Label = Food management as help to other households
+Value = 3190.0 Label = Other specified food management
+Value = 8311.0 Label = Listening to music on the radio
+Value = 120.0 Label = Sleep: Sick in bed
+Value = 5241.0 Label = Borrowing books records audiotapes videotapes CDs VDs etc. from a library
+Value = 5242.0 Label = Reference to books and other library materials within a library
+Value = 5243.0 Label = Using internet in the library
+Value = 4220.0 Label = Household upkeep as help to other households
+Value = 5245.0 Label = Reading newspapers in a library
+Value = 8319.0 Label = Other specified radio listening
+Value = 3200.0 Label = Unspecified household upkeep
+Value = 5249.0 Label = Other specified library activities
+Value = 5250.0 Label = Sports events
+Value = 7300.0 Label = Unspecified games
+Value = 4230.0 Label = Gardening and pet care as help to other households
+Value = 3210.0 Label = Cleaning dwelling
+Value = 9410.0 Label = Travel related to voluntary work and meetings
+Value = 2190.0 Label = Study: other specified activities related to school or university
+Value = 4240.0 Label = Construction and repairs as help to other households
+Value = 6290.0 Label = Other specified productive exercise
+Value = 3220.0 Label = Cleaning yard
+Value = 7320.0 Label = Unspecified games and play with others
+Value = 7321.0 Label = Billiards pool snooker or petanque
+Value = 4250.0 Label = Shopping and services as help to other households
+Value = 3230.0 Label = Heating and water
+Value = 7329.0 Label = Other specified parlour games and play
+Value = 2210.0 Label = Free time study
+Value = 6171.0 Label = Swimming
+Value = 9380.0 Label = Travel escorting a child other than education
+Value = 6310.0 Label = Unspecified sports related activities
+Value = 6311.0 Label = Activities related to sports
+Value = 3240.0 Label = Arranging household goods and materials
+Value = 8220.0 Label = Unspecified video watching
+Value = 5290.0 Label = Other unspecified entertainment and culture
+Value = 5291.0 Label = Visiting a historical site
+Value = 7340.0 Label = Gambling
+Value = 5293.0 Label = Visiting a botanical site
+Value = 5294.0 Label = Visiting a leisure park
+Value = 4271.0 Label = Physical care and supervision of child as help to other household
+Value = 4272.0 Label = Teaching non-coresident child
+Value = 4273.0 Label = Reading playing & talking to non-coresident child
+Value = 4274.0 Label = Accompanying non-coresident child
+Value = 5299.0 Label = Other or unspecified entertainment or culture
+Value = 4277.0 Label = Reading playing & talking to own non-coresident child
+Value = 4278.0 Label = Accompanying own non-coresident child
+Value = 4279.0 Label = Other specified childcare as help to other household
+Value = 9400.0 Label = Travel related to organisational work
+Value = 4281.0 Label = Physical care and supervision of an adult as help to another household
+Value = 4282.0 Label = Accompanying an adult as help to another household
+Value = 4283.0 Label = Other specified help to an adult member of another household
+Value = 4280.0 Label = Unspecified help to an adult of another household
+Value = 5310.0 Label = Resting - Time out
+Value = 4289.0 Label = Other specified informal help to another household
+Value = 4290.0 Label = Other specified informal help
+Value = 1220.0 Label = Second job: Coffee and other breaks in second job
+Value = 6144.0 Label = Outdoor team games
+Value = 9420.0 Label = Travel related to informal help to other households
+Value = 4300.0 Label = Unspecified participatory activities
+Value = 210.0 Label = Eating
+Value = 4310.0 Label = Meetings
+Value = 3290.0 Label = Other or unspecified household upkeep
+Value = 7390.0 Label = Other specified games
+Value = 4320.0 Label = Religious activities
+Value = 3300.0 Label = Unspecified making and care for textiles
+Value = 3310.0 Label = Laundry
+Value = 3320.0 Label = Ironing
+Value = 3330.0 Label = Handicraft and producing textiles
+Value = 9430.0 Label = Travel related to religious activities
+Value = 1300.0 Label = Activities related to employment: Unspecified activities related to employment
+Value = 9500.0 Label = Travel to visit friends/relatives in their homes not respondents household
+Value = 1310.0 Label = Activities related to employment: Lunch break
+Value = 9510.0 Label = Travel related to other social activities
+Value = 300.0 Label = Other personal care: Unspecified other personal care
+Value = 5295.0 Label = Visiting an urban park playground designated play area
+Value = 9520.0 Label = Travel related to entertainment and culture
+Value = 310.0 Label = Other personal care: Wash and dress
+Value = 7220.0 Label = Computing - programming
+Value = 3390.0 Label = Other specified making and care for textiles
+Value = 9440.0 Label = Travel related to participatory activities other than religious activities
+Value = 3410.0 Label = Gardening
+Value = 3420.0 Label = Tending domestic animals
+Value = 3430.0 Label = Caring for pets
+Value = 1390.0 Label = Activities related to employment: Other specified activities related to employment
+Value = 1391.0 Label = Activities related to employment: Activities related to job seeking
+Value = 3440.0 Label = Walking the dog
+Value = 7230.0 Label = Unspecified information by computing
+Value = 1399.0 Label = Activities related to employment: Other unspecified activities related to employment
+Value = 9600.0 Label = Travel related to other leisure
+Value = 390.0 Label = Other personal care: Other specified personal care
+Value = 9610.0 Label = Travel related to physical exercise
+Value = 9390.0 Label = Travel escorting an adult other than education
+Value = 9620.0 Label = Travel related to hunting & fishing
+Value = 9630.0 Label = Travel related to productive exercise other than hunting & fishing
+Value = 3490.0 Label = Other specified gardening and pet care
+Value = 3500.0 Label = Unspecified construction and repairs
+Value = 7240.0 Label = Unspecified communication by computer
+Value = 3510.0 Label = House construction and renovation
+Value = 3520.0 Label = Repairs of dwelling
+Value = 9120.0 Label = Travel to work from home and back only
+Value = 6220.0 Label = Picking berries mushroom and herbs
+Value = 3530.0 Label = Making repairing and maintaining equipment
+Value = 3531.0 Label = Woodcraft metalcraft sculpture and pottery
+Value = 3539.0 Label = Other specified making repairing and maintaining equipment
+Value = 3540.0 Label = Vehicle maintenance
+Value = 9710.0 Label = Travel related to gambling
+Value = 9720.0 Label = Travel related to hobbies other than gambling
+Value = 3590.0 Label = Other specified construction and repairs
+Value = 3600.0 Label = Unspecified shopping and services
+Value = 3610.0 Label = Unspecified shopping
+Value = 3611.0 Label = Shopping mainly for food
+Value = 3612.0 Label = Shopping mainly for clothing
+Value = 3613.0 Label = Shopping mainly related to accommodation
+Value = 3614.0 Label = Shopping or browsing at car boot sales or antique fairs
+Value = 3615.0 Label = Window shopping or other shopping as leisure
+Value = 3619.0 Label = Other specified shopping
+Value = 3620.0 Label = Commercial and administrative services
+Value = 3630.0 Label = Personal services
+Value = 4190.0 Label = Other specified organisational work
+Value = 9800.0 Label = Travel related to changing locality
+Value = 3000.0 Label = Unspecified household and family care
+Value = 9810.0 Label = Travel to holiday base
+Value = 9820.0 Label = Travel for day trip/just walk
+Value = 3690.0 Label = Other specified shopping and services
+Value = 5224.0 Label = Live music other than classical concerts opera and musicals
+Value = 3710.0 Label = Household management not using the internet
+Value = 3713.0 Label = Shopping for and ordering clothing via the internet
+Value = 3720.0 Label = Unspecified household management using the internet
+Value = 3721.0 Label = Shopping for and ordering unspecified goods and services via the internet
+Value = 3722.0 Label = Shopping for and ordering food via the internet
+Value = 3724.0 Label = Shopping for and ordering goods and services related to accommodation via the internet
+Value = 3725.0 Label = Shopping for and ordering mass media via the internet
+Value = 3726.0 Label = Shopping for and ordering entertainment via the internet
+Value = 3727.0 Label = Banking and bill paying via the internet
+Value = 3729.0 Label = Other specified household management using the internet
+Value = 5230.0 Label = Art exhibitions and museums
+Value = 9890.0 Label = Other specified travel
+Value = 8310.0 Label = Unspecified radio listening
+Value = 5240.0 Label = Unspecified library
+Value = 9940.0 Label = Punctuating activity
+Value = 9941.0 Label = Unknown: at home
+Value = 3800.0 Label = Unspecified childcare
+Value = 9950.0 Label = Filling in the time use diary
+Value = 2000.0 Label = Study: Unspecified study school or university
+Value = 3810.0 Label = Unspecified physical care & supervision of a child
+Value = 3811.0 Label = Feeding the child
+Value = 4390.0 Label = Other specified participatory activities
+Value = 9960.0 Label = No main activity no idea what it might be
+Value = 5244.0 Label = Using computers in the library other than internet use
+Value = 3819.0 Label = Other and unspecified physical care & supervision of a child
+Value = 3820.0 Label = Teaching the child
+Value = 9970.0 Label = No main activity some idea what it might be
+Value = 3830.0 Label = Reading playing and talking with child
+Value = 9980.0 Label = Illegible activity
+Value = 3840.0 Label = Accompanying child
+Value = 8320.0 Label = Listening to recordings
+Value = 9990.0 Label = Unspecified time use
+Value = 9999.0 Label = Queryable
+Value = 7129.0 Label = Other specified performing arts
+Value = 8312.0 Label = Listening to sport on the radio
+Value = 9000.0 Label = Travel related to unspecified time use
+Value = 3890.0 Label = Other or unspecified childcare
+Value = 9010.0 Label = Travel related to personal business
+Value = 9370.0 Label = Travel related to services
+Value = 8000.0 Label = Unspecified mass media
+Value = 3910.0 Label = Unspecified help to a non-dependent eg injured adult household member
+Value = 3911.0 Label = Physical care of a non-dependent e.g. injured adult household member
+Value = 3914.0 Label = Accompanying a non-dependent adult household member e.g. to hospital
+Value = 3919.0 Label = Other specified help to a non-dependent adult household member
+Value = 3920.0 Label = Unspecified help to a dependent adult household member
+Value = 3921.0 Label = Physical care of a dependent adult household member e.g. Alzheimic parent
+Value = 3924.0 Label = Accompanying a dependent adult household member e.g. Alzheimic
+Value = 7310.0 Label = Solo games and play
+Value = 7000.0 Label = Unspecified hobbies games and computing
+Value = 3929.0 Label = Other specified help to a dependent adult household member
+Value = 8212.0 Label = Watching sport on TV
+Value = 9360.0 Label = Travel related to shopping
+Value = 6000.0 Label = Unspecified sports and outdoor activities
+Value = 1000.0 Label = Unspecified employment
+Value = 5000.0 Label = Unspecified social life and entertainment
+Value = 9100.0 Label = Travel to/from work
+Value = 9110.0 Label = Travel in the course of work
+Value = 7322.0 Label = Chess and bridge
+Value = 4000.0 Label = Unspecified volunteer work and meetings
+Value = 8100.0 Label = Unspecified reading
+Value = 9130.0 Label = Travel to work from a place other than home
+Value = 8110.0 Label = Reading periodicals
+Value = 8120.0 Label = Reading books
+Value = 7100.0 Label = Unspecified arts
+Value = 7110.0 Label = Unspecified visual arts
+Value = 7111.0 Label = Painting drawing or other graphic arts
+Value = 7112.0 Label = Making videos taking photographs or related photographic activities
+Value = -1.0 Label = Not applicable
+Value = 7330.0 Label = Computer games
+Value = 7119.0 Label = Other specified visual arts
+Value = 7120.0 Label = Unspecified performing arts
+Value = 7121.0 Label = Singing or other musical activities
+Value = 6100.0 Label = Unspecified physical exercise
+Value = 4260.0 Label = Help to other households in employment and farming
+Value = 7130.0 Label = Literary arts
+Value = 6110.0 Label = Walking and hiking
+Value = 6111.0 Label = Taking a walk or hike that lasts at least miles or 1 hour
+Value = 7140.0 Label = Other specified arts
+Value = 6119.0 Label = Other walk or hike
+Value = 6120.0 Label = Jogging and running
+Value = 5100.0 Label = Unspecified social life
+Value = 7150.0 Label = Unspecified hobbies
+Value = 6312.0 Label = Activities related to productive exercise
+Value = 6130.0 Label = Biking skiing and skating
+Value = 6131.0 Label = Biking
+Value = 6132.0 Label = Skiing or skating
+Value = 6142.0 Label = Indoor team games
+Value = 5110.0 Label = Socialising with family
+Value = -9.0 Label = No answer/refused
+Value = 7160.0 Label = Collecting
+Value = 9210.0 Label = Travel related to education
+Value = 6140.0 Label = Unspecified ball games
+Value = 6141.0 Label = Indoor pairs or doubles games
+Value = 8190.0 Label = Other specified reading
+Value = 6143.0 Label = Outdoor pairs or doubles games
+
+Pos. = 38 Variable = WhereWhen Variable label = Location
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhereWhen
+Value = 0.0 Label = Unspecified location
+Value = 10.0 Label = Unspecified location (not travelling)
+Value = 11.0 Label = Home
+Value = 12.0 Label = Second home or weekend house
+Value = 13.0 Label = Working place or school
+Value = 14.0 Label = Other peoples home
+Value = 15.0 Label = Restaurant cafe or pub
+Value = 16.0 Label = Sports facility
+Value = 17.0 Label = Arts or cultural centre
+Value = 18.0 Label = Parks countryside seaside beach or coast
+Value = 19.0 Label = Shopping centres markets other shops
+Value = 20.0 Label = Hotel guesthouse camping site
+Value = 21.0 Label = Other specified location (not travelling)
+Value = 30.0 Label = Unspecified private transport mode
+Value = 31.0 Label = Travelling on foot
+Value = 32.0 Label = Travelling by bicycle
+Value = 33.0 Label = Travelling by moped motorcycle or motorboat
+Value = 34.0 Label = Travelling by passenger car as the driver
+Value = 35.0 Label = Travelling by passenger car as a passenger
+Value = 36.0 Label = Travelling by passenger car - driver status unspecified
+Value = 37.0 Label = Travelling by lorry or tractor
+Value = 38.0 Label = Travelling by van
+Value = 39.0 Label = Other specified private travelling mode
+Value = 40.0 Label = Unspecified public transport mode
+Value = 41.0 Label = Travelling by taxi
+Value = 42.0 Label = Travelling by bus
+Value = 43.0 Label = Travelling by tram or underground
+Value = 44.0 Label = Travelling by train
+Value = 45.0 Label = Travelling by aeroplane
+Value = 46.0 Label = Travelling by boat or ship
+Value = 47.0 Label = Travelling by coach
+Value = 48.0 Label = Waiting for public transport
+Value = 49.0 Label = Other specified public transport mode
+Value = 90.0 Label = Unspecified transport mode
+Value = 99.0 Label = Illegible location or transport mode
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 39 Variable = Device Variable label = Whether used smartphone/tablet/laptop
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Device
+Value = 0.0 Label = not using device
+Value = 1.0 Label = using device
+Value = -9.0 Label = not reported
+
+Pos. = 40 Variable = WithAlone Variable label = Alone
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithAlone
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 41 Variable = WithSpouse Variable label = With spouse/partner
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithSpouse
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 42 Variable = WithMother Variable label = With mother
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithMother
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 43 Variable = WithFather Variable label = With father
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithFather
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 44 Variable = WithChild Variable label = With child 0-7 years
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithChild
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 45 Variable = WithOther Variable label = With other person(s) (incl. child 8+ years)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithOther
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 46 Variable = WithOtherYK Variable label = With other(s) you know outside of HH
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithOtherYK
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = Reported
+
+Pos. = 47 Variable = WithMiss Variable label = No co-presence reported
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithMiss
+Value = 0.0 Label = Co-presence reported
+Value = 1.0 Label = No co-presence reported
+
+Pos. = 48 Variable = WithNA Variable label = Sleep/Work/Education UK2000 concordance
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for WithNA
+Value = 0.0 Label = Not reported
+Value = 1.0 Label = main act: work/edu/sleep
+
+Pos. = 49 Variable = Enjoy Variable label = Level of enjoyment
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Enjoy
+Value = 1.0 Label = not at all
+Value = -9.0 Label = not reported
+Value = -1.0 Label = NA
+Value = 7.0 Label = very much
+
+Pos. = 50 Variable = impuflag Variable label = Imputation flag
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for impuflag
+Value = 1.0 Label = not missing
+Value = 2.0 Label = 9970 carried over
+Value = 3.0 Label = imputed 10 mins personal care after waking in morning
+Value = 4.0 Label = imputed 10 mins of unspec travel if location changed
+Value = 5.0 Label = imputed sleep if first episode missing
+Value = 6.0 Label = imputed sleep last episode missing, after 1am
+Value = -1.0 Label = missing

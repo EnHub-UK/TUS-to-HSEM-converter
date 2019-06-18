@@ -1,0 +1,1647 @@
+###  Translation from RTF performed by UnRTF, version 0.21.9 
+### font table contains 6 fonts total
+
+-----------------
+
+UK Data Archive Data Dictionary
+
+File-level information:
+
+File Name = uktus15_dv_time_vars
+Number of variables = 367
+Number of cases = 16533
+
+
+Variable-level information:
+
+Pos. = 1 Variable = serial Variable label = Household number
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for serial
+
+Pos. = 2 Variable = pnum Variable label = Person number
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for pnum
+
+Pos. = 3 Variable = daynum Variable label = Diary number
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for daynum
+Value = -8.0 Label = Don't know
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+Value = -1.0 Label = Item not applicable
+Value = -9.0 Label = No answer/refused
+
+Pos. = 4 Variable = strata Variable label = Strata
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for strata
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 5 Variable = psu Variable label = Primary sampling unit
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for psu
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 6 Variable = HhOut Variable label = Final outcome - household
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for HhOut
+Value = 640.0 Label = Unknown whether address is residential: No contact after 6+ calls
+Value = 214.0 Label = Productive : Household questionnaire completed  no individual interviews
+Value = 520.0 Label = Away / in hospital during survey period
+Value = 650.0 Label = Residential: unknown if eligible person(s) due to no-contact after 6+ calls
+Value = 531.0 Label = Physically unable / incompetent
+Value = 532.0 Label = Mentally unable / incompetent
+Value = 110.0 Label = Productive : Household interview completed, all eligible household members completed individual interviews and diary
+Value = 790.0 Label = Other ineligible
+Value = 410.0 Label = Office refusal
+Value = 540.0 Label = Language difficulties
+Value = 421.0 Label = Information refused about number of DUs/HHs at address
+Value = 422.0 Label = Information refused about people in household
+Value = 810.0 Label = Information refused about whether address is residential
+Value = 430.0 Label = Refusal before household interview
+Value = 690.0 Label = Other unknown eligibility (due to non-contact)
+Value = 820.0 Label = Contact made but no-one can confirm the presence of a resident hhold
+Value = 310.0 Label = No contact with anyone at address after 6+ calls
+Value = 830.0 Label = Information refused about whether resident(s) are eligible
+Value = 321.0 Label = Contact made at address. but not at selected DU/HH (USE IF MULTIPLE DUs/HHs ONLY)
+Value = 322.0 Label = Contact made. but not with responsible resident
+Value = 451.0 Label = Broken appointment. no re-contact
+Value = 710.0 Label = Not yet built / under construction
+Value = 591.0 Label = Full interview but respondent requested deletion
+Value = 592.0 Label = Partial interview but resp requested deletion
+Value = 210.0 Label = Productive : At least one individual interview but not from all eligible household members
+Value = 598.0 Label = Other reasons why unproductive
+Value = 599.0 Label = Other reasons why no individual interviews
+Value = 612.0 Label = Issued not attempted
+Value = 730.0 Label = Vacant / empty
+Value = 720.0 Label = Demolished / derelict
+Value = 611.0 Label = Not issued to an interviewer
+Value = 740.0 Label = Non-residential address (e.g. business. school. office. factory etc)
+Value = 620.0 Label = Inaccessible
+Value = 850.0 Label = Unable to confirm eligibility of resident(s) due to a language barrier
+Value = 750.0 Label = Occupied. no resident household (e.g. occupied holiday/weekend home)
+Value = 630.0 Label = Unable to locate address
+Value = 760.0 Label = Communal establishment/institution  no private dwellings
+Value = 890.0 Label = Other unknown eligibility (contact made)
+Value = 510.0 Label = Ill at home during survey period
+
+Pos. = 7 Variable = IndOut Variable label = Final outcome - individual
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IndOut
+Value = 34.0 Label = No contact with selected individual
+Value = 11.0 Label = Individual interview complete, diary collected
+Value = 22.0 Label = Individual interview not complete, diary collected
+Value = 43.0 Label = Refusal before interview
+Value = 44.0 Label = Refusal during interview
+Value = 45.0 Label = Broken appointment
+Value = 51.0 Label = Ill at home
+Value = 52.0 Label = Ill/away
+Value = 21.0 Label = Individual interview complete, no diary collected
+Value = 54.0 Label = Language difficulties
+Value = 55.0 Label = Mentally unable
+Value = -7.0 Label = Interview not achieved
+Value = 59.0 Label = Other reason
+Value = -2.0 Label = Schedule not applicable
+Value = 53.0 Label = Physically unable
+
+Pos. = 8 Variable = DMFlag Variable label = Final case status flag (IND)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DMFlag
+Value = 1.0 Label = Fully productive adult, from full prod HH
+Value = 2.0 Label = Fully productive adult, from part prod HH
+Value = 3.0 Label = Fully productive teen aged 8-15 yrs (from full/part prod HH)
+Value = 4.0 Label = Non-productive, from part prod HH
+Value = 5.0 Label = Child aged 0-7 yrs (from full/part prod HH)
+Value = -7.0 Label = Non-productive HH
+Value = -6.0 Label = Partial Ind from non-prod HH
+
+Pos. = 9 Variable = IMonth Variable label = Interview month
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IMonth
+Value = 1.0 Label = January
+Value = 2.0 Label = February
+Value = 3.0 Label = March
+Value = 4.0 Label = April
+Value = 5.0 Label = May
+Value = 6.0 Label = June
+Value = 7.0 Label = July
+Value = 8.0 Label = August
+Value = 9.0 Label = September
+Value = 10.0 Label = October
+Value = 11.0 Label = November
+Value = 12.0 Label = December
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 10 Variable = IYear Variable label = Interview Year
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for IYear
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 11 Variable = DVAge Variable label = Age
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DVAge
+Value = -7.0 Label = Interview not achieved
+
+Pos. = 12 Variable = DayNum_DiaryDay Variable label = Completed diary day
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DayNum_DiaryDay
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 13 Variable = DPday Variable label = Diary Day - ASSIGNED DATE
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DPday
+
+Pos. = 14 Variable = DiaryDate_Act Variable label = Diary Day - ACTUAL DATE
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DiaryDate_Act
+
+Pos. = 15 Variable = DiaryDay_Act Variable label = Diary Day - ACTUAL DAY
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DiaryDay_Act
+Value = 1.0 Label = Sunday
+Value = 2.0 Label = Monday
+Value = 3.0 Label = Tuesday
+Value = 4.0 Label = Wednesday
+Value = 5.0 Label = Thursday
+Value = 6.0 Label = Friday
+Value = 7.0 Label = Saturday
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 16 Variable = DiaryDateDiff Variable label = Diary Day - difference between assigned and actual
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for DiaryDateDiff
+Value = -999.0 Label = No answer/refused
+Value = -222.0 Label = Schedule not applicable
+Value = -777.0 Label = Interview not achieved
+
+Pos. = 17 Variable = dmonth Variable label = DV: Diary month
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dmonth
+Value = 1.0 Label = January
+Value = 2.0 Label = February
+Value = 3.0 Label = March
+Value = 4.0 Label = April
+Value = 5.0 Label = May
+Value = 6.0 Label = June
+Value = 7.0 Label = July
+Value = 8.0 Label = August
+Value = 9.0 Label = September
+Value = 10.0 Label = October
+Value = 11.0 Label = November
+Value = 12.0 Label = December
+
+Pos. = 18 Variable = dyear Variable label = DV: Diary year
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dyear
+
+Pos. = 19 Variable = ddayw Variable label = DV: Day of week: Weekday, Saturday, Sunday
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for ddayw
+Value = 1.0 Label = Mon-Fri
+Value = 2.0 Label = Saturday
+Value = 3.0 Label = Sunday
+
+Pos. = 20 Variable = DiaryType Variable label = Diary type
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for DiaryType
+Value = 1.0 Label = Version 1 Adult (14+ yrs) (with Enjoyment question)
+Value = 2.0 Label = Version 2 Adult (14+ yrs)
+Value = 3.0 Label = Version 3 Child (0-13 yrs) (with Enjoyment question)
+Value = 4.0 Label = Version 4 Child (0-13 yrs)
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 21 Variable = WhenDiary Variable label = When diary filled in
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhenDiary
+Value = 1.0 Label = Now and then during the diary day
+Value = 2.0 Label = At the end of the diary day
+Value = 3.0 Label = The day after the diary day
+Value = 4.0 Label = Later, some days after the diary day
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 22 Variable = AfterDiaryDay Variable label = No. of days later (if filled in after diary day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for AfterDiaryDay
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+Value = -1.0 Label = Item not applicable
+Value = -9.0 Label = No answer/refused
+
+Pos. = 23 Variable = WhereStart Variable label = Location at start of diary day (4am)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhereStart
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = Somewhere else
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = At home
+
+Pos. = 24 Variable = WhereEnd Variable label = Location at end of diary day (4am)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for WhereEnd
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = Somewhere else
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = At home
+
+Pos. = 25 Variable = RushedD Variable label = Whether felt rushed
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for RushedD
+Value = -7.0 Label = Interview not achieved
+Value = 2.0 Label = No
+Value = -9.0 Label = No answer/refused
+Value = -2.0 Label = Schedule not applicable
+Value = 1.0 Label = Yes
+
+Pos. = 26 Variable = Ordinary Variable label = Whether an ordinary day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Ordinary
+Value = -9.0 Label = No answer/refused
+
+Pos. = 27 Variable = KindOfDay Variable label = Kind of day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for KindOfDay
+Value = 1.0 Label = A workday
+Value = 2.0 Label = A school or college day
+Value = 3.0 Label = A day off due to the weekend/holiday or work schedule
+Value = 4.0 Label = A sick leave day
+Value = 5.0 Label = A vacation/annual leave day
+Value = 6.0 Label = On leave for other reasons
+Value = 7.0 Label = None of the above
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 28 Variable = Trip Variable label = Whether on a trip during diary day
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for Trip
+Value = 1.0 Label = No
+Value = 2.0 Label = Yes, on a single day trip within the country
+Value = 3.0 Label = Yes, on a single day trip abroad
+Value = 4.0 Label = Yes, on an overnight trip within the country
+Value = 5.0 Label = Yes, on an overnight trip abroad
+Value = -9.0 Label = No answer/refused
+Value = -7.0 Label = Interview not achieved
+Value = -2.0 Label = Schedule not applicable
+
+Pos. = 29 Variable = dia_wt_a Variable label = Diary weight - analysis at diary level/event level
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dia_wt_a
+
+Pos. = 30 Variable = dia_wt_b Variable label = Diary weight - analysis at individual level
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dia_wt_b
+
+Pos. = 31 Variable = dml1_0 Variable label = main activity - personal care/sleep (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_0
+
+Pos. = 32 Variable = dml1_1 Variable label = main activity - employment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_1
+
+Pos. = 33 Variable = dml1_2 Variable label = main activity - study (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_2
+
+Pos. = 34 Variable = dml1_3 Variable label = main activity - household & family care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_3
+
+Pos. = 35 Variable = dml1_4 Variable label = main activity - volunteer work & meetings (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_4
+
+Pos. = 36 Variable = dml1_5 Variable label = main activity - social life & entertainment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_5
+
+Pos. = 37 Variable = dml1_6 Variable label = main activity - sports & outdoor activities (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_6
+
+Pos. = 38 Variable = dml1_7 Variable label = main activity - hobbies & games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_7
+
+Pos. = 39 Variable = dml1_8 Variable label = main activity - mass media (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_8
+
+Pos. = 40 Variable = dml1_9a Variable label = main activity - travel (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml1_9a
+
+Pos. = 41 Variable = dml1_9b Variable label = main activity - other spec/not specfd - codes 994-999 (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml1_9b
+
+Pos. = 42 Variable = dml2_0 Variable label = unspecified personal care (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_0
+
+Pos. = 43 Variable = dml2_1 Variable label = sleep (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_1
+
+Pos. = 44 Variable = dml2_2 Variable label = eating (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_2
+
+Pos. = 45 Variable = dml2_3 Variable label = other personal care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_3
+
+Pos. = 46 Variable = dml2_10 Variable label = unspecified employment (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_10
+
+Pos. = 47 Variable = dml2_11 Variable label = main job (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_11
+
+Pos. = 48 Variable = dml2_12 Variable label = second job (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_12
+
+Pos. = 49 Variable = dml2_13 Variable label = activities related to employment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_13
+
+Pos. = 50 Variable = dml2_20 Variable label = unspecified study (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_20
+
+Pos. = 51 Variable = dml2_21 Variable label = school or university (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_21
+
+Pos. = 52 Variable = dml2_22 Variable label = free time study (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_22
+
+Pos. = 53 Variable = dml2_30 Variable label = unspecified household and family care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_30
+
+Pos. = 54 Variable = dml2_31 Variable label = food management (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_31
+
+Pos. = 55 Variable = dml2_32 Variable label = household upkeep (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_32
+
+Pos. = 56 Variable = dml2_33 Variable label = making and caring for textiles (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_33
+
+Pos. = 57 Variable = dml2_34 Variable label = gardening and pet care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_34
+
+Pos. = 58 Variable = dml2_35 Variable label = construction and repairs (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_35
+
+Pos. = 59 Variable = dml2_36 Variable label = shopping and services (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_36
+
+Pos. = 60 Variable = dml2_37 Variable label = household management (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_37
+
+Pos. = 61 Variable = dml2_38 Variable label = childcare of own household members (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_38
+
+Pos. = 62 Variable = dml2_39 Variable label = help to an adult household member (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_39
+
+Pos. = 63 Variable = dml2_40 Variable label = unspecified volunteer work and meetings (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_40
+
+Pos. = 64 Variable = dml2_41 Variable label = organisational work (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_41
+
+Pos. = 65 Variable = dml2_42 Variable label = informal help to other households (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_42
+
+Pos. = 66 Variable = dml2_43 Variable label = particpatory activities (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_43
+
+Pos. = 67 Variable = dml2_50 Variable label = unspecified social life and entertainment (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_50
+
+Pos. = 68 Variable = dml2_51 Variable label = social life and entertainment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_51
+
+Pos. = 69 Variable = dml2_52 Variable label = entertainment and culture (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_52
+
+Pos. = 70 Variable = dml2_53 Variable label = resting - time out (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_53
+
+Pos. = 71 Variable = dml2_60 Variable label = unspecified sports and outdoor activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_60
+
+Pos. = 72 Variable = dml2_61 Variable label = physical exercise/ball games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_61
+
+Pos. = 73 Variable = dml2_62 Variable label = productive exercise (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_62
+
+Pos. = 74 Variable = dml2_63 Variable label = sports related activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_63
+
+Pos. = 75 Variable = dml2_70 Variable label = unspecified hobbies, games and computing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_70
+
+Pos. = 76 Variable = dml2_71 Variable label = arts and hobbies (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_71
+
+Pos. = 77 Variable = dml2_72 Variable label = computing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_72
+
+Pos. = 78 Variable = dml2_73 Variable label = games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_73
+
+Pos. = 79 Variable = dml2_80 Variable label = unspecified mass media (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_80
+
+Pos. = 80 Variable = dml2_81 Variable label = reading (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_81
+
+Pos. = 81 Variable = dml2_82 Variable label = tv and video/dvd (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_82
+
+Pos. = 82 Variable = dml2_83 Variable label = radio and music (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_83
+
+Pos. = 83 Variable = dml2_90 Variable label = travel (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_90
+
+Pos. = 84 Variable = dml2_91 Variable label = travel - work (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_91
+
+Pos. = 85 Variable = dml2_92 Variable label = travel - education (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_92
+
+Pos. = 86 Variable = dml2_93 Variable label = travel - domestic (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_93
+
+Pos. = 87 Variable = dml2_94 Variable label = travel - voluntary/civic (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_94
+
+Pos. = 88 Variable = dml2_95 Variable label = travel - social/entertainment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_95
+
+Pos. = 89 Variable = dml2_96 Variable label = travel - sport/exercise (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_96
+
+Pos. = 90 Variable = dml2_97 Variable label = travel - hobbies/games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml2_97
+
+Pos. = 91 Variable = dml2_98 Variable label = travel - other (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_98
+
+Pos. = 92 Variable = dml2_99 Variable label = punct act/fill in time diary/oth spec and unspec time use (codes 996-999) (mins 
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml2_99
+
+Pos. = 93 Variable = dml3_0 Variable label = unspecified personal care (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_0
+
+Pos. = 94 Variable = dml3_11 Variable label = sleep (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_11
+
+Pos. = 95 Variable = dml3_12 Variable label = sick in bed (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_12
+
+Pos. = 96 Variable = dml3_21 Variable label = eating (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_21
+
+Pos. = 97 Variable = dml3_30 Variable label = unspecified other personal care (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_30
+
+Pos. = 98 Variable = dml3_31 Variable label = wash and dress (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_31
+
+Pos. = 99 Variable = dml3_39 Variable label = other specified personal care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_39
+
+Pos. = 100 Variable = dml3_100 Variable label = unspecified employment (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_100
+
+Pos. = 101 Variable = dml3_110 Variable label = unspecified main job (minutes per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_110
+
+Pos. = 102 Variable = dml3_111 Variable label = working time in main job (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_111
+
+Pos. = 103 Variable = dml3_112 Variable label = coffee and other breaks in main job (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_112
+
+Pos. = 104 Variable = dml3_121 Variable label = working time in second job (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_121
+
+Pos. = 105 Variable = dml3_122 Variable label = coffee and other breaks in second job (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_122
+
+Pos. = 106 Variable = dml3_130 Variable label = unspecf activities related to empl (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_130
+
+Pos. = 107 Variable = dml3_131 Variable label = lunch break (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_131
+
+Pos. = 108 Variable = dml3_139 Variable label = other specified activities related to empl (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_139
+
+Pos. = 109 Variable = dml3_200 Variable label = unspecf study (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_200
+
+Pos. = 110 Variable = dml3_210 Variable label = unspecf act related to school or university (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_210
+
+Pos. = 111 Variable = dml3_211 Variable label = classes and lectures (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_211
+
+Pos. = 112 Variable = dml3_212 Variable label = homework (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_212
+
+Pos. = 113 Variable = dml3_219 Variable label = other specf act related to school or university (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_219
+
+Pos. = 114 Variable = dml3_221 Variable label = free time study (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_221
+
+Pos. = 115 Variable = dml3_300 Variable label = unspecified household and family care (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_300
+
+Pos. = 116 Variable = dml3_310 Variable label = unspecified food management (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_310
+
+Pos. = 117 Variable = dml3_311 Variable label = food preparation and baking (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_311
+
+Pos. = 118 Variable = dml3_313 Variable label = dish washing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_313
+
+Pos. = 119 Variable = dml3_314 Variable label = preserving (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_314
+
+Pos. = 120 Variable = dml3_319 Variable label = other specified food management (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_319
+
+Pos. = 121 Variable = dml3_320 Variable label = unspecified household upkeep (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_320
+
+Pos. = 122 Variable = dml3_321 Variable label = cleaning dwelling (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_321
+
+Pos. = 123 Variable = dml3_322 Variable label = cleaning yard (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_322
+
+Pos. = 124 Variable = dml3_323 Variable label = heating and water (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_323
+
+Pos. = 125 Variable = dml3_324 Variable label = various arrangements (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_324
+
+Pos. = 126 Variable = dml3_325 Variable label = disposal of waste (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_325
+
+Pos. = 127 Variable = dml3_329 Variable label = other specified household upkeep (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_329
+
+Pos. = 128 Variable = dml3_330 Variable label = unspecified making and care for textiles (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_330
+
+Pos. = 129 Variable = dml3_331 Variable label = laundry (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_331
+
+Pos. = 130 Variable = dml3_332 Variable label = ironing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_332
+
+Pos. = 131 Variable = dml3_333 Variable label = handicraft and producing textiles (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_333
+
+Pos. = 132 Variable = dml3_339 Variable label = other specified making and care for textiles (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_339
+
+Pos. = 133 Variable = dml3_341 Variable label = gardening (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_341
+
+Pos. = 134 Variable = dml3_342 Variable label = tending domestic animals (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_342
+
+Pos. = 135 Variable = dml3_343 Variable label = caring for pets (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_343
+
+Pos. = 136 Variable = dml3_344 Variable label = walking the dog (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_344
+
+Pos. = 137 Variable = dml3_349 Variable label = other specified gardening and pet care (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_349
+
+Pos. = 138 Variable = dml3_350 Variable label = unspecified construction and repairs (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_350
+
+Pos. = 139 Variable = dml3_351 Variable label = house construction and renovation (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_351
+
+Pos. = 140 Variable = dml3_352 Variable label = repairs of dwelling (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_352
+
+Pos. = 141 Variable = dml3_353 Variable label = making, repairing and maintaining equipment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_353
+
+Pos. = 142 Variable = dml3_354 Variable label = vehicle maintenance (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_354
+
+Pos. = 143 Variable = dml3_359 Variable label = other specified construction and repairs (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_359
+
+Pos. = 144 Variable = dml3_360 Variable label = unspecified shopping and services (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_360
+
+Pos. = 145 Variable = dml3_361 Variable label = shopping (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_361
+
+Pos. = 146 Variable = dml3_362 Variable label = commercial and administrative services (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_362
+
+Pos. = 147 Variable = dml3_363 Variable label = personal services (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_363
+
+Pos. = 148 Variable = dml3_369 Variable label = other specf shopping and services (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_369
+
+Pos. = 149 Variable = dml3_371 Variable label = household management not using the internet (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_371
+
+Pos. = 150 Variable = dml3_372 Variable label = household management using the internet (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_372
+
+Pos. = 151 Variable = dml3_380 Variable label = unspecified childcare (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_380
+
+Pos. = 152 Variable = dml3_381 Variable label = physical care and supervision (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_381
+
+Pos. = 153 Variable = dml3_382 Variable label = teaching the child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_382
+
+Pos. = 154 Variable = dml3_383 Variable label = reading, playing and talking with child (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_383
+
+Pos. = 155 Variable = dml3_384 Variable label = accompanying child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_384
+
+Pos. = 156 Variable = dml3_389 Variable label = other specified childcare (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_389
+
+Pos. = 157 Variable = dml3_391 Variable label = help to an adult household member (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_391
+
+Pos. = 158 Variable = dml3_392 Variable label = unspecified help to a dependent adult household member (minutes per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_392
+
+Pos. = 159 Variable = dml3_400 Variable label = unspecified volunteer work and meetings (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_400
+
+Pos. = 160 Variable = dml3_410 Variable label = unspecified organisational work (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_410
+
+Pos. = 161 Variable = dml3_411 Variable label = work for an organisation (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_411
+
+Pos. = 162 Variable = dml3_412 Variable label = volunteer work through an organisation (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_412
+
+Pos. = 163 Variable = dml3_419 Variable label = other specified organisational work (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_419
+
+Pos. = 164 Variable = dml3_420 Variable label = unspecified informal help (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_420
+
+Pos. = 165 Variable = dml3_421 Variable label = food management as help (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_421
+
+Pos. = 166 Variable = dml3_422 Variable label = household upkeep as help (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_422
+
+Pos. = 167 Variable = dml3_423 Variable label = gardening and pet care as help (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_423
+
+Pos. = 168 Variable = dml3_424 Variable label = construction and repairs as help (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_424
+
+Pos. = 169 Variable = dml3_425 Variable label = shopping and services as help (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_425
+
+Pos. = 170 Variable = dml3_426 Variable label = help in employment and farming (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_426
+
+Pos. = 171 Variable = dml3_427 Variable label = childcare as help (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_427
+
+Pos. = 172 Variable = dml3_428 Variable label = help to an adult of another household (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_428
+
+Pos. = 173 Variable = dml3_429 Variable label = other specified informal help (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_429
+
+Pos. = 174 Variable = dml3_430 Variable label = unspecified participatory activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_430
+
+Pos. = 175 Variable = dml3_431 Variable label = meetings (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_431
+
+Pos. = 176 Variable = dml3_432 Variable label = religious activities (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_432
+
+Pos. = 177 Variable = dml3_439 Variable label = other specified participatory activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_439
+
+Pos. = 178 Variable = dml3_500 Variable label = unspecified social life and entertainment (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_500
+
+Pos. = 179 Variable = dml3_510 Variable label = unspecified social life (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_510
+
+Pos. = 180 Variable = dml3_511 Variable label = socialising with household members (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_511
+
+Pos. = 181 Variable = dml3_512 Variable label = visiting and receiving visitors (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_512
+
+Pos. = 182 Variable = dml3_513 Variable label = feasts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_513
+
+Pos. = 183 Variable = dml3_514 Variable label = telephone conversation (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_514
+
+Pos. = 184 Variable = dml3_519 Variable label = other specified social life (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_519
+
+Pos. = 185 Variable = dml3_520 Variable label = unspecified entertainment and culture (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_520
+
+Pos. = 186 Variable = dml3_521 Variable label = cinema (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_521
+
+Pos. = 187 Variable = dml3_522 Variable label = theatre and concerts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_522
+
+Pos. = 188 Variable = dml3_523 Variable label = art exhibitions and museums (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_523
+
+Pos. = 189 Variable = dml3_524 Variable label = library (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_524
+
+Pos. = 190 Variable = dml3_525 Variable label = sports events (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_525
+
+Pos. = 191 Variable = dml3_529 Variable label = other specified entertainment and culture (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_529
+
+Pos. = 192 Variable = dml3_531 Variable label = resting  time out (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_531
+
+Pos. = 193 Variable = dml3_600 Variable label = unspecified sports and outdoor activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_600
+
+Pos. = 194 Variable = dml3_610 Variable label = unspecified physical exercise (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_610
+
+Pos. = 195 Variable = dml3_611 Variable label = walking and hiking (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_611
+
+Pos. = 196 Variable = dml3_612 Variable label = jogging and running (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_612
+
+Pos. = 197 Variable = dml3_613 Variable label = biking, skiing and skating (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_613
+
+Pos. = 198 Variable = dml3_614 Variable label = ball games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_614
+
+Pos. = 199 Variable = dml3_615 Variable label = gymnastics (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_615
+
+Pos. = 200 Variable = dml3_616 Variable label = fitness (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_616
+
+Pos. = 201 Variable = dml3_617 Variable label = water sports (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_617
+
+Pos. = 202 Variable = dml3_619 Variable label = other specified physical exercise (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_619
+
+Pos. = 203 Variable = dml3_620 Variable label = unspecified productive exercise (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_620
+
+Pos. = 204 Variable = dml3_621 Variable label = hunting and fishing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_621
+
+Pos. = 205 Variable = dml3_622 Variable label = picking berries, mushroom and herbs (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_622
+
+Pos. = 206 Variable = dml3_629 Variable label = other specified productive exercise (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_629
+
+Pos. = 207 Variable = dml3_631 Variable label = sports related activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_631
+
+Pos. = 208 Variable = dml3_700 Variable label = unspecified hobbies and games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_700
+
+Pos. = 209 Variable = dml3_710 Variable label = unspecified arts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_710
+
+Pos. = 210 Variable = dml3_711 Variable label = visual arts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_711
+
+Pos. = 211 Variable = dml3_712 Variable label = performing arts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_712
+
+Pos. = 212 Variable = dml3_713 Variable label = literary arts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_713
+
+Pos. = 213 Variable = dml3_714 Variable label = other specified arts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_714
+
+Pos. = 214 Variable = dml3_715 Variable label = unspecified hobbies (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_715
+
+Pos. = 215 Variable = dml3_716 Variable label = collecting (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_716
+
+Pos. = 216 Variable = dml3_717 Variable label = correspondence (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_717
+
+Pos. = 217 Variable = dml3_719 Variable label = other specified arts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_719
+
+Pos. = 218 Variable = dml3_722 Variable label = computing  programming (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_722
+
+Pos. = 219 Variable = dml3_723 Variable label = information by computing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_723
+
+Pos. = 220 Variable = dml3_724 Variable label = communication by computing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_724
+
+Pos. = 221 Variable = dml3_725 Variable label = other computing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_725
+
+Pos. = 222 Variable = dml3_730 Variable label = unspecified games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_730
+
+Pos. = 223 Variable = dml3_731 Variable label = solo games and play (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_731
+
+Pos. = 224 Variable = dml3_732 Variable label = games and plays with others (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_732
+
+Pos. = 225 Variable = dml3_733 Variable label = computer games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_733
+
+Pos. = 226 Variable = dml3_734 Variable label = gambling (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_734
+
+Pos. = 227 Variable = dml3_739 Variable label = other specified games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_739
+
+Pos. = 228 Variable = dml3_800 Variable label = unspecified mass media (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_800
+
+Pos. = 229 Variable = dml3_810 Variable label = unspecified reading (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_810
+
+Pos. = 230 Variable = dml3_811 Variable label = reading periodicals (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_811
+
+Pos. = 231 Variable = dml3_812 Variable label = reading books (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_812
+
+Pos. = 232 Variable = dml3_819 Variable label = other specified reading (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_819
+
+Pos. = 233 Variable = dml3_821 Variable label = watching tv (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_821
+
+Pos. = 234 Variable = dml3_822 Variable label = watching video (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_822
+
+Pos. = 235 Variable = dml3_830 Variable label = unspecified listening to radio and music (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_830
+
+Pos. = 236 Variable = dml3_831 Variable label = listening to radio (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_831
+
+Pos. = 237 Variable = dml3_832 Variable label = listening to recordings (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_832
+
+Pos. = 238 Variable = dml3_900 Variable label = travel related to unspecified time use (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_900
+
+Pos. = 239 Variable = dml3_901 Variable label = travel related to personal business (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_901
+
+Pos. = 240 Variable = dml3_910 Variable label = travel to/from work (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_910
+
+Pos. = 241 Variable = dml3_911 Variable label = travel in the course of work (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_911
+
+Pos. = 242 Variable = dml3_912 Variable label = travel to work from home and back only (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_912
+
+Pos. = 243 Variable = dml3_913 Variable label = travel to work from a place other than home (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_913
+
+Pos. = 244 Variable = dml3_921 Variable label = travel related to education (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_921
+
+Pos. = 245 Variable = dml3_923 Variable label = travel escorting to/ from education (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_923
+
+Pos. = 246 Variable = dml3_931 Variable label = travel related to household care (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_931
+
+Pos. = 247 Variable = dml3_936 Variable label = travel related to shopping (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_936
+
+Pos. = 248 Variable = dml3_937 Variable label = travel related to services (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_937
+
+Pos. = 249 Variable = dml3_938 Variable label = travel escorting a child (other than education) (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_938
+
+Pos. = 250 Variable = dml3_939 Variable label = travel escorting an adult (other than education) (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_939
+
+Pos. = 251 Variable = dml3_940 Variable label = travel related to organisational work (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_940
+
+Pos. = 252 Variable = dml3_941 Variable label = travel related to organisational work (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_941
+
+Pos. = 253 Variable = dml3_942 Variable label = travel related to informal help to other households (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_942
+
+Pos. = 254 Variable = dml3_943 Variable label = travel related to religious activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_943
+
+Pos. = 255 Variable = dml3_944 Variable label = travel related to participatory act except rel act (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_944
+
+Pos. = 256 Variable = dml3_950 Variable label = travel to visit friends/ relatives in their homes (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_950
+
+Pos. = 257 Variable = dml3_951 Variable label = travel related to other social activities (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_951
+
+Pos. = 258 Variable = dml3_952 Variable label = travel related to entertainment and culture (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_952
+
+Pos. = 259 Variable = dml3_960 Variable label = travel related to other leisure (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_960
+
+Pos. = 260 Variable = dml3_961 Variable label = travel related to physical exercise (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_961
+
+Pos. = 261 Variable = dml3_962 Variable label = travel related to hunting & fishing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_962
+
+Pos. = 262 Variable = dml3_963 Variable label = travel related to prod ex except hunt & fish (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_963
+
+Pos. = 263 Variable = dml3_971 Variable label = travel related to gambling (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_971
+
+Pos. = 264 Variable = dml3_972 Variable label = travel related to hobbies other than gambling (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_972
+
+Pos. = 265 Variable = dml3_980 Variable label = travel related to changing locality (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_980
+
+Pos. = 266 Variable = dml3_981 Variable label = travel to holiday base (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_981
+
+Pos. = 267 Variable = dml3_982 Variable label = travel for day trip/ just walk (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_982
+
+Pos. = 268 Variable = dml3_989 Variable label = other specified travel (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_989
+
+Pos. = 269 Variable = dml3_994 Variable label = punctuating activity(mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_994
+
+Pos. = 270 Variable = dml3_995 Variable label = filling in the time use diary (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_995
+
+Pos. = 271 Variable = dml3_996 Variable label = no main activity, no idea what it might be (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_996
+
+Pos. = 272 Variable = dml3_997 Variable label = no main activity, some idea what it might be (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_997
+
+Pos. = 273 Variable = dml3_998 Variable label = illegible activity (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml3_998
+
+Pos. = 274 Variable = dml3_999 Variable label = unspecified time use (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml3_999
+
+Pos. = 275 Variable = dml4_1391 Variable label = activities related to job seeking (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_1391
+
+Pos. = 276 Variable = dml4_1399 Variable label = other unspecified activities related to employment (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_1399
+
+Pos. = 277 Variable = dml4_3531 Variable label = woodcraft metalcraft sculpture and pottery (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3531
+
+Pos. = 278 Variable = dml4_3539 Variable label = other specified making repairing and maintaining equipment (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_3539
+
+Pos. = 279 Variable = dml4_3611 Variable label = shopping mainly for food (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3611
+
+Pos. = 280 Variable = dml4_3612 Variable label = shopping mainly for clothing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3612
+
+Pos. = 281 Variable = dml4_3613 Variable label = shopping mainly related to accommodation (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3613
+
+Pos. = 282 Variable = dml4_3614 Variable label = shopping or browsing at car boot sales or antique fairs (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3614
+
+Pos. = 283 Variable = dml4_3615 Variable label = window shopping or other shopping as leisure (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3615
+
+Pos. = 284 Variable = dml4_3619 Variable label = other specified shopping(mins per day) 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3619
+
+Pos. = 285 Variable = dml4_3713 Variable label = shopping for and ordering clothing via the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3713
+
+Pos. = 286 Variable = dml4_3721 Variable label = shopping for and ordering unspecified goods and services via the internet (mins 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3721
+
+Pos. = 287 Variable = dml4_3722 Variable label = shopping for and ordering food via the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3722
+
+Pos. = 288 Variable = dml4_3724 Variable label = shopping for and ordering goods and services related to accommodation via the in
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3724
+
+Pos. = 289 Variable = dml4_3725 Variable label = shopping for and ordering mass media via the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3725
+
+Pos. = 290 Variable = dml4_3726 Variable label = shopping for and ordering entertainment via the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3726
+
+Pos. = 291 Variable = dml4_3727 Variable label = banking and bill paying via the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3727
+
+Pos. = 292 Variable = dml4_3729 Variable label = other specified household management using the internet (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3729
+
+Pos. = 293 Variable = dml4_3811 Variable label = feeding the child (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_3811
+
+Pos. = 294 Variable = dml4_3819 Variable label = other and unspecified physical care & supervision of a child (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_3819
+
+Pos. = 295 Variable = dml4_3911 Variable label = physical care of a non-dependent e.g. injured adult household member (mins per d
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3911
+
+Pos. = 296 Variable = dml4_3914 Variable label = accompanying a non-dependent adult household member e.g. to hospital (mins per d
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3914
+
+Pos. = 297 Variable = dml4_3919 Variable label = other specified help to a non-dependent adult household member (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3919
+
+Pos. = 298 Variable = dml4_3921 Variable label = physical care of a dependent adult household member e.g. Alzheimic parent (mins 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3921
+
+Pos. = 299 Variable = dml4_3924 Variable label = accompanying a dependent adult household member e.g. Alzheimic parent (mins per 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3924
+
+Pos. = 300 Variable = dml4_3929 Variable label = other specified help to a dependent adult household member (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_3929
+
+Pos. = 301 Variable = dml4_4271 Variable label = physical care and supervision of child as help to other household (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_4271
+
+Pos. = 302 Variable = dml4_4272 Variable label = teaching non-coresident child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4272
+
+Pos. = 303 Variable = dml4_4273 Variable label = reading playing & talking to non-coresident child (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_4273
+
+Pos. = 304 Variable = dml4_4274 Variable label = accompanying non-coresident child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4274
+
+Pos. = 305 Variable = dml4_4275 Variable label = physical care and supervision of own child as help to other household (mins per 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4275
+
+Pos. = 306 Variable = dml4_4277 Variable label = reading playing & talking to own non-coresident child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4277
+
+Pos. = 307 Variable = dml4_4278 Variable label = accompanying own non-coresident child (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4278
+
+Pos. = 308 Variable = dml4_4279 Variable label = other specified childcare as help to other household (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4279
+
+Pos. = 309 Variable = dml4_4281 Variable label = physical care and supervision of an adult as help to another household (mins per
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4281
+
+Pos. = 310 Variable = dml4_4282 Variable label = accompanying an adult as help to another household (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4282
+
+Pos. = 311 Variable = dml4_4283 Variable label = other specified help to an adult member of another household (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4283
+
+Pos. = 312 Variable = dml4_4289 Variable label = other specified informal help to another household (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_4289
+
+Pos. = 313 Variable = dml4_5221 Variable label = plays musicals or pantomimes (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5221
+
+Pos. = 314 Variable = dml4_5222 Variable label = opera operetta or light opera (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5222
+
+Pos. = 315 Variable = dml4_5223 Variable label = concerts or other performances of classical music (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5223
+
+Pos. = 316 Variable = dml4_5224 Variable label = live music other than classical concerts opera and musicals (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_5224
+
+Pos. = 317 Variable = dml4_5225 Variable label = dance performances (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5225
+
+Pos. = 318 Variable = dml4_5229 Variable label = other specified theatre or concerts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5229
+
+Pos. = 319 Variable = dml4_5241 Variable label = borrowing books records audiotapes videotapes CDs VDs etc. from a library (mins 
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5241
+
+Pos. = 320 Variable = dml4_5242 Variable label = reference to books and other library materials within a library (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5242
+
+Pos. = 321 Variable = dml4_5243 Variable label = using internet in the library (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5243
+
+Pos. = 322 Variable = dml4_5244 Variable label = using computers in the library other than internet use (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5244
+
+Pos. = 323 Variable = dml4_5245 Variable label = reading newspapers in a library (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5245
+
+Pos. = 324 Variable = dml4_5249 Variable label = other specified library activities (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5249
+
+Pos. = 325 Variable = dml4_5291 Variable label = visiting a historical site (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_5291
+
+Pos. = 326 Variable = dml4_5292 Variable label = visiting a wildlife site (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5292
+
+Pos. = 327 Variable = dml4_5293 Variable label = visiting a botanical site (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_5293
+
+Pos. = 328 Variable = dml4_5294 Variable label = visiting a leisure park (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_5294
+
+Pos. = 329 Variable = dml4_5295 Variable label = visiting an urban park playground designated play area (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_5295
+
+Pos. = 330 Variable = dml4_5299 Variable label = other or unspecified entertainment or culture (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_5299
+
+Pos. = 331 Variable = dml4_6111 Variable label = taking a walk or hike that lasts at least miles or 1 hour (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_6111
+
+Pos. = 332 Variable = dml4_6119 Variable label = other walk or hike (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6119
+
+Pos. = 333 Variable = dml4_6131 Variable label = biking (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_6131
+
+Pos. = 334 Variable = dml4_6132 Variable label = skiing or skating (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6132
+
+Pos. = 335 Variable = dml4_6141 Variable label = indoor pairs or doubles games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6141
+
+Pos. = 336 Variable = dml4_6142 Variable label = indoor team games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6142
+
+Pos. = 337 Variable = dml4_6143 Variable label = outdoor pairs or doubles games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_6143
+
+Pos. = 338 Variable = dml4_6144 Variable label = outdoor team games (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_6144
+
+Pos. = 339 Variable = dml4_6149 Variable label = other specified ball games (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6149
+
+Pos. = 340 Variable = dml4_6171 Variable label = swimming (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6171
+
+Pos. = 341 Variable = dml4_6179 Variable label = other specified water sports (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6179
+
+Pos. = 342 Variable = dml4_6311 Variable label = activities related to sports (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6311
+
+Pos. = 343 Variable = dml4_6312 Variable label = activities related to productive exercise (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_6312
+
+Pos. = 344 Variable = dml4_7111 Variable label = painting drawing or other graphic arts (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7111
+
+Pos. = 345 Variable = dml4_7112 Variable label = making videos taking photographs or related photographic activities (mins per da
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7112
+
+Pos. = 346 Variable = dml4_7119 Variable label = other specified visual arts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7119
+
+Pos. = 347 Variable = dml4_7121 Variable label = singing or other musical activities (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7121
+
+Pos. = 348 Variable = dml4_7129 Variable label = other specified performing arts (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7129
+
+Pos. = 349 Variable = dml4_7231 Variable label = information searching on the internet (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7231
+
+Pos. = 350 Variable = dml4_7239 Variable label = other specified information by computing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7239
+
+Pos. = 351 Variable = dml4_7241 Variable label = communication on the internet (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7241
+
+Pos. = 352 Variable = dml4_7249 Variable label = other specified communication by computing (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7249
+
+Pos. = 353 Variable = dml4_7251 Variable label = skype or other video call (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7251
+
+Pos. = 354 Variable = dml4_7259 Variable label = other specified computing (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7259
+
+Pos. = 355 Variable = dml4_7321 Variable label = billiards pool snooker or petanque (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7321
+
+Pos. = 356 Variable = dml4_7322 Variable label = chess and bridge (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_7322
+
+Pos. = 357 Variable = dml4_7329 Variable label = other specified parlour games and play (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_7329
+
+Pos. = 358 Variable = dml4_8211 Variable label = watching a film on TV (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_8211
+
+Pos. = 359 Variable = dml4_8212 Variable label = watching sport on TV (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_8212
+
+Pos. = 360 Variable = dml4_8219 Variable label = other specified TV watching (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_8219
+
+Pos. = 361 Variable = dml4_8221 Variable label = watching a film on video (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_8221
+
+Pos. = 362 Variable = dml4_8222 Variable label = watching sport on video (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_8222
+
+Pos. = 363 Variable = dml4_8229 Variable label = other specified video watching (mins per day)
+This variable is numeric, the SPSS measurement level is SCALE
+ Value label information for dml4_8229
+
+Pos. = 364 Variable = dml4_8311 Variable label = listening to music on the radio (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_8311
+
+Pos. = 365 Variable = dml4_8312 Variable label = listening to sport on the radio (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_8312
+
+Pos. = 366 Variable = dml4_8319 Variable label = other specified radio listening (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_8319
+
+Pos. = 367 Variable = dml4_9999 Variable label = queryable (mins per day)
+This variable is numeric, the SPSS measurement level is NOMINAL
+ Value label information for dml4_9999
