@@ -13,7 +13,7 @@
 
 path.aux <- "/myData/AuxiliaryData"
 file.act <- paste0(path.TUS, path.aux, "/activities/ActivitiesTable.csv")
-file.fct <- paste0(path.TUS, path.aux, "activities/ActivitiesFactors.csv")
+file.fct <- paste0(path.TUS, path.aux, "/activities/ActivitiesFactors.csv")
 file.rel <- paste0(path.TUS, path.aux, "/Relationships.csv")
 
 tblActivities <- read.csv(file.act, stringsAsFactors = F, row.names = 1)
@@ -45,7 +45,7 @@ if(var.TUSyear==2000){
 					 get(dta.uktus00.names$tblTUSRawSubsets[i]), envir = .GlobalEnv)
     rm(list=dta.uktus00.names$tblTUSRawSubsets[i])
   }
-  print("+ databases have been renamed")
+  message("➥ databases have been relabelled")
 }else{
   uktus15_diary_ep_long$tid <- factor(uktus15_diary_ep_long$tid,
                                       levels=dtaTimeSlot$tid,
@@ -66,7 +66,6 @@ if(var.TUSyear==2000){
                                             FUN=fnGetActivity)
   uktus15_diary_ep_long$What_Oth3 <- sapply(uktus15_diary_ep_long$What_Oth3,
                                             FUN=fnGetActivity)
-
   uktus15_diary_ep_long$whatdoing <- factor(uktus15_diary_ep_long$whatdoing,
                                             levels=tblActivities$Id,
                                             labels=tblActivities$Name)
@@ -80,5 +79,5 @@ if(var.TUSyear==2000){
                                             levels=tblActivities$Id,
                                             labels=tblActivities$Name)
 
-  print("+ Factors have been re-formatted")
+  message("➥ Factors have been re-formatted")
 }

@@ -1,12 +1,23 @@
+<p align="center">
+  <img src="public/_FigMatrix.png" width="100%">
+</p>
+
 # TUS ➦ HSEM | converter
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-This R project processes the original **UK-TUS** data repository into *Housing Stock Energy Model (HSEM)* tables for modelling and simulating activity transitions.
+This `R` project converts original **Time Use Survey** data sources into *Housing Stock Energy Model** (HSEM) tables for modelling and simulating activity transitions.
+
+The main reason for having a dedicated *TUS project* is <u>to comply with licensing rules</u>. Therefore, users should request access to the relevant datasets from [UK-Data-Service](https://www.ukdataservice.ac.uk).
 
 <p align="center">
-  <img src="public/_FigMatrix.png" width="100%">
+  <img src="public/UKDS Logos_Col_Grey_300dpi.png" width="30%">
 </p>
+
+Once granted, these can be copied (or redirected) as shown at the bottom of this page. (Only the *documentation files* are copied to `/myData` because these are converted into plain text.)
+
+Another reason is that the **TUS** information is employed along different projects, and so the datasets can be stored in a central repository.
+
 
 
 ## Data Sources
@@ -23,8 +34,9 @@ This R project processes the original **UK-TUS** data repository into *Housing S
 
 ---
 
-Notes:
- 1. **myData** folder employs `symlinks` directing to a centralised database where the the original repositories are stored.
+**NOTES**
+1. `/myData` folder employs `symlinks` to a centralised database where the original repositories are previously retrieved from [UK-Data-Archive](https://www.ukdataservice.ac.uk/get-data.aspx).
+
 
 ```sh
 myData

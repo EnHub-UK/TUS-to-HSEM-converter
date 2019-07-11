@@ -1,4 +1,5 @@
 .Rproj.user
+*.Rproj
 .Rhistory
 .RData
 *.RData
@@ -9,15 +10,22 @@ RTAGS
 
 myData/UKDA*
 
-outData/*/*
+outputs/*
+outputs/*/*
 
 outFigures/*
 outFigures/*/*
 
-_extras/*
+_extras
 _extras/*/*
 
+myScripts/inProgress
+myScripts/inProgress/*/*
+
+
 /* symlinks */
+./_extras
+./myScripts/inProgress
 ./myData/UKDA
 ./myData/UKDA*
 

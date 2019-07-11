@@ -10,7 +10,6 @@
 #'
 
 
-# fnGetOS() :: obtain OS for definition of paths and global variables
 fnGetOS <- function(...) {
   if (.Platform$OS.type == "windows") {
     "win"
@@ -27,13 +26,8 @@ fnGetOS <- function(...) {
   }
 }
 
-# fnGetEHSProjectPath() :: reduces ambiguity across processes
-#                                       osx:$  mdfind -name GBR
-#                                     linux:$  find / -name GBR
 fnGetTUSProjectPath <- function(...){
 
-  # Check paths for each OS.
-  # It might also be in the Project folder
   pathFinder <- function(type) {
     switch(type,
            win = getwd(),
@@ -47,11 +41,9 @@ fnGetTUSProjectPath <- function(...){
 }
 
 fnDisplayUser <- function(...){
-  # Check paths for each OS.
   os <- fnGetOS()
   if(os=="mac" | os=="linux"){
-    user <- paste("whoami",sep="")
-    user <- system(user, wait = T, intern = TRUE, ignore.stderr = TRUE)
+    user <- system("whoami", wait = T, intern = TRUE, ignore.stderr = TRUE)
   }else{
     user <- "windows user"
   }
@@ -61,7 +53,7 @@ fnDisplayUser <- function(...){
 
 fnMakeDir <- function(pathNew, myPath=path.TUS, myOS=fnGetOS()){
   if(myOS == "win"){
-    pathNew <- paste(normalizePath(myPath), gsub("/","\\\\",pathNew), sep="")
+    pathNew <- paste0(normalizePath(myPath), gsub("/","\\\\",pathNew))
     shell(paste("mkdir ", pathNew, sep=""))
   }else{
     system(paste("mkdir -p ", pathNew, "/", sep=""))
@@ -70,7 +62,7 @@ fnMakeDir <- function(pathNew, myPath=path.TUS, myOS=fnGetOS()){
 
 fnRemoveDir <- function(pathNew, myPath=path.TUS, myOS=fnGetOS()){
   if(myOS == "win"){
-    pathNew <- paste(normalizePath(myPath), gsub("/","\\\\",pathNew), sep="")
+    pathNew <- paste0(normalizePath(myPath), gsub("/","\\\\",pathNew))
     shell(paste("del /S /Q ", pathNew, sep=""))
   }else{
     system(paste("rm -rf ", pathNew, "/", sep=""), intern=F, ignore.stdout=T)
