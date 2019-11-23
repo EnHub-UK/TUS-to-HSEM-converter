@@ -181,7 +181,8 @@ fnExtractInfo <- function(varNumbers, dtaToCheck, varHhld, tblHhdsRef=tblHhds){
   return(dtaExtraction)
 }
 
-fnExtractProfile <- function(valHhd, tblHhdRef, tblHhd=uktus15_household, tblInd=uktus15_individual, tblDay=uktus15_diary_ep_long){
+fnExtractProfile <- function(valHhd, tblHhdRef, tblHhd=uktus15_household,
+  tblInd=uktus15_individual, tblDay=uktus15_diary_ep_long){
 
   #.. Identify variable numbers (see documentation):
   #   `myData/AuxiliaryData/allissue/uktus15_household_ukda_data_dictionary`
@@ -304,7 +305,7 @@ fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
 
 fnLoadTUSProcessed <- function(path=path.TUS.out){
 
-  lblTables <- c('-household','-individual','-profiles')
+  lblTables <- c('-household','-individual','-profiles','-diary')
   (varFiles <- list.files(path, pattern = ".rds"))
   varFiles <- as.numeric(sapply(lblTables, function(x) grep(x,varFiles)))
 
@@ -316,17 +317,21 @@ fnLoadTUSProcessed <- function(path=path.TUS.out){
     saveRDS(uktus15_profiles, paste0(path.TUS.out, file="/TUS-profiles.rds"))
     saveRDS(uktus15_individual, paste0(path.TUS.out, file="/TUS-individual.rds"))
     saveRDS(uktus15_household, paste0(path.TUS.out, file="/TUS-household.rds"))
+    saveRDS(uktus15_diary_ep_long, paste0(path.TUS.out, file="/TUS-diary.rds"))
   }else{
     #.. retrieving ----------------
     uktus15_profiles <-
-      readRDS(file = paste0(path.TUS.out, paste0("/TUS",lblTables[3],".rds")))
+      readRDS(file = paste0(path.TUS.out, file="/TUS-profiles.rds"))
     uktus15_individual <-
-      readRDS(file = paste0(path.TUS.out, paste0("/TUS",lblTables[2],".rds")))
+      readRDS(file = paste0(path.TUS.out, file="/TUS-individual.rds"))
     uktus15_household <-
-      readRDS(file = paste0(path.TUS.out, paste0("/TUS",lblTables[1],".rds")))
+      readRDS(file = paste0(path.TUS.out, file="/TUS-household.rds"))
+    uktus15_diary_ep_long <-
+      readRDS(file = paste0(path.TUS.out, file="/TUS-diary.rds"))
   }
 
   assign(x = 'dtaHhd_hh_profiles', value = uktus15_profiles, envir = .GlobalEnv)
   assign(x = 'uktus15_individual', value = uktus15_individual, envir = .GlobalEnv)
   assign(x = 'uktus15_household', value = uktus15_household, envir = .GlobalEnv)
+  assign(x = 'uktus15_diary_ep_long', value = uktus15_diary_ep_long, envir = .GlobalEnv)
 }
