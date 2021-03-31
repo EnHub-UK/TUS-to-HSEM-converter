@@ -1,7 +1,8 @@
 #' -----------------------------------------------------------------------------
 #' TUS Converter                                                 {Data Parser}
 #'
-#' @file `_aux_GetData.R` contains auxiliary functions to load raw data.
+#' This contains auxiliary functions to load raw data.
+#' 
 #' -----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser

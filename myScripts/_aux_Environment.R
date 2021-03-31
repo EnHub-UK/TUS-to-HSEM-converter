@@ -1,8 +1,8 @@
 #' -----------------------------------------------------------------------------
 #' TUS Converter                                                 {Environment}
 #'
-#' @file `_get_Additional.R` contains auxiliary functions to improve
-#'       the project environment.
+#' This contains auxiliary functions for the project environment.
+#'
 #' -----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser

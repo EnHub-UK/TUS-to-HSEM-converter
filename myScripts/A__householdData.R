@@ -1,7 +1,8 @@
 #' ----------------------------------------------------------------------------
 #' TUS Converter                                            {data collection}
 #'
-#' @file `A__householdData.R` collects TUS data and converts it to R objects.
+#' This first stage collects TUS data and converts it to R objects.
+#' 
 #' ----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser
