@@ -14,12 +14,12 @@
 
 # (a) required libraries ----
 
-fnStartLibraries <- function(){
+.fnStartLibraries <- function(){
   message("Loading libraries")
   packageStartupMessage("initializing ...", appendLF = FALSE)
 
   # ... for loading and parsing data
-  library(renv)
+  # library(renv)
   library(plyr)
   library(dplyr)
   library(Hmisc)
@@ -27,15 +27,17 @@ fnStartLibraries <- function(){
   library(pbapply)
   library(data.table)
   library(timeDate)
+  library(lubridate)
   library(reshape2)
   library(ggplot2)
   library(gplots)
+  library(treemap)
 
   packageStartupMessage(" done")
 }
 
-fnStartLibraries()
-rm(fnStartLibraries)
+.fnStartLibraries()
+
 
 # (b) auxiliary functions ----
 source('myScripts/_aux_Environment.R')

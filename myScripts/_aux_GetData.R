@@ -2,7 +2,7 @@
 #' TUS Converter                                                 {Data Parser}
 #'
 #' This contains auxiliary functions to load raw data.
-#' 
+#'
 #' -----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser
@@ -336,3 +336,51 @@ fnLoadTUSProcessed <- function(path=path.TUS.out){
   assign(x = 'uktus15_household', value = uktus15_household, envir = .GlobalEnv)
   assign(x = 'uktus15_diary_ep_long', value = uktus15_diary_ep_long, envir = .GlobalEnv)
 }
+
+fnGetActionsTable <- function(dtaAct, dtaFull=tblActivities){
+
+  # [instant] is a dummy value employed to identify activities
+  # that make their value consistent (e.g. sleep)
+  dtaFull$Instant <- sample(c(0,1), dim(dtaFull)[1], replace = TRUE)
+
+  # data from chosen household is mined for existing activities
+  tblSvy <- as.data.frame(table(dtaAct$whatdoing))
+  tblSvy <- tblSvy[tblSvy$Freq>0,]
+  colnames(tblSvy) <- c('Name', 'Freq')
+
+  tblSvy <- join(tblSvy, tblActivities, by='Name')
+  tblSvy <- tblSvy[order(tblSvy$Freq),]
+  rownames(tblSvy) <- NULL
+
+  tblSvy <- join(tblSvy, dtaFull, by=c("Id","Name"))
+
+  return(tblSvy)
+}
+
+fnGetActionsPerSurveyed <- function(valActId, dtaHHd_toCheck){
+
+  tblTime <- fnMakeTimeSlotTable()
+  valActSelect <- tblActivities$Name[tblActivities$Id==valActId]
+  print(valActSelect)
+  dtaAct <- subset(dtaHHd_toCheck, whatdoing==valActSelect,
+                   select = c('tid', 'whatdoing', 'DiaryDate_Act', 'DVAge'))
+  if(dim(dtaAct)[1]<1){
+    print("--> This activity was not performed")
+    dtaAct <- NULL
+  }else{
+    colnames(dtaAct) <- c('tid','whatdoing','DiaryDate_Act','DVAge')
+    dtaAct <- join(tblTime, dtaAct, by="tid")
+    dtaAct$value <- ifelse(!is.na(dtaAct$whatdoing) &
+                             dtaAct$whatdoing==valActSelect, 1, 0)
+    dtaAct <- dtaAct[!is.na(dtaAct$DVAge),]
+    dtaAct <- dcast(dtaAct, tid ~ DiaryDate_Act + DVAge + value)
+    dtaAct <- join(tblTime, dtaAct, by="tid")
+    dtaAct[is.na(dtaAct)] <- 0
+    dtaAct <- dtaAct[, !(names(dtaAct) %in%
+                           c('tid.from','tid.to','tid.slot'))]
+    dtaAct <- melt(dtaAct, id = 1)
+    print("--> Profiles Generated")
+  }
+  return(dtaAct)
+}
+

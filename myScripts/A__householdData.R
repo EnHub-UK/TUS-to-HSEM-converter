@@ -2,7 +2,7 @@
 #' TUS Converter                                            {data collection}
 #'
 #' This first stage collects TUS data and converts it to R objects.
-#' 
+#'
 #' ----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser
@@ -25,6 +25,10 @@ findStrings("serial")
 findStrings("evact1")
 findStrings("type")
 
+pblapply(c("serial","pnum","Accom","dtenure","dhhtype","dgorpaf",
+           "Income", "deconact", "NumAdult","NumChild",
+           "HiQual","SatisOv", "DMSex_P1","WorkSta_P1"), findStrings)
+
 
 #.. display data structures ---------------------------------------------------
 uktus15_diary_ep_long[1:4,]  # This dataset contains activities per time slot
@@ -38,7 +42,7 @@ uktus15_wksched[1:4,]        # This dataset contains work schedules
 
 # EXTRACTION ------------------------------------------------------------------
 
-#.. extract household profiles
+#.. extract household profiles (one by one, to process household relationships)
 
 fnLoadTUSProcessed()
 
@@ -51,10 +55,15 @@ lstHhd_hh_profiles <- fnGetInParameters(dtaHhd_hh_profiles)
 
 
 
+
+# SAVE Environment ------------------------------------------------------------
+save.image("outputs/Stage_A.RData")
+
 # NEXT > analysis, simulation, prediction -------------------------------------
-# file.edit("myScripts/B__analysisSurvey.R")
-# file.edit("myScripts/C__subsetSurvey.R")
-# file.edit("myScripts/D__simulateMarkovChain.R")
-# file.edit("myScripts/E__exportProfiles.R")
+file.edit("myScripts/B__descriptive.R")
+# file.edit("myScripts/C__analysisSurvey.R")
+# file.edit("myScripts/D__subsetSurvey.R")
+# file.edit("myScripts/E__simulateMarkovChain.R")
+# file.edit("myScripts/F__exportProfiles.R")
 
 # END -------------------------------------------------------------------------

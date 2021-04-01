@@ -3,7 +3,7 @@
 #'
 #' This contains auxiliary functions to load raw data and
 #' process selected variables
-#' 
+#'
 #' -----------------------------------------------------------------------------
 #' @author g.sousa
 #' @keywords household, diary, survey, parser
