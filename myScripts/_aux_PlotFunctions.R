@@ -68,14 +68,12 @@ figActivitiesPanel <- function(dtaToPlot, varX, varY, varZ, varW,
   p <- p + theme_minimal()
   p <- p + theme(legend.position = "bottom")
 
-
   print(p)
 
 }
 
 figTransMatrixPlot <- function(dtaToPlot, type="area", ...){
   t <- scale_fill_brewer(palette = "Spectral")
-  # t <- scale_fill_manual(values = cbbPalette)
 
   if(type=="area"){
     gp <-  ggplot(dtaToPlot,

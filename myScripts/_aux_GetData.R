@@ -119,37 +119,37 @@ fnGetRelationship <- function(x, vrbFac=F, dtaRef=tblRelationships){
 }
 
 fnMakeTimeSlotTable <- function(){
-  valYearRef <- 2015
-  valDairyTimeSlot <- "10min"
-  dtaTimeSlot <- data.frame(tid=1:144)
-  dtaTimeSlot$slotA <-
-    timeSequence(from = paste(valYearRef,"-01-01 04:00:00",sep=""),
-                 to = paste(valYearRef,"-01-02 03:59:00",sep=""),
-                 by= valDairyTimeSlot)
-  dtaTimeSlot$slotB <-
-    timeSequence(from = paste(valYearRef,"-01-01 04:10:00",sep=""),
-                 to = paste(valYearRef,"-01-02 04:09:00",sep=""),
-                 by= valDairyTimeSlot)
-  dtaTimeSlot$hourA <- strftime(dtaTimeSlot$slotA, format="%H:%M")
-  dtaTimeSlot$hourB <- strftime(dtaTimeSlot$slotB, format="%H:%M")
-  dtaTimeSlot$tid.slot <- paste(dtaTimeSlot$hourA,dtaTimeSlot$hourB,sep="-")
-  dtaTimeSlot <- dtaTimeSlot[,c('tid','hourA','hourB','tid.slot')]
-  colnames(dtaTimeSlot) <- c('tid','tid.from','tid.to','tid.slot')
-  return(dtaTimeSlot)
+  varYr <- 2015
+  valStep <- "10min"
+  tblTime <- data.frame(tid=1:144)
+  tblTime$slotA <-
+    timeSequence(from = paste(varYr,"-01-01 04:00:00",sep=""),
+                 to = paste(varYr,"-01-02 03:59:00",sep=""),
+                 by= valStep)
+  tblTime$slotB <-
+    timeSequence(from = paste(varYr,"-01-01 04:10:00",sep=""),
+                 to = paste(varYr,"-01-02 04:09:00",sep=""),
+                 by= valStep)
+  tblTime$hourA <- strftime(tblTime$slotA, format="%H:%M")
+  tblTime$hourB <- strftime(tblTime$slotB, format="%H:%M")
+  tblTime$tid.slot <- paste(tblTime$hourA,tblTime$hourB,sep="-")
+  tblTime <- tblTime[,c('tid','hourA','hourB','tid.slot')]
+  colnames(tblTime) <- c('tid','tid.from','tid.to','tid.slot')
+  return(tblTime)
 }
 
-fnMakeTimeSlot <- function(varTimeSlt){
-  if(varTimeSlt=="1hour" | varTimeSlt=="60min"){
-    tblTimeSlot <- seq(0, 23.99, by=1)
-  }else if(varTimeSlt=="10min"){
-    tblTimeSlot <- trunc(seq(0, 239.9, by=10/6))/10
-  }else if(varTimeSlt=="30min"){
-    tblTimeSlot <- seq(0, 23.99, by=0.5)
+fnMakeTimeSlot <- function(varStep){
+  if(varStep=="1hour" | varStep=="60min"){
+    tblTime <- seq(0, 23.99, by=1)
+  }else if(varStep=="10min"){
+    tblTime <- trunc(seq(0, 239.9, by=10/6))/10
+  }else if(varStep=="30min"){
+    tblTime <- seq(0, 23.99, by=0.5)
   }else{
-    tblTimeSlot <- seq(0, 23.99, by=1)
+    tblTime <- seq(0, 23.99, by=1)
     message("Please check requested time-slot... 1 hour assigned")
   }
-  return(tblTimeSlot)
+  return(tblTime)
 }
 
 findStrings <- function(varToFind){
@@ -173,13 +173,13 @@ findStrings <- function(varToFind){
   return(t1)
 }
 
-fnExtractInfo <- function(varNumbers, dtaToCheck, varHhld, tblHhdsRef=tblHhds){
+fnExtractInfo <- function(varNo, dtaToCheck, varHhld, tblHhdsRef=tblHhds){
 
-  dtaExtraction <- subset(dtaToCheck, serial==tblHhdsRef[varHhld])
-  dtaExtraction <- as.data.frame(t(dtaExtraction[,varNumbers]))
-  colnames(dtaExtraction) <- tblHhdsRef[varHhld]
+  dtaExt <- subset(dtaExtCheck, serial==tblHhdsRef[varHhld])
+  dtaExt <- as.data.frame(t(dtaExt[,varNo]))
+  colnames(dtaExt) <- tblHhdsRef[varHhld]
 
-  return(dtaExtraction)
+  return(dtaExt)
 }
 
 fnExtractProfile <- function(valHhd, tblHhdRef, tblHhd=uktus15_household,
@@ -188,82 +188,82 @@ fnExtractProfile <- function(valHhd, tblHhdRef, tblHhd=uktus15_household,
   #.. Identify variable numbers (see documentation):
   #   `myData/AuxiliaryData/allissue/uktus15_household_ukda_data_dictionary`
 
-  valHhd_hh_profiles <- list(general=c(23,13,14,64,73,72,65,36,206,216,226),
+  valHhd_hhp <- list(general=c(23,13,14,64,73,72,65,36,206,216,226),
                              appliances=37:53,
                              status=206:235,
                              relationships=236:335)
-  valHhd_ind_profiles <- c(321,463,599,588,594)
+  valHhd_ppp <- c(321,463,599,588,594)
 
   #.. Extract variable information
 
-  dtaHhd_hh_profiles <-
-    pblapply(valHhd_hh_profiles, fnExtractInfo, tblHhd, valHhd)
+  dtaHhd_hhp <-
+    pblapply(valHhd_hhp, fnExtractInfo, tblHhd, valHhd)
 
   dtaHhd_hh_composition <- as.data.frame(t(
     subset(tblInd,
            serial==tblHhdRef[valHhd] & pnum==1,
-           select=colnames(tblInd)[valHhd_ind_profiles])))
-  colnames(dtaHhd_hh_composition) <- colnames(dtaHhd_hh_profiles[['general']])
+           select=colnames(tblInd)[valHhd_ppp])))
+  colnames(dtaHhd_hh_composition) <- colnames(dtaHhd_hhp[['general']])
 
   #.. Perform additional edits to the retrieved information
 
-  dtaHhd_hh_profiles[['general']] <-
-    rbind(dtaHhd_hh_profiles[['general']], dtaHhd_hh_composition)
+  dtaHhd_hhp[['general']] <-
+    rbind(dtaHhd_hhp[['general']], dtaHhd_hh_composition)
 
-  dtaHhd_hh_profiles$status <-
-    as.data.frame(matrix(as.character(dtaHhd_hh_profiles$status[,1]),
+  dtaHhd_hhp$status <-
+    as.data.frame(matrix(as.character(dtaHhd_hhp$status[,1]),
                          nrow = 10, ncol = 3, byrow = FALSE,
                          dimnames = list(1:10,c('gender','employment','age'))))
-  dtaHhd_hh_profiles$status <- as_tibble(
-    dtaHhd_hh_profiles$status[complete.cases(dtaHhd_hh_profiles$status),])
-  dtaHhd_hh_profiles$status$age <-
-    as.numeric(as.character(dtaHhd_hh_profiles$status$age))
+  dtaHhd_hhp$status <- as_tibble(
+    dtaHhd_hhp$status[complete.cases(dtaHhd_hhp$status),])
+  dtaHhd_hhp$status$age <-
+    as.numeric(as.character(dtaHhd_hhp$status$age))
 
-  dtaHhd_hh_profiles$relationships <-
-    matrix(apply(as.data.frame(t(dtaHhd_hh_profiles$relationships)), 2,
+  dtaHhd_hhp$relationships <-
+    matrix(apply(as.data.frame(t(dtaHhd_hhp$relationships)), 2,
                  FUN=fnGetRelationship, F),
            nrow = 10, ncol = 10, byrow = TRUE,
            dimnames = list(1:10,1:10))
 
-  dtaHhd_hh_profiles[['dailyacts']] <- as_tibble(
+  dtaHhd_hhp[['dailyacts']] <- as_tibble(
     subset(tblDay, serial==tblHhdRef[valHhd],
            select = c('pnum','tid','whatdoing',
                       'DiaryDate_Act','DVAge','WhereWhen',
                       'What_Oth1','What_Oth2','What_Oth3')))
 
   #.. Return household profile as a list
-  return(dtaHhd_hh_profiles)
+  return(dtaHhd_hhp)
 }
 
 fnGetIndices <- function(dtaTUS=uktus15_individual, path=path.TUS.out){
 
-  dta.selection <-
-    subset(dtaTUS,
-           select = c(serial, NumAdult, NumChild, dtenure, dgorpaf, Accom))
-  dta.selection <- dta.selection[!duplicated(dta.selection),]
+  dtaSel <- subset(dtaTUS,
+    select = c(serial, NumAdult, NumChild, dtenure, dgorpaf, Accom))
+  dtaSel <- dtaSel[!duplicated(dtaSel),]
 
-  dta.selection$.dwtype <-
-    ifelse(dta.selection$Accom=="House or bungalow","House",
-           ifelse(dta.selection$Accom=="Flat or maisonette", "Apartment", NA))
-  dta.selection$.region <-
-    ifelse(dta.selection$dgorpaf=="North West (incl merseyside)","North West",
-           ifelse(dta.selection$dgorpaf=="Yorkshire & Humberside","Yorkshire and the Humber",
-                  ifelse(dta.selection$dgorpaf=="East of England","Eastern England", as.character(dta.selection$dgorpaf))))
-  dta.selection$.tenure <-
-    ifelse(dta.selection$dtenure=="Owns outright"|dta.selection$dtenure=="Own with a mortgage","Private",
-           ifelse(dta.selection$dtenure=="Rented (private) / rent free"|dta.selection$dtenure=="Rented (public)","Rented", NA))
-  dta.selection$.hhsize <-
-    paste(ifelse(dta.selection$NumAdult>4,'X',dta.selection$NumAdult), ifelse(dta.selection$NumChild>3,'more',dta.selection$NumChild), sep=".")
+  dtaSel$.dwtype <-
+    ifelse(dtaSel$Accom=="House or bungalow","House",
+    ifelse(dtaSel$Accom=="Flat or maisonette", "Apartment", NA))
+  dtaSel$.region <-
+    ifelse(dtaSel$dgorpaf=="North West (incl merseyside)","North West",
+    ifelse(dtaSel$dgorpaf=="Yorkshire & Humberside","Yorkshire and the Humber",
+    ifelse(dtaSel$dgorpaf=="East of England","Eastern England", as.character(dtaSel$dgorpaf))))
+  dtaSel$.tenure <-
+    ifelse(dtaSel$dtenure=="Owns outright"|dtaSel$dtenure=="Own with a mortgage","Private",
+    ifelse(dtaSel$dtenure=="Rented (private) / rent free"|dtaSel$dtenure=="Rented (public)","Rented", NA))
+  dtaSel$.hhsize <-
+    paste(ifelse(dtaSel$NumAdult>4,'X',dtaSel$NumAdult),
+    ifelse(dtaSel$NumChild>3,'more',dtaSel$NumChild), sep=".")
 
-  dta.selection <- dta.selection[!is.na(dta.selection$.dwtype)|!is.na(dta.selection$.tenure),]
-  dta.selection <-
-    subset(dta.selection, select = c(serial,.dwtype,.region,.tenure,.hhsize))
-  dta.selection <- as_tibble(dta.selection)
+  dtaSel <- dtaSel[!is.na(dtaSel$.dwtype)|!is.na(dtaSel$.tenure),]
+  dtaSel <-
+    subset(dtaSel, select = c(serial,.dwtype,.region,.tenure,.hhsize))
+  dtaSel <- as_tibble(dtaSel)
 
   file.out <- paste0(path, "/tbl_TUS_index.csv")
-  write.csv(dta.selection, file.out)
+  write.csv(dtaSel, file.out)
 
-  return(dta.selection)
+  return(dtaSel)
 }
 
 fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
@@ -275,21 +275,21 @@ fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
 
   dtaHhd_hh_i <- 1:length(lstProfiles)
 
-  dtaHhd_hh_gral <- pblapply(dtaHhd_hh_i,
+  dtaHhd_general <- pblapply(dtaHhd_hh_i,
                              fnGetGeneralProfile, lstProfiles, 'general')
-  dtaHhd_hh_gral <- ldply(dtaHhd_hh_gral, data.frame)
-  dtaHhd_hh_gral$serial <- dtaHhdsRef[dtaHhd_hh_i]
-  rownames(dtaHhd_hh_gral) <- NULL
+  dtaHhd_general <- ldply(dtaHhd_general, data.frame)
+  dtaHhd_general$serial <- dtaHhdsRef[dtaHhd_hh_i]
+  rownames(dtaHhd_general) <- NULL
 
-  dta.hhd <- subset(fnGetIndices(),  serial %in% dtaHhd_hh_gral$serial)
-  dtaHhd_hh_gral <- join(dta.hhd, dtaHhd_hh_gral, by='serial')
-  dtaHhd_hh_gral <-
-    subset(dtaHhd_hh_gral,
+  dta.hhd <- subset(fnGetIndices(),  serial %in% dtaHhd_general$serial)
+  dtaHhd_general <- join(dta.hhd, dtaHhd_general, by='serial')
+  dtaHhd_general <-
+    subset(dtaHhd_general,
            select = c(serial, .dwtype, .region, .tenure, .hhsize,
                       NumAdult, NumChild, dhhtype, Repairs, IncCat,
                       Income, Wages, NumRooms, DMSex_P1, WorkSta_P1,
                       DVAge_P1, HiQual, SatisOv))
-  colnames(dtaHhd_hh_gral) <- tolower(colnames(dtaHhd_hh_gral))
+  colnames(dtaHhd_general) <- tolower(colnames(dtaHhd_general))
 
 
   dtaHhd_hh_apps <- pblapply(dtaHhd_hh_i,
@@ -298,7 +298,7 @@ fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
   dtaHhd_hh_apps$serial <- dtaHhdsRef[dtaHhd_hh_i]
   rownames(dtaHhd_hh_apps) <- NULL
 
-  lstHhd_hh <- list(dtaHhd_hh_gral, dtaHhd_hh_apps)
+  lstHhd_hh <- list(dtaHhd_general, dtaHhd_hh_apps)
   names(lstHhd_hh) <- c('household.demographics', 'appliances.ownership')
   #
   return(lstHhd_hh)
@@ -383,4 +383,3 @@ fnGetActionsPerSurveyed <- function(valActId, dtaHHd_toCheck){
   }
   return(dtaAct)
 }
-

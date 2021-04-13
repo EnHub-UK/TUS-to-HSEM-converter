@@ -1,7 +1,7 @@
 #' ----------------------------------------------------------------------------
 #' TUS Converter                                        {descriptive analysis}
 #'
-#' This second stage helps to have an overview about the datasets.
+#' This second stage helps have an overview about the datasets.
 #'
 #' ----------------------------------------------------------------------------
 #' @author g.sousa
@@ -12,8 +12,6 @@
 
 # Environment SETUP -----------------------------------------------------------
 #                       source('myScripts/A__householdData.R', verbose = FALSE)
-#                                     file.edit('myScripts/A__householdData.R')
-#                                                 load("outputs/Stage_A.RData")
                                                             .fnStartLibraries()
                                        source('myScripts/_aux_PlotFunctions.R')
 
@@ -70,7 +68,7 @@ tbl.hhd.daily <- lapply(dtaHhd_hh_profiles, `[[`, 'dailyacts')
 treemap(tbl.hhd.daily,
         index=c("whatdoing", "What_Oth1"),
         vSize="n", type="index",
-        palette = viridis::viridis(dim(tbl.hhd.daily)[1]))
+        palette = viridis::viridis(36))
 
 
 #.. pick an activity and check occurrence (beginning of) ---

@@ -1,7 +1,7 @@
 #' ----------------------------------------------------------------------------
 #' TUS Converter                                            {data collection}
 #'
-#' This first stage collects TUS data and converts it to R objects.
+#' This first stage collects TUS data and converts them to R objects.
 #'
 #' ----------------------------------------------------------------------------
 #' @author g.sousa
@@ -54,10 +54,6 @@ lstHhd_hh_profiles <- fnGetInParameters(dtaHhd_hh_profiles)
  lstHhd_hh_profiles[[2]] # displays ownership of appliances
 
 
-
-
-# SAVE Environment ------------------------------------------------------------
-save.image("outputs/Stage_A.RData")
 
 # NEXT > analysis, simulation, prediction -------------------------------------
 file.edit("myScripts/B__descriptive.R")
