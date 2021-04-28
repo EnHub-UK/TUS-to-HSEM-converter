@@ -174,16 +174,4 @@ ggplot(tbl.hhd.demo, aes(WashMach, fill=Tumble)) +
   geom_bar() + scale_fill_viridis_d() + theme_minimal() + coord_fixed(0.00025)
 
 
-
-
-
-
-
-
-# NEXT > analysis, simulation, prediction -------------------------------------
-# file.edit("myScripts/C__analysisSurvey.R")
-# file.edit("myScripts/D__subsetSurvey.R")
-# file.edit("myScripts/E__simulateMarkovChain.R")
-# file.edit("myScripts/F__exportProfiles.R")
-
 # END -------------------------------------------------------------------------

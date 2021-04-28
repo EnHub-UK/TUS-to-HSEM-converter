@@ -187,11 +187,12 @@ fnExtractProfile <- function(valHhd, tblHhdRef, tblHhd=uktus15_household,
 
   #.. Identify variable numbers (see documentation):
   #   `myData/AuxiliaryData/allissue/uktus15_household_ukda_data_dictionary`
+  #'@note replace with regex
 
-  valHhd_hhp <- list(general=c(23,13,14,64,73,72,65,36,206,216,226),
-                             appliances=37:53,
-                             status=206:235,
-                             relationships=236:335)
+  valHhd_hhp <- list(general = c(23,13,14,64,73,72,65,36,206,216,226),
+                     appliances = 37:53,
+                     status = 206:235,
+                     relationships = 236:335)
   valHhd_ppp <- c(321,463,599,588,594)
 
   #.. Extract variable information
@@ -247,10 +248,13 @@ fnGetIndices <- function(dtaTUS=uktus15_individual, path=path.TUS.out){
   dtaSel$.region <-
     ifelse(dtaSel$dgorpaf=="North West (incl merseyside)","North West",
     ifelse(dtaSel$dgorpaf=="Yorkshire & Humberside","Yorkshire and the Humber",
-    ifelse(dtaSel$dgorpaf=="East of England","Eastern England", as.character(dtaSel$dgorpaf))))
+    ifelse(dtaSel$dgorpaf=="East of England","Eastern England",
+      as.character(dtaSel$dgorpaf))))
   dtaSel$.tenure <-
-    ifelse(dtaSel$dtenure=="Owns outright"|dtaSel$dtenure=="Own with a mortgage","Private",
-    ifelse(dtaSel$dtenure=="Rented (private) / rent free"|dtaSel$dtenure=="Rented (public)","Rented", NA))
+    ifelse(dtaSel$dtenure=="Owns outright" |
+      dtaSel$dtenure=="Own with a mortgage","Private",
+    ifelse(dtaSel$dtenure=="Rented (private) / rent free" |
+      dtaSel$dtenure=="Rented (public)","Rented", NA))
   dtaSel$.hhsize <-
     paste(ifelse(dtaSel$NumAdult>4,'X',dtaSel$NumAdult),
     ifelse(dtaSel$NumChild>3,'more',dtaSel$NumChild), sep=".")
@@ -331,10 +335,14 @@ fnLoadTUSProcessed <- function(path=path.TUS.out){
       readRDS(file = paste0(path.TUS.out, file="/TUS-diary.rds"))
   }
 
-  assign(x = 'dtaHhd_hh_profiles', value = uktus15_profiles, envir = .GlobalEnv)
-  assign(x = 'uktus15_individual', value = uktus15_individual, envir = .GlobalEnv)
-  assign(x = 'uktus15_household', value = uktus15_household, envir = .GlobalEnv)
-  assign(x = 'uktus15_diary_ep_long', value = uktus15_diary_ep_long, envir = .GlobalEnv)
+  assign(x = 'dtaHhd_hh_profiles',
+         value = uktus15_profiles, envir = .GlobalEnv)
+  assign(x = 'uktus15_individual',
+         value = uktus15_individual, envir = .GlobalEnv)
+  assign(x = 'uktus15_household',
+         value = uktus15_household, envir = .GlobalEnv)
+  assign(x = 'uktus15_diary_ep_long',
+         value = uktus15_diary_ep_long, envir = .GlobalEnv)
 }
 
 fnGetActionsTable <- function(dtaAct, dtaFull=tblActivities){

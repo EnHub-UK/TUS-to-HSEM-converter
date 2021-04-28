@@ -42,12 +42,13 @@ uktus15_wksched[1:4,]        # This dataset contains work schedules
 
 # EXTRACTION ------------------------------------------------------------------
 
-#.. extract household profiles (one by one, to process household relationships)
+#.. 1) extract household profiles ----
+#     one by one, to obtain household relationships
 
 fnLoadTUSProcessed()
 
 
-#.. generate summaries ----
+#.. 2) generate summaries ----
 
 lstHhd_hh_profiles <- fnGetInParameters(dtaHhd_hh_profiles)
  lstHhd_hh_profiles[[1]] # displays household demographics

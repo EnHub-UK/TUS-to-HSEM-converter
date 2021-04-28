@@ -18,7 +18,7 @@ Once granted, the datasets need to be stored (or redirected) as shown at the bot
 
 Another reason for having a dedicated *repo* is that **TUS** information is employed along different projects, and so the datasets can be stored and shared in a central repository.
 
-<span style="background-color: #ffb82e"> Please note that...</span> the generation of profiles have been integrated into the [EnHub](github.com/EnHub-UK/Platform) platform.
+<span style="background-color: #ffb82e"> Please note that...</span> the generation of profiles has been integrated into the [EnHub](github.com/EnHub-UK/Platform) platform.
 
 
 ### Data Sources
@@ -35,7 +35,7 @@ Another reason for having a dedicated *repo* is that **TUS** information is empl
 ---
 
 **NOTES**
-1. `/myData` folder employs `symlinks` to a centralised database where the original repositories are previously retrieved from [UK-Data-Archive](https://www.ukdataservice.ac.uk/get-data.aspx).
+1. `/myData` folder employs `symlinks` to a centralised database where the original repositories are previously retrieved from [UK-Data-Service](https://www.ukdataservice.ac.uk/get-data.aspx).
 
 
 ```sh

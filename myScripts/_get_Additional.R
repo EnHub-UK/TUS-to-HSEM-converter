@@ -24,7 +24,7 @@ tblActivities$Group <-
   factor(tblActivities$Group,
 				 levels = tblActivitiesRef$Id, labels = tblActivitiesRef$Name)
 
-tblActivitiesGroupOrder <- c(9,8,1,4,3,2,5,10,6,7)
+tblActivitiesSorted <- c(9,8,1,4,3,2,5,10,6,7)
 
 tblRelationships <- read.csv(file.rel, stringsAsFactors = F)
 

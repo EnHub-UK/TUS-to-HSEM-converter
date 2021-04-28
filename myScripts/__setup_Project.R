@@ -48,7 +48,7 @@ source('myScripts/_aux_GetData.R')
 # Initiate --------------------------------------------------------------------
 
 path.TUS <- fnGetTUSProjectPath()
-fnMakeDir(path.TUS.out <- paste0(path.TUS,'/outputs'))
+dir.create(path.TUS.out <- paste0(path.TUS,'/outputs'), showWarnings = F)
 
 if(var.TUSyear %in% c(2000, 2015)) {
 
