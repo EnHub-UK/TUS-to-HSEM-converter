@@ -6,6 +6,8 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+[![DOI](https://zenodo.org/badge/308143570.svg)](https://zenodo.org/badge/latestdoi/308143570)
+
 This `R` project converts original **Time Use Survey** data sources into **Housing Stock Energy Model** (HSEM) tables for modelling and simulating activity transitions.
 
 The main reason for having a dedicated *TUS project* is <u>to comply with licensing rules</u>. Therefore, upon accessing the sources for the first time, users must request access to the relevant datasets from [UK-Data-Service](https://www.ukdataservice.ac.uk).
