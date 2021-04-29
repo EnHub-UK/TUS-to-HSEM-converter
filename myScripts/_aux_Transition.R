@@ -9,8 +9,10 @@
 #' @repository github.com/EnHub-UK/TUS-to-HSEM-converter
 #'
 
-fnGetActivitiesbySubset <- function(lstSubset, varPick, tblSubset,
-  dtaInd=uktus15_individual, dtaDiary=uktus15_diary_ep_long, varExtra=FALSE){
+fnGetActivitiesbySubset <-
+  function(lstSubset, varPick, tblSubset, dtaInd=uktus15_individual,
+           dtaDiary=uktus15_diary_ep_long, varExtra=FALSE,
+           ageFil=tblExtraFactors){
 
     idPick <- as.character(tblSubset$Id[lstSubset])
     idPick.name <- as.character(tblSubset$Name[tblSubset$Id %in% idPick])
@@ -29,21 +31,51 @@ fnGetActivitiesbySubset <- function(lstSubset, varPick, tblSubset,
     if(varExtra==TRUE){
       tblSubset$ExtraFactor <-
         factor(ifelse(tblSubset$DVAge<17, ifelse(tblSubset$DVAge<10, 1, 2), 3),
-               levels = 1:3, labels = tblExtraFactors)
+               levels = 1:3, labels = ageFil)
       lstSubset <- list()
       for(i in 1:3){
-        lstSubset[[i]] <- subset(tblSubset, ExtraFactor==tblExtraFactors[i])
+        lstSubset[[i]] <- subset(tblSubset, ExtraFactor==ageFil[i])
         lstSubset[[i]]$ExtraFactor <- NULL
       }
-      names(lstSubset) <- tblExtraFactors
+      names(lstSubset) <- ageFil
       tblSubset <- lstSubset
     }
 
     return(tblSubset)
   }
 
-fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
-                                  varOut=T, tblActs=tblActivities){
+fnGetActivitiesbyHousehold <-
+  function(valHhd, dtaInd=uktus15_individual,
+           dtaDiary=uktus15_diary_ep_long, varExtra=FALSE,
+           ageFil=tblExtraFactors){
+
+  # Cases where no diary was collected are excluded here
+  dtaSubset <- dtaDiary[dtaDiary$serial %in% valHhd, ]
+
+  if(dim(dtaSubset)[1]<1){
+    dtaSubset <- print("Warning: No Data in subset")
+  }else{
+    # add condition here to make subset by age categories
+    if(varExtra==TRUE){
+      dtaSubset$ExtraFactor <-
+        factor(ifelse(dtaSubset$DVAge<17,
+                      ifelse(dtaSubset$DVAge<10, 1, 2), 3),
+               levels = 1:3, labels = ageFil)
+      lstSubset <- list()
+      for(i in 1:3){
+        lstSubset[[i]] <- subset(dtaSubset, ExtraFactor==ageFil[i])
+        lstSubset[[i]]$ExtraFactor <- NULL
+      }
+      names(lstSubset) <- ageFil
+      dtaSubset <- lstSubset
+    }
+  }
+
+  return(dtaSubset)
+}
+
+fnGetTransitionTables <-
+  function(dtaSource, varSlot="1hour", varOut=T, tblActs=tblActivities){
 
   fnMakeandSummariseSubset <- function(dtaTo, tblAcssFull, tblSlots,
                                        varCtrlA, varCtrlB){
@@ -86,66 +118,67 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
 
     fnImputeMatrix <- function(dtaTidGaps, dtaMaxVal){
 
-      dtaToCheck <- tblTimeValid
-      valRowActive <-
+      dtaToCheck <- tblTime
+
+      valActive <-
         as.integer(rownames(dtaToCheck[dtaToCheck$tid==dtaTidGaps,]))
       dtaValid <- NULL
 
       if(dtaTidGaps==0.0){
         dtaValid <- dtaMaxVal
       }else{
-        dtaValid <- dtaToCheck[valRowActive-1,2:11]
+        dtaValid <- dtaToCheck[valActive-1,2:11]
       }
-      dtaToCheck[valRowActive, 2:11] <- dtaValid
-      assign("tblTimeValid", dtaToCheck, inherits=TRUE)
+      dtaToCheck[valActive, 2:11] <- dtaValid
+      assign("tblTime", dtaToCheck, inherits=TRUE)
       rownames(dtaValid) <- NULL
       return(dtaValid)
     }
 
     tblActNames <- fnGetActivityGroup()
 
-    tblTimeValid <- tblTimeValidd <-
+    tblTime <- tblTimed <-
       dcast(dtaToValidate, tid ~ variable, value.var="value")
-    colnames(tblTimeValid) <- gsub("-",".", colnames(tblTimeValid))
-    colnames(tblTimeValidd) <- gsub("-",".", colnames(tblTimeValidd))
-    tblTimeValid.cols <- colnames(tblTimeValid)
+    colnames(tblTime) <- gsub("-",".", colnames(tblTime))
+    colnames(tblTimed) <- gsub("-",".", colnames(tblTimed))
+    tblTime.cols <- colnames(tblTime)
 
-    tblTimeValid.Ref <-
-      as.data.frame(matrix(NA, nrow = dim(tblTimeValid)[1],
+    tblTime.Ref <-
+      as.data.frame(matrix(NA, nrow = dim(tblTime)[1],
                            ncol = 1 + dim(tblActNames)[1]))
-    colnames(tblTimeValid.Ref) <- c('tid', tblActNames$Name)
-    tblTimeValid.Ref[,tblTimeValid.cols] <- tblTimeValid
-    tblTimeValid <- tblTimeValid.Ref
-    rm(tblTimeValid.Ref)
+    colnames(tblTime.Ref) <- c('tid', tblActNames$Name)
+    tblTime.Ref[,tblTime.cols] <- tblTime
+    tblTime <- tblTime.Ref
+    rm(tblTime.Ref)
 
-    tblTimeValid$tid <- as.numeric(as.character(tblTimeValid$tid))
-    tblTimeValid[is.na(tblTimeValid)] <- 0
-    tblTimeValid$events <- rowSums(tblTimeValid[,2:11], na.rm = TRUE)
-    tblTimeValid$events <- ifelse(tblTimeValid$events>0, T,F)
-    tblTimeValid$occurence <- tblTimeValid$events * tblTimeValid$tid
-    valMaxEvent <- max(tblTimeValid$occurence)
+    tblTime$tid <- as.numeric(as.character(tblTime$tid))
+    tblTime[is.na(tblTime)] <- 0
+    tblTime$events <- rowSums(tblTime[,2:11], na.rm = TRUE)
+    tblTime$events <- ifelse(tblTime$events>0, T,F)
+    tblTime$occurence <- tblTime$events * tblTime$tid
+    valMaxEvent <- max(tblTime$occurence)
     dtaMaxEvent <-
-      tblTimeValid[tblTimeValid$occurence==valMaxEvent,2:11]
+      tblTime[tblTime$occurence==valMaxEvent,2:11]
     dtaTimeGaps <-
-      tblTimeValid$tid[tblTimeValid$events==FALSE]
+      tblTime$tid[tblTime$events==FALSE]
 
     if(length(dtaTimeGaps)>0){
       dtaImputated <-
         ldply(lapply(dtaTimeGaps, fnImputeMatrix, dtaMaxEvent), data.frame)
       dtaImputated$tid <- dtaTimeGaps
-      tblTimeValidd$tid <- as.numeric(as.character(tblTimeValidd$tid))
-      tblTimeValidd <- tblTimeValidd[,tblTimeValid.cols]
-      dtaImputated <- dtaImputated[,tblTimeValid.cols]
-      tblTimeValidd[tblTimeValidd$tid%in%dtaTimeGaps,] <- dtaImputated
+      tblTimed$tid <- as.numeric(as.character(tblTimed$tid))
+      tblTimed <- tblTimed[,tblTime.cols]
+      dtaImputated <- dtaImputated[,tblTime.cols]
+      tblTimed[tblTimed$tid%in%dtaTimeGaps,] <- dtaImputated
     }else{
-      tblTimeValidd <- tblTimeValid
+      tblTimed <- tblTime
     }
-    rm(tblTimeValid)
+    rm(tblTime)
 
-    tblTimeValidd <- melt(tblTimeValidd, id=1)
-    tblTimeValidd$tid <- as.numeric(tblTimeValidd$tid)
+    tblTimed <- melt(tblTimed, id=1)
+    tblTimed$tid <- as.numeric(tblTimed$tid)
 
-    return(tblTimeValidd)
+    return(tblTimed)
   }
 
   fnReScaleData <- function(dtaTo){
@@ -165,30 +198,30 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     return(dtaTo)
   }
 
-  fnGetTableOccurrence <- function(dta.wTime, dtw.wValues){
+  fnGetTableOccurrence <- function(dtaTime, dtaInfo){
 
-    dta.wActs <- fnGetActivityGroup()
+    dtaActs <- fnGetActivityGroup()
 
     dtaStd <- expand.grid(
-      tid.from=as.character(unique(dta.wTime$tid.from.num)),
-      Group=as.character(unique(dta.wActs$Name)))
+      tid.from=as.character(unique(dtaTime$tid.from.num)),
+      Group=as.character(unique(dtaActs$Name)))
 
     dtaStd$tid.from <- as.numeric(as.character(dtaStd$tid.from))
     dtaStd <- dtaStd[order(dtaStd$tid.from),]
     dtaStd$Group <- as.character(dtaStd$Group)
 
-    dtaStd <- join(dtaStd, dtw.wValues, by=c('tid.from', 'Group'))
+    dtaStd <- join(dtaStd, dtaInfo, by=c('tid.from', 'Group'))
     colnames(dtaStd) <- c('tid','variable','value')
     dtaStd$value[is.na(dtaStd$value)] <- 0
     dtaStd <- fnValidateData(dtaStd)
     return(dtaStd)
   }
 
-  fnGetTableProportion <- function(dtw.wValues){
+  fnGetTableProportion <- function(dtaInfo){
 
-    dta.wActs <- fnGetActivityGroup()
+    dtaActs <- fnGetActivityGroup()
 
-    dtaEvents <- dcast(dtw.wValues, tid ~ variable, value.var="value")
+    dtaEvents <- dcast(dtaInfo, tid ~ variable, value.var="value")
     dtaEvents.rows <- dtaEvents$tid
     rownames(dtaEvents) <- dtaEvents$tid
     dtaEvents <- dtaEvents[,-c(1)]
@@ -201,21 +234,21 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     dtaEvents$tid <- as.numeric(dtaEvents$tid)
     dtaEvents <- dtaEvents[!is.na(dtaEvents$value),]
 
-    dtaSubsetStd <-
-      expand.grid(tid=as.character(unique(dtaEvents$tid)),
-                  variable=as.character(unique(dta.wActs$Name)))
-    dtaSubsetStd <- join(dtaSubsetStd, dtaEvents, by=c('tid', 'variable'))
-    dtaSubsetStd$value[is.na(dtaSubsetStd$value)] <- 0
-    dtaSubsetStd <- fnReScaleData(dtaSubsetStd)
+    dtaStd <- expand.grid(
+      tid=as.character(unique(dtaEvents$tid)),
+      variable=as.character(unique(dtaActs$Name)))
+    dtaStd <- join(dtaStd, dtaEvents, by=c('tid', 'variable'))
+    dtaStd$value[is.na(dtaStd$value)] <- 0
+    dtaStd <- fnReScaleData(dtaStd)
 
-    return(dtaSubsetStd)
+    return(dtaStd)
   }
 
-  fnGetTableProbable <- function(dta.wEvents, dtw.wValues){
+  fnGetTableProbable <- function(dtaLogs, dtaInfo){
 
-    dta.wActs <- fnGetActivityGroup()
+    dtaActs <- fnGetActivityGroup()
 
-    dtaLog <- dcast(dta.wEvents, tid ~ variable, value.var="value")
+    dtaLog <- dcast(dtaLogs, tid ~ variable, value.var="value")
     dtaLog.rows <- dtaLog$tid
     rownames(dtaLog) <- dtaLog$tid
     dtaLog <- dtaLog[,-c(1)]
@@ -224,7 +257,8 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     dtaLogA <- apply(dtaLogA, 2, function(x) x / rowSums(dtaLogA, na.rm = T))
     dtaLogA <- dtaLogA[c(dim(dtaLogA)[1],1:dim(dtaLogA)[1]-1),]
 
-    dtaLogB <- t(apply(dtaLogB, 1, function(x) x / colSums(dtaLogB, na.rm = T)))
+    dtaLogB <-
+     t(apply(dtaLogB, 1, function(x) x / colSums(dtaLogB, na.rm = T)))
 
     dtaLogA[is.na(dtaLogA)] <- 0
     dtaLogB[is.na(dtaLogB)] <- 0
@@ -240,8 +274,8 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     dtaLog <- dtaLog[!is.na(dtaLog$value),]
 
     dtaSub <- expand.grid(
-      tid=as.character(unique(dta.wEvents$tid)),
-      variable=as.character(unique(dta.wActs$Name)))
+      tid=as.character(unique(dtaLogs$tid)),
+      variable=as.character(unique(dtaActs$Name)))
     dtaSub <- join(dtaSub, dtaLog, by=c('tid', 'variable'))
     dtaSub$value[is.na(dtaSub$value)] <- 0
 
@@ -316,7 +350,7 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     # prepare data to display proportion of occurrences
     lstOut[[2]] <- fnGetTableProportion(lstOut[[1]])
 
-    # prepare data to display probability of occurrences based on previous state
+    # prepare data to display probability based on previous state
     lstOut[[3]] <- fnGetTableProbable(lstOut[[2]], dtaSubset)
 
     # convert tables to matrices
@@ -337,7 +371,7 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
     # prepare data to display proportion of occurrences
     lstOut[[7]] <- fnGetTableProportion(lstOut[[6]])
 
-    # prepare data to display probability of occurrences based on previous state
+    # prepare data to display probability based on previous state
     lstOut[[8]] <- fnGetTableProbable(lstOut[[7]], dtaSubset_inOnly)
 
     # convert tables to matrices
@@ -364,7 +398,8 @@ fnGetTransitionTables <- function(dtaSource, varSlot="1hour",
   return(lstOut)
 }
 
-fnExportTransitionObjects <- function(pathId, dtaExport, timeStep, pathToSave){
+fnExportTransitionObjects <-
+  function(pathId, dtaExport, timeStep, pathToSave){
 
     if(pathId=="normal"){
       pathId=""
@@ -418,12 +453,12 @@ fnExportTransitionObjects <- function(pathId, dtaExport, timeStep, pathToSave){
       tblActNames <- fnGetActivityGroup()
       tblStdTransition <- fnExpandTables(tblTimeSlot, tblActNames)
 
-      tblTransition <- fnMakeStandardTable(tblTransition, dtaMatrix)
-      tblTransition$value[is.na(tblTransition$value)] <- 0
-      tblTransition <- dcast(tblTransition, tid ~ variable)
-      tblTransition$tid <- NULL
+      tblStdTransition <- fnMakeStandardTable(tblStdTransition, dtaMatrix)
+      tblStdTransition$value[is.na(tblStdTransition$value)] <- 0
+      tblStdTransition <- dcast(tblStdTransition, tid ~ variable)
+      tblStdTransition$tid <- NULL
 
-      return(tblTransition)
+      return(tblStdTransition)
     }
 
     #.. define/locate folder
@@ -544,32 +579,4 @@ fnExportTransitionSingle <-
 
     # return null
     message(paste("Exported to →", pathToExport))
-  }
-
-fnGetActivitiesbyHousehold <- function(valHhd, dtaInd=uktus15_individual,
-  dtaDiary=uktus15_diary_ep_long, varExtra=FALSE){
-
-    # Cases where no diary was collected are excluded here
-    dtaSubset <- dtaDiary[dtaDiary$serial %in% valHhd, ]
-
-    if(dim(dtaSubset)[1]<1){
-      dtaSubset <- print("Warning: No Data in subset")
-    }else{
-      # add condition here to make subset by age categories
-      if(varExtra==TRUE){
-        dtaSubset$ExtraFactor <-
-          factor(ifelse(dtaSubset$DVAge<17,
-                        ifelse(dtaSubset$DVAge<10, 1, 2), 3),
-                 levels = 1:3, labels = tblExtraFactors)
-        lstSubset <- list()
-        for(i in 1:3){
-          lstSubset[[i]] <- subset(dtaSubset, ExtraFactor==tblExtraFactors[i])
-          lstSubset[[i]]$ExtraFactor <- NULL
-        }
-        names(lstSubset) <- tblExtraFactors
-        dtaSubset <- lstSubset
-      }
-    }
-
-    return(dtaSubset)
   }

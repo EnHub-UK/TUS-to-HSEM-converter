@@ -1,7 +1,7 @@
 #' ----------------------------------------------------------------------------
 #' TUS Converter                                     {matrices of transition}
 #'
-#' @file `B__analysisSurvey.R` collects activities and generates matrices of
+#' @file `C__analysisSurvey` collects activities and generates matrices of
 #'       transition for each (manually defined) household profile.
 #'
 #' @note This workflow is DEPRECATED.
@@ -51,7 +51,7 @@ source('myScripts/_aux_PlotFunctions.R')
 
 
 
-# ACTIVITY collection --------------------------------------------------------
+# ACTIVITY collection ---------------------------------------------------------
 
 #.. Standard example ----------------------------------------------------------
 
@@ -116,12 +116,15 @@ pblapply(names(dtaFactor), fnExportTransition,
 # profiles of the UK population) or the consideration of dwelling typologies
 # corresponding to No-MASS or EnHub categories.
 
+
 # (#.) First, the TUS data set is duplicated. Note that this data.frame needs
 # to be declared when calling `fnGetActivitiesbySubset`.
 dtaHhd <- fnGetIndices()
 uktus15_individual.der <- join(uktus15_individual, dtaHhd, by='serial')
 
+
 # (#.) Second, mixed categories are created
+
 uktus15_individual.der$cluster.A <-
   as.factor(paste(uktus15_individual.der$dhhtype,
                   uktus15_individual.der$dtenure, sep=" + "))

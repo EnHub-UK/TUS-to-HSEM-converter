@@ -1,7 +1,7 @@
 #' ----------------------------------------------------------------------------
 #' TUS Converter                                        {descriptive analysis}
 #'
-#' This second stage helps have an overview about the datasets.
+#' This second stage helps provide an overview about the datasets.
 #'
 #' ----------------------------------------------------------------------------
 #' @author g.sousa

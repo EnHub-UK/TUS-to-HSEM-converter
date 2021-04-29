@@ -64,6 +64,88 @@
 # └── uktus15_wksched.dta
 #
 
+fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
+
+  fnGetGeneralProfile <- function(lstRef, lstData, lstDataSet){
+    dtaExtract <- as.data.frame(t(lstData[[lstRef]][[lstDataSet]]))
+    return(dtaExtract)
+  }
+
+  dtaHHd_i <- 1:length(lstProfiles)
+
+  dtaHHd_gral <-
+    pblapply(dtaHHd_i, fnGetGeneralProfile, lstProfiles, 'general')
+  dtaHHd_gral <- ldply(dtaHHd_gral, data.frame)
+  dtaHHd_gral$serial <- dtaHhdsRef[dtaHHd_i]
+  rownames(dtaHHd_gral) <- NULL
+
+  dtaHHd_ind <- subset(fnGetIndices(), serial %in% dtaHHd_gral$serial)
+  dtaHHd_gral <- join(dtaHHd_ind, dtaHHd_gral, by='serial')
+  dtaHHd_gral <- subset(dtaHHd_gral,
+                        select = c(serial, .dwtype, .region, .tenure, .hhsize,
+                                   NumAdult, NumChild, dhhtype, Repairs,
+                                   IncCat, Income, Wages, NumRooms, DMSex_P1,
+                                   WorkSta_P1, DVAge_P1, HiQual, SatisOv))
+  colnames(dtaHHd_gral) <- tolower(colnames(dtaHHd_gral))
+
+  dtaHHd_apps <-
+    pblapply(dtaHHd_i, fnGetGeneralProfile, lstProfiles, 'appliances')
+  dtaHHd_apps <- ldply(dtaHHd_apps, data.frame)
+  dtaHHd_apps$serial <- dtaHhdsRef[dtaHHd_i]
+  rownames(dtaHHd_apps) <- NULL
+
+  lstHHd <- list(dtaHHd_gral, dtaHHd_apps)
+  names(lstHHd) <- c('household.demographics', 'appliances.ownership')
+  #
+  return(lstHHd)
+}
+
+fnGetActionsPerSurveyed <- function(valActId, dtaHHd_toCheck){
+
+  tblTime <- fnMakeTimeSlotTable()
+  valActSelect <- tblActivities$Name[tblActivities$Id==valActId]
+  print(valActSelect)
+  dtaAct <- subset(dtaHHd_toCheck, whatdoing==valActSelect,
+                   select = c('tid', 'whatdoing', 'DiaryDate_Act', 'DVAge'))
+  if(dim(dtaAct)[1]<1){
+    print("--> This activity was not performed")
+    dtaAct <- NULL
+  }else{
+    colnames(dtaAct) <- c('tid','whatdoing','DiaryDate_Act','DVAge')
+    dtaAct <- join(tblTime, dtaAct, by="tid")
+    dtaAct$value <-
+      ifelse(!is.na(dtaAct$whatdoing) & dtaAct$whatdoing==valActSelect, 1, 0)
+    dtaAct <- dtaAct[!is.na(dtaAct$DVAge),]
+    dtaAct <- dcast(dtaAct, tid ~ DiaryDate_Act + DVAge + value)
+    dtaAct <- join(tblTime, dtaAct, by="tid")
+    dtaAct[is.na(dtaAct)] <- 0
+    dtaAct <- dtaAct[, !(names(dtaAct) %in% c('tid.from','tid.to','tid.slot'))]
+    dtaAct <- melt(dtaAct, id = 1)
+    print("--> Profiles Generated")
+  }
+  return(dtaAct)
+}
+
+fnGetActionsTable <- function(dtaAct, dtaFull=tblActivities){
+
+  # [instant] is a dummy value employed to identify activities
+  # that make their value consistent (e.g. sleep)
+  dtaFull$Instant <- sample(c(0,1), dim(dtaFull)[1], replace = TRUE)
+
+  # data from chosen household is mined for existing activities
+  tblSvy <- as.data.frame(table(dtaAct$whatdoing))
+  tblSvy <- tblSvy[tblSvy$Freq>0,]
+  colnames(tblSvy) <- c('Name', 'Freq')
+
+  tblSvy <- join(tblSvy, tblActivities, by='Name')
+  tblSvy <- tblSvy[order(tblSvy$Freq),]
+  rownames(tblSvy) <- NULL
+
+  tblSvy <- join(tblSvy, dtaFull, by=c("Id","Name"))
+
+  return(tblSvy)
+}
+
 fnLoadTUSRawFiles <- function(){
 
   files <- list.files(pattern="dta", recursive=TRUE)
@@ -270,44 +352,6 @@ fnGetIndices <- function(dtaTUS=uktus15_individual, path=path.TUS.out){
   return(dtaSel)
 }
 
-fnGetInParameters <- function(lstProfiles, dtaHhdsRef=tblHhds){
-
-  fnGetGeneralProfile <- function(lstRef, lstData, lstDataSet){
-    dtaExtract <- as.data.frame(t(lstData[[lstRef]][[lstDataSet]]))
-    return(dtaExtract)
-  }
-
-  dtaHhd_hh_i <- 1:length(lstProfiles)
-
-  dtaHhd_general <- pblapply(dtaHhd_hh_i,
-                             fnGetGeneralProfile, lstProfiles, 'general')
-  dtaHhd_general <- ldply(dtaHhd_general, data.frame)
-  dtaHhd_general$serial <- dtaHhdsRef[dtaHhd_hh_i]
-  rownames(dtaHhd_general) <- NULL
-
-  dta.hhd <- subset(fnGetIndices(),  serial %in% dtaHhd_general$serial)
-  dtaHhd_general <- join(dta.hhd, dtaHhd_general, by='serial')
-  dtaHhd_general <-
-    subset(dtaHhd_general,
-           select = c(serial, .dwtype, .region, .tenure, .hhsize,
-                      NumAdult, NumChild, dhhtype, Repairs, IncCat,
-                      Income, Wages, NumRooms, DMSex_P1, WorkSta_P1,
-                      DVAge_P1, HiQual, SatisOv))
-  colnames(dtaHhd_general) <- tolower(colnames(dtaHhd_general))
-
-
-  dtaHhd_hh_apps <- pblapply(dtaHhd_hh_i,
-                             fnGetGeneralProfile, lstProfiles, 'appliances')
-  dtaHhd_hh_apps <- ldply(dtaHhd_hh_apps, data.frame)
-  dtaHhd_hh_apps$serial <- dtaHhdsRef[dtaHhd_hh_i]
-  rownames(dtaHhd_hh_apps) <- NULL
-
-  lstHhd_hh <- list(dtaHhd_general, dtaHhd_hh_apps)
-  names(lstHhd_hh) <- c('household.demographics', 'appliances.ownership')
-  #
-  return(lstHhd_hh)
-}
-
 fnLoadTUSProcessed <- function(path=path.TUS.out){
 
   lblTables <- c('-household','-individual','-profiles','-diary')
@@ -343,51 +387,4 @@ fnLoadTUSProcessed <- function(path=path.TUS.out){
          value = uktus15_household, envir = .GlobalEnv)
   assign(x = 'uktus15_diary_ep_long',
          value = uktus15_diary_ep_long, envir = .GlobalEnv)
-}
-
-fnGetActionsTable <- function(dtaAct, dtaFull=tblActivities){
-
-  # [instant] is a dummy value employed to identify activities
-  # that make their value consistent (e.g. sleep)
-  dtaFull$Instant <- sample(c(0,1), dim(dtaFull)[1], replace = TRUE)
-
-  # data from chosen household is mined for existing activities
-  tblSvy <- as.data.frame(table(dtaAct$whatdoing))
-  tblSvy <- tblSvy[tblSvy$Freq>0,]
-  colnames(tblSvy) <- c('Name', 'Freq')
-
-  tblSvy <- join(tblSvy, tblActivities, by='Name')
-  tblSvy <- tblSvy[order(tblSvy$Freq),]
-  rownames(tblSvy) <- NULL
-
-  tblSvy <- join(tblSvy, dtaFull, by=c("Id","Name"))
-
-  return(tblSvy)
-}
-
-fnGetActionsPerSurveyed <- function(valActId, dtaHHd_toCheck){
-
-  tblTime <- fnMakeTimeSlotTable()
-  valActSelect <- tblActivities$Name[tblActivities$Id==valActId]
-  print(valActSelect)
-  dtaAct <- subset(dtaHHd_toCheck, whatdoing==valActSelect,
-                   select = c('tid', 'whatdoing', 'DiaryDate_Act', 'DVAge'))
-  if(dim(dtaAct)[1]<1){
-    print("--> This activity was not performed")
-    dtaAct <- NULL
-  }else{
-    colnames(dtaAct) <- c('tid','whatdoing','DiaryDate_Act','DVAge')
-    dtaAct <- join(tblTime, dtaAct, by="tid")
-    dtaAct$value <- ifelse(!is.na(dtaAct$whatdoing) &
-                             dtaAct$whatdoing==valActSelect, 1, 0)
-    dtaAct <- dtaAct[!is.na(dtaAct$DVAge),]
-    dtaAct <- dcast(dtaAct, tid ~ DiaryDate_Act + DVAge + value)
-    dtaAct <- join(tblTime, dtaAct, by="tid")
-    dtaAct[is.na(dtaAct)] <- 0
-    dtaAct <- dtaAct[, !(names(dtaAct) %in%
-                           c('tid.from','tid.to','tid.slot'))]
-    dtaAct <- melt(dtaAct, id = 1)
-    print("--> Profiles Generated")
-  }
-  return(dtaAct)
 }
