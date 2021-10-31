@@ -58,9 +58,6 @@ lstHhd_hh_profiles <- fnGetInParameters(dtaHhd_hh_profiles)
 
 # NEXT > analysis, simulation, prediction -------------------------------------
 file.edit("myScripts/B__descriptive.R")
-# file.edit("myScripts/C__analysisSurvey.R")
-# file.edit("myScripts/D__subsetSurvey.R")
-# file.edit("myScripts/E__simulateMarkovChain.R")
-# file.edit("myScripts/F__exportProfiles.R")
+file.edit("myScripts/C__analysisSurvey.R")
 
 # END -------------------------------------------------------------------------

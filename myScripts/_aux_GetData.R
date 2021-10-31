@@ -257,7 +257,7 @@ findStrings <- function(varToFind){
 
 fnExtractInfo <- function(varNo, dtaToCheck, varHhld, tblHhdsRef=tblHhds){
 
-  dtaExt <- subset(dtaExtCheck, serial==tblHhdsRef[varHhld])
+  dtaExt <- subset(dtaToCheck, serial==tblHhdsRef[varHhld])
   dtaExt <- as.data.frame(t(dtaExt[,varNo]))
   colnames(dtaExt) <- tblHhdsRef[varHhld]
 
